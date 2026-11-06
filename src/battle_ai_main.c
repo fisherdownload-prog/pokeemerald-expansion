@@ -1754,7 +1754,7 @@ static s32 AI_CheckBadMove(enum BattlerId battlerAtk, enum BattlerId battlerDef,
             ADJUST_SCORE(-10);
         break;
     case EFFECT_CAPTIVATE:
-        if (!AreBattlersOfOppositeGender(battlerAtk, battlerDef))
+        if (!CanBattlerCharmBattler(battlerAtk, battlerDef))
             ADJUST_SCORE(-10);
         else if (!AI_CanAnyStatChange(battlerAtk, battlerDef, move))
             ADJUST_SCORE(-10);

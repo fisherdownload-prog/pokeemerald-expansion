@@ -4221,7 +4221,7 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, enum BattlerId battler, enum
              && IsBattlerAlive(gBattlerTarget)
              && (GetConfig(B_ABILITY_TRIGGER_CHANCE) >= GEN_4 ? RandomPercentage(RNG_CUTE_CHARM, 30) : RandomChance(RNG_CUTE_CHARM, 1, 3))
              && !(gBattleMons[gBattlerAttacker].volatiles.infatuation)
-             && AreBattlersOfOppositeGender(gBattlerAttacker, gBattlerTarget)
+             && CanBattlerCharmBattler(gBattlerAttacker, gBattlerTarget)
              && !IsAbilityAndRecord(gBattlerAttacker, GetBattlerAbility(gBattlerAttacker), ABILITY_OBLIVIOUS)
              && !CanBattlerAvoidContactEffects(gBattlerAttacker, gBattlerTarget, GetBattlerAbility(gBattlerAttacker), GetBattlerHoldEffect(gBattlerAttacker), move)
              && !IsAbilityOnSide(gBattlerAttacker, ABILITY_AROMA_VEIL))
@@ -9638,6 +9638,13 @@ bool32 AreBattlersOfOppositeGender(enum BattlerId battler1, enum BattlerId battl
     u32 gender2 = GetBattlerGender(battler2);
 
     return (gender1 != MON_GENDERLESS && gender2 != MON_GENDERLESS && gender1 != gender2);
+}
+
+// Resolve RPG: being Charmed (infatuation) is gender-neutral. Anyone can charm anyone else.
+// Used instead of AreBattlersOfOppositeGender for Attract, Cute Charm, Captivate and Destiny Knot.
+bool32 CanBattlerCharmBattler(enum BattlerId battler1, enum BattlerId battler2)
+{
+    return battler1 != battler2;
 }
 
 bool32 AreBattlersOfSameGender(enum BattlerId battler1, enum BattlerId battler2)

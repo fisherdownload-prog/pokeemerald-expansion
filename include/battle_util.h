@@ -241,6 +241,7 @@ bool32 BattlerHasCopyableChanges(enum BattlerId battler);
 bool32 ChangeTypeBasedOnTerrain(enum BattlerId battler);
 u32 GetBattlerGender(enum BattlerId battler);
 bool32 AreBattlersOfOppositeGender(enum BattlerId battler1, enum BattlerId battler2);
+bool32 CanBattlerCharmBattler(enum BattlerId battler1, enum BattlerId battler2);
 bool32 AreBattlersOfSameGender(enum BattlerId battler1, enum BattlerId battler2);
 u32 CalcSecondaryEffectChance(enum BattlerId battler, enum Ability battlerAbility, const struct AdditionalEffect *additionalEffect);
 bool32 MoveEffectIsGuaranteed(enum BattlerId battler, enum Ability battlerAbility, const struct AdditionalEffect *additionalEffect);

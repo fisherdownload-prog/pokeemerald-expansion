@@ -1440,7 +1440,7 @@ static enum CancelerResult CancelerMoveEffectFailureTarget(struct BattleCalcValu
             }
             break;
         case EFFECT_CAPTIVATE:
-            if (!AreBattlersOfOppositeGender(cv->battlerAtk, battlerDef))
+            if (!CanBattlerCharmBattler(cv->battlerAtk, battlerDef))
             {
                 battleScript = BattleScript_ButItFailed;
             }

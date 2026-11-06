@@ -1,4 +1,4 @@
-# Resolve RPG: Rename Sheet (draft 10)
+# Resolve RPG: Rename Sheet (draft 11)
 
 Based on `pokeemerald-expansion` at commit `3ecef353`, branch `Resolve-rpg`.
 Goal: get the theme by **using what already exists**, not adding mechanics.
@@ -96,6 +96,17 @@ someone easier to recruit, and being left speechless or stunned helps most.
 
 **Battle messages done:** 70 strings in `src/battle_message.c` rewritten for these seven statuses,
 using "their" for people. Toxic Spikes text now refers to **seeds of doubt** (a good name for the move later).
+
+**Charmed (infatuation) is gender-neutral.** Anyone can charm anyone. `CanBattlerCharmBattler`
+in `src/battle_util.c` replaces the opposite-gender check for Attract, Cute Charm, Captivate and
+Destiny Knot (including the AI's checks). Only the Rivalry ability still uses gender.
+
+**Flinch = Interrupted**: "X was interrupted and couldn't respond!"
+
+**Pronouns: everyone is "they".** All battle messages use they/their/themselves for people.
+"It" is kept only where it means a move, the weather or an item ("But it failed!", "made it rain").
+NPC and story dialogue (`data/text/`) still uses Emerald's text, which will be replaced when the
+story is written.
 
 **Not yet done:**
 - Status icons (PSN, BRN, PAR, SLP, FRZ) are graphics: `graphics/battle_interface/status*.png`.
@@ -244,9 +255,6 @@ info screen (`menu_specialized.c:781`) and the Pokédex search. In-game names ar
 1. ~~In-game name for Assertion~~: **Facts**. A person who goes on what they "know" to be true, whether or not it is.
 2. Name for snow, and whether to use hail or snow.
 3. Fighting/Ingenuity family placement (Reason?) and Tradition's family.
-4. **Infatuation (Charmed)** only works between opposite genders. That's hardcoded
-   (`AreBattlersOfOppositeGender`), so it reads as romantic attraction.
-5. **Flinch**: rename to Interrupted?
-6. **Frostbite**: an optional replacement for freeze that halves *special* (Passion) damage, mirroring
+4. **Frostbite**: an optional replacement for freeze that halves *special* (Passion) damage, mirroring
    Frustrated. Switching it on would replace Stunned silence.
-7. **Pronoun pass**: many other battle messages still say "its" for people.
+
