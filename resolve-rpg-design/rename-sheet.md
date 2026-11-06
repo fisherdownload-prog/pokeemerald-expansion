@@ -1,4 +1,4 @@
-# Resolve RPG: Rename Sheet (draft 11)
+# Resolve RPG: Rename Sheet (draft 12)
 
 Based on `pokeemerald-expansion` at commit `3ecef353`, branch `Resolve-rpg`.
 Goal: get the theme by **using what already exists**, not adding mechanics.
@@ -160,18 +160,27 @@ If the vanilla chart is kept for these, Memory (Ice) is super effective against 
 Pragmatism (Ground) and Hierarchy (Dragon), and weak to Rage (Fire), Assertion (Rock), Mathematics (Steel)
 and the Fighting slot.
 
-### Stats
+### Stats (done)
 
-Text in `src/battle_message.c:155-168` (`gStatNamesTable`) and `src/strings.c` (summary labels).
+| Existing | New | Summary label | Dex abbreviation |
+|---|---|---|---|
+| HP | Resolve | RESOLVE | RES |
+| Attack | Logic | LOGIC | LOG |
+| Defense | **Rigour** (a trait, not an action like "Rebuttal") | RIGOUR | RIG |
+| Sp. Atk | **Spirit** (Passion didn't fit) | SPIRIT | SPI |
+| Sp. Def | **Poise** (Composure didn't fit) | POISE | POI |
+| Speed | Wit | WIT | WIT |
+| Accuracy | credibility | (battle text only) | |
+| Evasion | scepticism | (battle text only) | |
 
-| Existing | New |
-|---|---|
-| HP | Resolve |
-| Attack / Defense | Logic / Rebuttal |
-| Sp. Atk / Sp. Def | Passion / Composure |
-| Speed | Wit |
-| Accuracy | Credibility |
-| Evasion | Scepticism |
+The summary screen centres labels in fixed widths: **42 px** on the left (Resolve, Logic, Rigour)
+and **36 px** on the right (Spirit, Poise, Wit). RESOLVE uses all 42 px.
+Changed in `src/battle_message.c` (stat names, plus "HP", "Attack", "Defense" and "Sp. Def" inside
+messages), `src/strings.c` (summary, level-up window, party menu) and `src/pokedex_plus_hgss.c`.
+The level-up window shows RESOLVE, not "MAX RESOLVE", which would collide with the numbers.
+
+**Still graphics:** the "HP" label on the battle Resolve bar and the party menu.
+**Left for the moves pass:** "ACCURACY" on the move info screen (that's move *Plausibility*).
 
 ### Battle messages (`src/battle_message.c`)
 
