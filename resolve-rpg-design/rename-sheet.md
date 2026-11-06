@@ -1,4 +1,4 @@
-# Resolve RPG: Rename Sheet (draft 9)
+# Resolve RPG: Rename Sheet (draft 10)
 
 Based on `pokeemerald-expansion` at commit `3ecef353`, branch `Resolve-rpg`.
 Goal: get the theme by **using what already exists**, not adding mechanics.
@@ -79,14 +79,28 @@ Hail and snow are alternatives: `B_SNOW_WARNING` (battle.h:335) picks which one 
 
 ### Status conditions (effects are hardcoded, names are text)
 
-| Existing | New | Effect |
-|---|---|---|
-| Sleep | Speechless | Can't act for a few turns; boosts recruit rate |
-| Paralysis | Hesitant | May fail to act; Wit drops |
-| Burn | Frustrated | Physical (Logic) damage halved; slow Resolve loss |
-| Poison / Toxic | Doubting / Deep doubt | Slow (or growing) Resolve loss |
-| Freeze | Stunned silence | Can't act until it wears off; boosts recruit rate |
-| Confusion | Flustered | May undermine own argument |
+Exact numbers from the code (latest-generation configs in `include/config/battle.h`):
+
+| Existing | New | Hardcoded effect | Recruit bonus |
+|---|---|---|---|
+| Sleep | **Speechless** | Can't act for 1-3 turns (`B_SLEEP_TURNS`) | x2.5 |
+| Freeze | **Stunned silence** | Can't act; 20% chance each turn to recover; a Rage move breaks it | x2.5 |
+| Paralysis | **Hesitant** | 25% chance to fail to act; Wit halved | x1.5 |
+| Burn | **Frustrated** | Logic (physical) damage halved; loses 1/16 Resolve per turn | x1.5 |
+| Poison | **Doubting** | Loses 1/8 Resolve per turn | x1.5 |
+| Toxic | **Deep doubt** | Loses 1/16, 2/16, 3/16... Resolve per turn | x1.5 |
+| Confusion | **Flustered** | 1/3 chance to hit themselves with their own Logic, for 2-5 turns | none |
+
+Recruit bonuses come from `battle_script_commands.c:8102-8110`. So any lasting status makes
+someone easier to recruit, and being left speechless or stunned helps most.
+
+**Battle messages done:** 70 strings in `src/battle_message.c` rewritten for these seven statuses,
+using "their" for people. Toxic Spikes text now refers to **seeds of doubt** (a good name for the move later).
+
+**Not yet done:**
+- Status icons (PSN, BRN, PAR, SLP, FRZ) are graphics: `graphics/battle_interface/status*.png`.
+- Item names and descriptions (Antidote, Burn Heal, Awakening...) belong to the items pass.
+- Frostbite strings are untouched; it's off (`B_USE_FROSTBITE`, battle.h:393).
 
 Note: Frustrated halving **Logic** fits the per-move split: a frustrated person reasons badly
 but can still be emotional.
@@ -230,3 +244,9 @@ info screen (`menu_specialized.c:781`) and the Pokédex search. In-game names ar
 1. ~~In-game name for Assertion~~: **Facts**. A person who goes on what they "know" to be true, whether or not it is.
 2. Name for snow, and whether to use hail or snow.
 3. Fighting/Ingenuity family placement (Reason?) and Tradition's family.
+4. **Infatuation (Charmed)** only works between opposite genders. That's hardcoded
+   (`AreBattlersOfOppositeGender`), so it reads as romantic attraction.
+5. **Flinch**: rename to Interrupted?
+6. **Frostbite**: an optional replacement for freeze that halves *special* (Passion) damage, mirroring
+   Frustrated. Switching it on would replace Stunned silence.
+7. **Pronoun pass**: many other battle messages still say "its" for people.
