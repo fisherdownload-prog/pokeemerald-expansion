@@ -34,12 +34,14 @@ Mostly **visible, overworld-based** encounters, plus a few deliberate sources of
 - **A fictional setting resembling the British Empire.** The colonised land is more like India than
   America, **without being a stereotype**: an invented place with its own names, regions and
   traditions, inspired by history rather than copying it.
+- **The regime** is a collaborationist government: local people grown rich through loyalty to the empire.
+- **Imperial troops and visitors from the heartland** appear occasionally, distinct by **fashion, not ethnicity**.
 - Surveillance means informers, censors and police files, which already fits *Din*, Doctored
   Records and the Protocol, Power and Corrupt officer types.
 
 ## Characters
 
-Characters take the place of Pokémon species.
+Characters take the place of Pokémon species. The first batch is in `characters.md`.
 
 - **Archetypes** (common people, like common species) and **unique individuals** (like legendaries).
 - **Experience is debating experience.**
