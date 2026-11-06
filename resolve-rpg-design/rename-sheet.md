@@ -1,4 +1,4 @@
-# Resolve RPG: Rename Sheet (draft 7)
+# Resolve RPG: Rename Sheet (draft 8)
 
 Based on `pokeemerald-expansion` at commit `3ecef353`, branch `Resolve-rpg`.
 Goal: get the theme by **using what already exists**, not adding mechanics.
@@ -17,7 +17,7 @@ We work through the code in three tiers:
   Emotion moves are special (Passion vs Composure), Reason moves are physical (Logic vs Rebuttal).
   Individual moves can break the rule on purpose.
 - **Emotion slots accepted for now:** Rage = Fire, Grief = Water, Fear = Ghost, Hope = Poison,
-  Dignity = Electric, Love = Fairy.
+  Humour = Electric (replaced Dignity), Love = Fairy.
 - **Idealism = Flying, Pragmatism = Ground, Assertion = Rock**, and **Gish Gallop = sandstorm** (see tier 1).
 - **Mathematics = Steel, Memory = Ice**, **Hail = Revisionism**.
 - **Common Sense = Normal**, **Ingenuity = Fighting** (working name: maverick, outside-the-box thinking).
@@ -36,7 +36,7 @@ We work through the code in three tiers:
 | Fire | Can't be burned; its damaging moves thaw a frozen target | **Rage** | Can't be made Frustrated; Rage snaps people out of Stunned silence | battle_util.c:5346, battle_script_commands.c:9173 |
 | Ghost | Always escapes wild battles; can't be trapped (config, see tier 2) | **Fear** | The frightened flee and can't be cornered | battle_util.c:671, 4982 |
 | Poison | Can't be poisoned; Toxic never misses from a Poison type (config); absorbs Toxic Spikes on entry | **Hope** | Can't be made Doubting; clears lingering doubt from the field | battle_util.c:5305, battle_switch_in.c:342 |
-| Electric | Can't be paralyzed (config) | **Dignity** | Can't be made Hesitant | battle_util.c:5327 |
+| Electric | Can't be paralyzed (config); Electric Terrain prevents sleep | **Humour** | People in a joking mood act on impulse, so they can't be made Hesitant. Electric Terrain becomes a **Lively** atmosphere where nobody is left Speechless. | battle_util.c:5327 |
 | Flying | **Not grounded**: Ground moves can't hit it; ignores Spikes, Toxic Spikes and terrains | **Idealism** | Pragmatic arguments don't reach people with their head in the clouds | battle_util.c:5971, 8181-8318 |
 | Ground | Immune to sandstorm damage | **Pragmatism** | A Gish Gallop doesn't faze a practical person | battle_end_turn.c:148 |
 | Rock | Immune to sandstorm damage; **Sp. Def x1.5 in sandstorm** | **Assertion** | Asserters thrive in a flood of claims: during a Gish Gallop they're harder to move emotionally | battle_end_turn.c:148, battle_util.c:7295 |
@@ -74,7 +74,7 @@ Hail and snow are alternatives: `B_SNOW_WARNING` (battle.h:335) picks which one 
 | Slot | New type | Notes |
 |---|---|---|
 | Psychic | **Protocol** (officer) | Only quirk is Psychic Terrain boosting its moves, which could become a "bureaucratic" atmosphere. If the vanilla chart is kept: Corrupt (Dark) is immune to Protocol, and Fear (Ghost) is super effective against it (officers fear their superiors). |
-| Dragon | **Hierarchy** (officer) | Only quirk is Misty Terrain halving its moves. If the vanilla chart is kept: resists Rage, Grief and Dignity; weak to Hierarchy (pulling rank) and Memory; Love is super effective and immune to it. |
+| Dragon | **Hierarchy** (officer) | Only quirk is Misty Terrain halving its moves. If the vanilla chart is kept: resists Rage, Grief and Custom; weak to Hierarchy (pulling rank) and Memory; Love is super effective and immune to it. |
 | Fighting | **Ingenuity** | No quirks. If the vanilla chart is kept: super effective against Common Sense, Assertion, Mathematics, Memory and Corrupt; resisted by Idealism, Hope, Love and Protocol; Fear is immune. Weak to Idealism, Protocol and Love. |
 
 ### Status conditions (effects are hardcoded, names are text)
@@ -100,7 +100,7 @@ All in `include/config/battle.h`.
 | Config | Line | What it controls | Relevant to |
 |---|---|---|---|
 | `B_GHOSTS_ESCAPE` | 45 | Ghost types always escape and can't be trapped | Fear: keep |
-| `B_PARALYZE_ELECTRIC` | 46 | Electric types can't be paralyzed | Dignity: keep |
+| `B_PARALYZE_ELECTRIC` | 46 | Electric types can't be paralyzed | Humour: keep |
 | `B_POWDER_GRASS` | 47 | Grass types immune to powder and spore moves | Grass slot: decide later |
 | `B_PRANKSTER_DARK_TYPES` | 49 | Dark types immune to Prankster-boosted status moves | Dark slot: a fit for **Corrupt** (they know the game) |
 | `B_TOXIC_NEVER_MISS` | 91 | Toxic can't miss when used by a Poison type | Hope: probably harmless |
@@ -120,14 +120,14 @@ carry over.
 
 Emotion matchups agreed so far (attacker ↓, defender →; 2 = super effective, ½ = resisted):
 
-| | Rage | Fear | Hope | Love | Grief | Dignity |
+| | Rage | Fear | Hope | Love | Grief | Humour |
 |---|---|---|---|---|---|---|
 | **Rage** | ½ | 2 | | ½ | | 2 |
 | **Fear** | ½ | | 2 | 2 | | ½ |
 | **Hope** | ½ | 2 | | | 2 | ½ |
 | **Love** | 2 | ½ | | | 2 | ½ |
 | **Grief** | ½ | | 2 | 2 | ½ | |
-| **Dignity** | 2 | 2 | | | | ½ |
+| **Humour** | 2 | 2 | | | ½ | ½ |
 
 Also set so far: Assertion → Idealism = 2.
 
@@ -166,29 +166,30 @@ Text in `src/battle_message.c:155-168` (`gStatNamesTable`) and `src/strings.c` (
 
 ## Current type chart (in the code)
 
-The six Emotion types use the custom matchups among themselves. Every other cell is still vanilla.
+The six Emotion types use the custom matchups among themselves. Every other cell is vanilla,
+except **Humour → Power = 2** (mockery deflates the powerful).
 `src/data/types_info.h` now has a second header row with the new names.
 
 | Type | Super effective against | Not very effective against | No effect on | Weak to | Resists | Immune to |
 |---|---|---|---|---|---|---|
 | **Sense** | - | Facts, Maths | Fear | Vision | - | Fear |
 | **Vision** | Sense, Facts, Maths, Memory, Corrupt | Idealism, Hope, Wealth, Protocol, Love | Fear | Idealism, Protocol, Love | Facts, Wealth, Corrupt | - |
-| **Idealism** | Vision, Wealth, Custom | Facts, Maths, Dignity | - | Facts, Dignity, Memory | Vision, Wealth, Custom | Realism |
-| **Hope** | Fear, Grief, Custom | Realism, Facts, Rage, Dignity | Maths | Realism, Fear, Grief, Protocol | Vision, Wealth, Custom | - |
-| **Realism** | Hope, Facts, Maths, Rage, Dignity | Wealth, Custom | Idealism | Grief, Custom, Memory | Hope, Facts | Dignity |
+| **Idealism** | Vision, Wealth, Custom | Facts, Maths, Humour | - | Facts, Humour, Memory | Vision, Wealth, Custom | Realism |
+| **Hope** | Fear, Grief, Custom | Realism, Facts, Rage, Humour | Maths | Realism, Fear, Grief, Protocol | Vision, Wealth, Custom | - |
+| **Realism** | Hope, Facts, Maths, Rage, Humour | Wealth, Custom | Idealism | Grief, Custom, Memory | Hope, Facts | Humour |
 | **Facts** | Idealism, Wealth, Rage, Memory | Vision, Realism, Maths | - | Vision, Realism, Maths, Grief, Custom | Sense, Idealism, Hope, Rage | - |
 | **Wealth** | Custom, Protocol, Corrupt | Vision, Idealism, Hope, Fear, Maths, Rage, Love | - | Idealism, Facts, Rage | Vision, Realism, Custom | - |
-| **Fear** | Hope, Protocol, Love | Rage, Dignity, Corrupt | Sense | Hope, Rage, Dignity, Corrupt | Wealth, Love | Sense, Vision |
-| **Maths** | Facts, Memory, Love | Maths, Rage, Grief, Dignity | - | Vision, Realism, Rage | Sense, Idealism, Facts, Wealth, Maths, Custom, Protocol, Memory, Power, Love | Hope |
-| **Rage** | Wealth, Fear, Maths, Custom, Dignity, Memory | Facts, Rage, Power, Love | - | Realism, Facts, Dignity, Love | Hope, Wealth, Fear, Maths, Rage, Grief, Custom, Memory | - |
-| **Grief** | Hope, Realism, Facts, Love | Rage, Grief, Custom, Power | - | Hope, Custom, Love | Maths, Grief, Memory | - |
-| **Custom** | Realism, Facts, Grief | Idealism, Hope, Wealth, Maths, Rage, Custom, Power | - | Idealism, Hope, Wealth, Rage, Memory | Realism, Grief, Custom, Dignity | - |
-| **Dignity** | Idealism, Fear, Rage | Custom, Dignity, Power | Realism | Realism, Rage | Idealism, Hope, Fear, Maths, Dignity, Love | - |
+| **Fear** | Hope, Protocol, Love | Rage, Humour, Corrupt | Sense | Hope, Rage, Humour, Corrupt | Wealth, Love | Sense, Vision |
+| **Maths** | Facts, Memory, Love | Maths, Rage, Grief, Humour | - | Vision, Realism, Rage | Sense, Idealism, Facts, Wealth, Maths, Custom, Protocol, Memory, Power, Love | Hope |
+| **Rage** | Wealth, Fear, Maths, Custom, Humour, Memory | Facts, Rage, Power, Love | - | Realism, Facts, Humour, Love | Hope, Wealth, Fear, Maths, Rage, Grief, Custom, Memory | - |
+| **Grief** | Hope, Realism, Facts, Love | Rage, Grief, Custom, Power | - | Hope, Custom, Love | Maths, Grief, Humour, Memory | - |
+| **Custom** | Realism, Facts, Grief | Idealism, Hope, Wealth, Maths, Rage, Custom, Power | - | Idealism, Hope, Wealth, Rage, Memory | Realism, Grief, Custom, Humour | - |
+| **Humour** | Idealism, Fear, Rage, Power | Grief, Custom, Humour | Realism | Realism, Rage | Idealism, Hope, Fear, Maths, Humour, Love | - |
 | **Protocol** | Vision, Hope | Maths, Protocol | Corrupt | Wealth, Fear, Corrupt | Vision, Protocol | - |
 | **Memory** | Idealism, Realism, Custom, Power | Maths, Rage, Grief, Memory | - | Vision, Facts, Maths, Rage | Memory | - |
-| **Power** | Power | Maths | Love | Memory, Power, Love | Rage, Grief, Custom, Dignity | - |
+| **Power** | Power | Maths | Love | Humour, Memory, Power, Love | Rage, Grief, Custom | - |
 | **Corrupt** | Fear, Protocol | Vision, Corrupt, Love | - | Vision, Wealth, Love | Fear, Corrupt | Protocol |
-| **Love** | Vision, Rage, Grief, Power, Corrupt | Fear, Maths, Dignity | - | Fear, Maths, Grief | Vision, Wealth, Rage, Corrupt | Power |
+| **Love** | Vision, Rage, Grief, Power, Corrupt | Fear, Maths, Humour | - | Fear, Maths, Grief | Vision, Wealth, Rage, Corrupt | Power |
 
 ## Full slot list
 
@@ -206,7 +207,7 @@ The six Emotion types use the custom matchups among themselves. Every other cell
 | Fire | Rage | Emotion | Rage |
 | Water | Grief | Emotion | Grief |
 | Grass | Tradition | Reason | Custom |
-| Electric | Dignity | Emotion | Dignity |
+| Electric | Humour | Emotion | Humour |
 | Psychic | Protocol | Officer | Protocol |
 | Ice | Memory | Reason | Memory |
 | Dragon | Hierarchy | Officer | Power |

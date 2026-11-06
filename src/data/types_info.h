@@ -14,7 +14,7 @@
 const uq4_12_t gTypeEffectivenessTable[NUMBER_OF_MON_TYPES][NUMBER_OF_MON_TYPES] =
 {//                   Defender -->
  //  Attacker           None   Normal Fighting Flying  Poison  Ground   Rock    Bug     Ghost   Steel  Mystery  Fire   Water   Grass  Electric Psychic   Ice   Dragon   Dark   Fairy   Stellar
- //  (Resolve RPG)      None   Sense  Vision  Idealism Hope  Realism  Facts  Wealth   Fear    Maths  Mystery  Rage   Grief  Custom  Dignity Protocol Memory  Power  Corrupt  Love   Stellar
+ //  (Resolve RPG)      None   Sense  Vision  Idealism Hope  Realism  Facts  Wealth   Fear    Maths  Mystery  Rage   Grief  Custom  Humour  Protocol Memory  Power  Corrupt  Love   Stellar
     [TYPE_NONE]     = {______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______},
     [TYPE_NORMAL]   = {______, ______, ______, ______, ______, ______, X(0.5), ______, X(0.0), X(0.5), ______, ______, ______, ______, ______, ______, ______, ______, ______, ______, ______},
     [TYPE_FIGHTING] = {______, X(2.0), ______, X(0.5), X(0.5), ______, X(2.0), X(0.5), X(0.0), X(2.0), ______, ______, ______, ______, ______, X(0.5), X(2.0), ______, X(2.0), X(0.5), ______},
@@ -29,7 +29,7 @@ const uq4_12_t gTypeEffectivenessTable[NUMBER_OF_MON_TYPES][NUMBER_OF_MON_TYPES]
     [TYPE_FIRE]     = {______, ______, ______, ______, ______, ______, X(0.5), X(2.0), X(2.0), X(2.0), ______, X(0.5), ______, X(2.0), X(2.0), ______, X(2.0), X(0.5), ______, X(0.5), ______},
     [TYPE_WATER]    = {______, ______, ______, ______, X(2.0), X(2.0), X(2.0), ______, ______, ______, ______, X(0.5), X(0.5), X(0.5), ______, ______, ______, X(0.5), ______, X(2.0), ______},
     [TYPE_GRASS]    = {______, ______, ______, X(0.5), X(0.5), X(2.0), X(2.0), X(0.5), ______, X(0.5), ______, X(0.5), X(2.0), X(0.5), ______, ______, ______, X(0.5), ______, ______, ______},
-    [TYPE_ELECTRIC] = {______, ______, ______, X(2.0), ______, X(0.0), ______, ______, X(2.0), ______, ______, X(2.0), ______, X(0.5), X(0.5), ______, ______, X(0.5), ______, ______, ______},
+    [TYPE_ELECTRIC] = {______, ______, ______, X(2.0), ______, X(0.0), ______, ______, X(2.0), ______, ______, X(2.0), X(0.5), X(0.5), X(0.5), ______, ______, X(2.0), ______, ______, ______},
     [TYPE_PSYCHIC]  = {______, ______, X(2.0), ______, X(2.0), ______, ______, ______, ______, X(0.5), ______, ______, ______, ______, ______, X(0.5), ______, ______, X(0.0), ______, ______},
     [TYPE_ICE]      = {______, ______, ______, X(2.0), ______, X(2.0), ______, ______, ______, X(0.5), ______, FIR_RS, X(0.5), X(2.0), ______, ______, X(0.5), X(2.0), ______, ______, ______},
     [TYPE_DRAGON]   = {______, ______, ______, ______, ______, ______, ______, ______, ______, X(0.5), ______, ______, ______, ______, ______, ______, ______, X(2.0), ______, X(0.0), ______},
@@ -341,8 +341,8 @@ const struct TypeInfo gTypesInfo[NUMBER_OF_MON_TYPES] =
     },
     [TYPE_ELECTRIC] =
     {
-        .name = _("Dignity"),
-        .generic = _("a DIGNITY move"),
+        .name = _("Humour"),
+        .generic = _("a HUMOUR move"),
         .palette = 13,
         .zMove = MOVE_GIGAVOLT_HAVOC,
         .maxMove = MOVE_MAX_LIGHTNING,
