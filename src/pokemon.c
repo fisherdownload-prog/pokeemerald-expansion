@@ -4321,7 +4321,11 @@ bool32 DoesMonMeetAdditionalConditions(struct Pokemon *mon, const struct Evoluti
             }
             break;
         case IF_RECOIL_DAMAGE_GE:
-            if (evolutionTracker >= params[i].arg1)
+            if ((evolutionTracker & EVO_TRACKER_RECOIL_MASK) >= params[i].arg1)
+                currentCondition = TRUE;
+            break;
+        case IF_COLLAPSED_FROM_RECOIL:
+            if (evolutionTracker & EVO_TRACKER_COLLAPSED_FLAG)
                 currentCondition = TRUE;
             break;
         case IF_CURRENT_DAMAGE_GE:

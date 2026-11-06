@@ -271,6 +271,10 @@ enum BodyColor
 
 #define EVOLUTIONS_END                    0xFFFF // Not an actual evolution, used to mark the end of an evolution array.
 
+// Resolve RPG: how IF_RECOIL_DAMAGE_GE and IF_COLLAPSED_FROM_RECOIL share the 10-bit evolution tracker.
+#define EVO_TRACKER_RECOIL_MASK           0x1FF // Recoil endured without collapsing (max 511)
+#define EVO_TRACKER_COLLAPSED_FLAG        0x200 // Collapsed from their own recoil at least once
+
 enum EvolutionConditions {
     // Gen 2
     IF_GENDER,                          // The Pokémon is of specific gender.
@@ -305,7 +309,7 @@ enum EvolutionConditions {
     IF_NATURE,                          // The Pokémon has a specific nature.
     IF_AMPED_NATURE,                    // The Pokémon has one of the following natures: Hardy, Brave, Adamant, Naughty, Docile, Impish, Lax, Hasty, Jolly, Naive, Rash, Sassy, or Quirky.
     IF_LOW_KEY_NATURE,                  // The Pokémon has one of the following natures: Lonely, Bold, Relaxed, Timid, Serious, Modest, Mild, Quiet, Bashful, Calm, Gentle, or Careful.
-    IF_RECOIL_DAMAGE_GE,                // The Pokémon suffered at least certain amount of non-fainting recoil damage.
+    IF_RECOIL_DAMAGE_GE,                // The Pokémon suffered at least certain amount of non-fainting recoil damage. Progress resets if it faints from recoil.
     IF_CURRENT_DAMAGE_GE,               // The Pokémon has the specified difference of HP from its Max HP.
     IF_CRITICAL_HITS_GE,                // The Pokémon performed the specified number of critical hits in one battle at least.
     IF_USED_MOVE_X_TIMES,               // The Pokémon has used a move for at least X amount of times.
@@ -318,6 +322,8 @@ enum EvolutionConditions {
     IF_BAG_ITEM_COUNT,                  // The Player has the specific amount of an item in the bag. It then removes those items.
     IF_REGION,                          // The Player is in the specific region.
     IF_NOT_REGION,                      // The Player is NOT in the specific region.
+    // Resolve RPG
+    IF_COLLAPSED_FROM_RECOIL,           // The Pokémon was knocked out by its own recoil (e.g. Struggle). Shares the tracker with IF_RECOIL_DAMAGE_GE.
     CONDITIONS_END
 };
 

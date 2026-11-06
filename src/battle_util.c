@@ -11028,7 +11028,8 @@ void TryUpdateEvolutionTracker(enum EvolutionConditions evolutionCondition, u32 
 
             for (j = 0; evolutions[i].params[j].condition != CONDITIONS_END; j++)
             {
-                if (evolutions[i].params[j].condition != evolutionCondition)
+                if (evolutions[i].params[j].condition != evolutionCondition
+                 && !(evolutionCondition == IF_RECOIL_DAMAGE_GE && evolutions[i].params[j].condition == IF_COLLAPSED_FROM_RECOIL))
                     continue;
 
                 struct Pokemon *monAtk = GetBattlerMon(gBattlerAttacker);
@@ -11043,10 +11044,19 @@ void TryUpdateEvolutionTracker(enum EvolutionConditions evolutionCondition, u32 
                         SetMonData(monAtk, MON_DATA_EVOLUTION_TRACKER, &val);
                     break;
                 case IF_RECOIL_DAMAGE_GE:
-                    if (gBattleMons[gBattlerAttacker].hp == 0)
-                        val = 0;
+                {
+                    // Resolve RPG: the tracker holds recoil endured without collapsing in its low 9 bits,
+                    // and a "collapsed from recoil" flag in its top bit. The recoil hasn't been applied
+                    // to HP yet at this point, so a collapse is when this recoil will use up the rest.
+                    u16 tracker = GetMonData(monAtk, MON_DATA_EVOLUTION_TRACKER);
+                    if (gBattleMons[gBattlerAttacker].hp <= upAmount)
+                        val = EVO_TRACKER_COLLAPSED_FLAG; // Collapsed: enduring progress resets.
+                    else
+                        val = (tracker & EVO_TRACKER_COLLAPSED_FLAG)
+                            | min(EVO_TRACKER_RECOIL_MASK, (tracker & EVO_TRACKER_RECOIL_MASK) + upAmount);
                     SetMonData(monAtk, MON_DATA_EVOLUTION_TRACKER, &val);
                     break;
+                }
                 case IF_DEFEAT_X_WITH_ITEMS:
                     if (GetMonData(monDef, MON_DATA_SPECIES) == evolutions[i].params[j].arg1
                      && GetMonData(monDef, MON_DATA_HELD_ITEM) == evolutions[i].params[j].arg2)

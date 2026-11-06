@@ -3852,6 +3852,9 @@ static void PrintEvolutionTargetSpeciesAndMethod(u8 taskId, enum Species species
                 case IF_LOW_KEY_NATURE:
                     StringAppend(gStringVar4, COMPOUND_STRING("low-Key natures"));
                     break;
+                case IF_COLLAPSED_FROM_RECOIL:
+                    StringAppend(gStringVar4, COMPOUND_STRING("collapses from recoil"));
+                    break;
                 case IF_RECOIL_DAMAGE_GE:
                     StringAppend(gStringVar4, COMPOUND_STRING("takes >= "));
                     ConvertIntToDecimalStringN(gStringVar2, evolutions[i].params[j].arg1, STR_CONV_MODE_LEFT_ALIGN, 3);

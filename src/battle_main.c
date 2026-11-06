@@ -5292,6 +5292,12 @@ static void HandleEndTurn_FinishBattle(void)
             // Recalculate the stats of every party member before the end
             if (!changedForm && B_RECALCULATE_STATS >= GEN_5)
                 CalculateMonStats(&gParties[B_TRAINER_PLAYER][i]);
+
+            // Resolve RPG: talking points reset after every encounter.
+            if (B_RESTORE_PP_AFTER_BATTLE
+             && !(gBattleTypeFlags & (BATTLE_TYPE_LINK | BATTLE_TYPE_RECORDED_LINK))
+             && GetMonData(&gParties[B_TRAINER_PLAYER][i], MON_DATA_SPECIES) != SPECIES_NONE)
+                MonRestorePP(&gParties[B_TRAINER_PLAYER][i]);
         }
         RecordedBattle_SetPlaybackFinished();
         if (gTestRunnerEnabled)

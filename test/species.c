@@ -186,7 +186,8 @@ TEST("No species has two evolutions that use the evolution tracker")
             )
                 evolutionTrackerEvolutions++;
 
-            if (evolutions[i].params[j].condition == IF_RECOIL_DAMAGE_GE)
+            if (evolutions[i].params[j].condition == IF_RECOIL_DAMAGE_GE
+             || evolutions[i].params[j].condition == IF_COLLAPSED_FROM_RECOIL)
             {
                 // Special handling for these since they can be combined as the evolution tracker field is used for the same purpose
                 if (!hasRecoilEvo)
