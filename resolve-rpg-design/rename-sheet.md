@@ -1,4 +1,4 @@
-# Resolve RPG: Rename Sheet (draft 4)
+# Resolve RPG: Rename Sheet (draft 5)
 
 Based on `pokeemerald-expansion` at commit `3ecef353`, branch `Resolve-rpg`.
 Goal: get the theme by **using what already exists**, not adding mechanics.
@@ -21,7 +21,9 @@ We work through the code in three tiers:
 - **Idealism = Flying, Pragmatism = Ground, Assertion = Rock**, and **Gish Gallop = sandstorm** (see tier 1).
 - **Mathematics = Steel, Memory = Ice**, **Hail = Revisionism**.
 - **Common Sense = Normal**, **Ingenuity = Fighting** (working name: maverick, outside-the-box thinking).
-- **Officer types: Protocol = Psychic, Hierarchy = Dragon**, Corrupt = Dark (tentative).
+- **Officer types: Protocol = Psychic, Hierarchy = Dragon, Corrupt = Dark.**
+- **Tradition = Grass, Self-Interest = Bug.** All 18 slots now have a concept.
+- *Scrutiny* is better as a **move** (lowers the target's Passion) than a type.
 
 ---
 
@@ -40,9 +42,9 @@ We work through the code in three tiers:
 | Rock | Immune to sandstorm damage; **Sp. Def x1.5 in sandstorm** | **Assertion** | Asserters thrive in a flood of claims: during a Gish Gallop they're harder to move emotionally | battle_end_turn.c:148, battle_util.c:7295 |
 | Steel | Can't be poisoned; immune to sandstorm damage | **Mathematics** | A proof can't be doubted; a flood of dubious claims doesn't move someone who checks the numbers | battle_util.c:5305, battle_end_turn.c:148 |
 | Ice | Can't be frozen; immune to hail; Defense x1.5 in snow | **Memory** | People who know history aren't shocked into silence; unhurt by Revisionism; snow boosts Rebuttal | battle_util.c:5397, battle_end_turn.c:171, 7300 |
-| Grass | Immune to Leech Seed (powder immunity is a config, see tier 2) | *open* | | battle_script_commands.c:5256 |
+| Grass | Immune to Leech Seed (powder immunity is a config, see tier 2) | **Tradition** | Tradition can't be slowly worn away. Grassy Terrain (heals each turn) could become a Gathering or Festival. | battle_script_commands.c:5256 |
 | Normal | Pure Flying becomes Normal while using Roost | **Common Sense** | An idealist who steps back comes down to earth | battle_util.c:9803 |
-| Water, Bug | Net Ball bonus | | Only matters if Net Ball stays | battle_script_commands.c:7879 |
+| Water, Bug | Net Ball bonus | Bug = **Self-Interest** | Only matters if Net Ball stays | battle_script_commands.c:7879 |
 
 ### Idealism, Pragmatism and Assertion: how it plays out
 
@@ -162,17 +164,38 @@ Text in `src/battle_message.c:155-168` (`gStatNamesTable`) and `src/strings.c` (
 
 ---
 
-## Remaining slots, sorted by tier
+## Full slot list
 
-| Tier | Slots | What constrains them |
-|---|---|---|
-| 1: hardcoded quirks | Grass | Immune to Leech Seed |
-| 2: config quirks only | **Dark** (Corrupt, tentative), Grass (powder) | Can be switched off |
-| 3: no quirks | Bug | Free choice |
+| Slot | Concept | Family | Fits 8 chars? |
+|---|---|---|---|
+| Normal | Common Sense | Reason | No (12) |
+| Fighting | Ingenuity | Reason | No (9) |
+| Flying | Idealism | Reason | Yes |
+| Poison | Hope | Emotion | Yes |
+| Ground | Pragmatism | Reason | No (10) |
+| Rock | Assertion | Reason | No (9) |
+| Bug | Self-Interest | Reason | No (13) |
+| Ghost | Fear | Emotion | Yes |
+| Steel | Mathematics | Reason | No (11) |
+| Fire | Rage | Emotion | Yes |
+| Water | Grief | Emotion | Yes |
+| Grass | Tradition | Reason | No (9) |
+| Electric | Dignity | Emotion | Yes |
+| Psychic | Protocol | Officer | Yes |
+| Ice | Memory | Reason | Yes |
+| Dragon | Hierarchy | Officer | No (9) |
+| Dark | Corrupt | Officer | Yes |
+| Fairy | Love | Emotion | Yes |
+
+**Name length limit:** `TYPE_NAME_LENGTH` is **8 characters** (`include/constants/global.h:169`).
+Type names appear as text in the battle move menu (`battle_controller_player.c:1735`), the move
+info screen (`menu_specialized.c:781`) and the Pokédex search. The limit can be raised, but the
+battle menu's type box is narrow, so short names are the minimal-change route. The concept name
+and the in-game label can differ.
 
 ## Open decisions
 
-1. Name for **Rock**: Assertion, Spin, or something else?
-2. Final name for Fighting (Ingenuity, Lateral Thinking, Iconoclasm, Unorthodoxy...).
-3. Name for snow, and whether to use hail or snow.
-4. Confirm **Corrupt = Dark**, then fill Grass and Bug.
+1. **In-game short names** (8 characters max) for: Common Sense, Ingenuity, Pragmatism,
+   Assertion, Self-Interest, Mathematics, Tradition, Hierarchy.
+2. Name for snow, and whether to use hail or snow.
+3. Fighting/Ingenuity family placement (Reason?) and Tradition's family.
