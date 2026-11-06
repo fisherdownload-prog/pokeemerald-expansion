@@ -1,4 +1,4 @@
-# Resolve RPG: Rename Sheet (draft 12)
+# Resolve RPG: Rename Sheet (draft 13)
 
 Based on `pokeemerald-expansion` at commit `3ecef353`, branch `Resolve-rpg`.
 Goal: get the theme by **using what already exists**, not adding mechanics.
@@ -59,23 +59,27 @@ We work through the code in three tiers:
 - **Stealth Rock** becomes a planted narrative (**Talking Points**?). It hurts everyone who enters,
   scaled by how weak they are to Assertion, so idealists take the most. That behavior is built in.
 
-### Weather damage
+### Weather and terrain (battle messages done)
 
-| Weather | New name | Who's unaffected (hardcoded) | Bonus (hardcoded) |
-|---|---|---|---|
-| Sandstorm | **Gish Gallop** | Pragmatism, Assertion, Mathematics | Assertion Sp. Def x1.5 |
-| Hail | **Revisionism** | Memory | none |
-| Snow | *open* | none | Memory Defense (Rebuttal) x1.5 |
-
-Hail and snow are alternatives: `B_SNOW_WARNING` (battle.h:335) picks which one Snow Warning summons.
-
-### Other slots (no hardcoded type behavior)
-
-| Slot | New type | Notes |
+| Existing | New | Effect (hardcoded) |
 |---|---|---|
-| Psychic | **Protocol** (officer) | Only quirk is Psychic Terrain boosting its moves, which could become a "bureaucratic" atmosphere. If the vanilla chart is kept: Corrupt (Dark) is immune to Protocol, and Fear (Ghost) is super effective against it (officers fear their superiors). |
-| Dragon | **Hierarchy** (officer) | Only quirk is Misty Terrain halving its moves. If the vanilla chart is kept: resists Rage, Grief and Custom; weak to Hierarchy (pulling rank) and Memory; Love is super effective and immune to it. |
-| Fighting | **Ingenuity** | No quirks. If the vanilla chart is kept: super effective against Common Sense, Assertion, Mathematics, Memory and Corrupt; resisted by Idealism, Hope, Love and Protocol; Fear is immune. Weak to Idealism, Protocol and Love. |
+| Sun | **Heated Atmosphere** | Rage moves x1.5, Grief moves x0.5 |
+| Extremely harsh sun | **Fury** | Grief moves fail outright |
+| Rain | **Sombre Mood** | Grief moves x1.5, Rage moves x0.5 |
+| Heavy rain | **Deep Mourning** | Rage moves fail outright |
+| Sandstorm | **Gish Gallop** | Hurts all but Realism, Facts and Maths; Facts Poise x1.5 |
+| Hail | **Revisionism** | Hurts all but Memory |
+| Snow | **Nostalgia** | Memory Rigour x1.5; hurts no one |
+| Fog | **Rumours** | Lowers credibility (accuracy) |
+| Strong winds | **Lofty Ideals** | Weakens super-effective hits on Idealism |
+| Electric Terrain | **Lively** | Humour moves boosted; nobody can be left Speechless |
+| Grassy Terrain | **Festival** | Custom moves boosted; everyone on the ground recovers a little Resolve each turn |
+| Misty Terrain | **Civility** | Protects from status conditions; halves Power moves |
+| Psychic Terrain | **Formality** | Protocol moves boosted; blocks priority moves (no jumping the queue) |
+
+65 messages rewritten in `src/battle_message.c`. Weather **move** names (Rain Dance, Sunny Day,
+Sandstorm, Hail, Snowscape, the terrain moves) belong to the moves pass.
+`B_SNOW_WARNING` (battle.h:335) decides whether the Snow Warning ability causes Revisionism or Nostalgia.
 
 ### Status conditions (effects are hardcoded, names are text)
 
@@ -261,9 +265,8 @@ info screen (`menu_specialized.c:781`) and the Pokédex search. In-game names ar
 
 ## Open decisions
 
-1. ~~In-game name for Assertion~~: **Facts**. A person who goes on what they "know" to be true, whether or not it is.
-2. Name for snow, and whether to use hail or snow.
-3. Fighting/Ingenuity family placement (Reason?) and Tradition's family.
-4. **Frostbite**: an optional replacement for freeze that halves *special* (Passion) damage, mirroring
-   Frustrated. Switching it on would replace Stunned silence.
+1. Family placement for Vision (Ingenuity) and Custom (Tradition): Reason, or something else?
+2. Redraw graphics: status icons, type icons, and the "HP" label on the Resolve bar and party menu.
+3. Next passes: moves, abilities, items.
 
+Decided: Frostbite stays off, so freeze remains **Stunned silence**.
