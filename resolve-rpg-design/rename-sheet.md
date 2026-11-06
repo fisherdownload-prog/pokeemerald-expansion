@@ -1,4 +1,4 @@
-# Resolve RPG: Rename Sheet (draft 13)
+# Resolve RPG: Rename Sheet (draft 14)
 
 Based on `pokeemerald-expansion` at commit `3ecef353`, branch `Resolve-rpg`.
 Goal: get the theme by **using what already exists**, not adding mechanics.
@@ -61,25 +61,32 @@ We work through the code in three tiers:
 
 ### Weather and terrain (battle messages done)
 
-| Existing | New | Effect (hardcoded) |
-|---|---|---|
-| Sun | **Heated Atmosphere** | Rage moves x1.5, Grief moves x0.5 |
-| Extremely harsh sun | **Fury** | Grief moves fail outright |
-| Rain | **Sombre Mood** | Grief moves x1.5, Rage moves x0.5 |
-| Heavy rain | **Deep Mourning** | Rage moves fail outright |
-| Sandstorm | **Gish Gallop** | Hurts all but Realism, Facts and Maths; Facts Poise x1.5 |
-| Hail | **Revisionism** | Hurts all but Memory |
-| Snow | **Nostalgia** | Memory Rigour x1.5; hurts no one |
-| Fog | **Rumours** | Lowers credibility (accuracy) |
-| Strong winds | **Lofty Ideals** | Weakens super-effective hits on Idealism |
-| Electric Terrain | **Lively** | Humour moves boosted; nobody can be left Speechless |
-| Grassy Terrain | **Festival** | Custom moves boosted; everyone on the ground recovers a little Resolve each turn |
-| Misty Terrain | **Civility** | Protects from status conditions; halves Power moves |
-| Psychic Terrain | **Formality** | Protocol moves boosted; blocks priority moves (no jumping the queue) |
+Three kinds of condition:
+- **Tones**: set deliberately by a move. They change how everyone engages, and the opponent gets drawn in.
+- **Places**: a property of the location, which no one can cause.
+- **Auras**: surround an exceptional person. Caused only by rare abilities.
 
-65 messages rewritten in `src/battle_message.c`. Weather **move** names (Rain Dance, Sunny Day,
-Sandstorm, Hail, Snowscape, the terrain moves) belong to the moves pass.
-`B_SNOW_WARNING` (battle.h:335) decides whether the Snow Warning ability causes Revisionism or Nostalgia.
+| Existing | New | Kind | Effect (hardcoded) |
+|---|---|---|---|
+| Electric Terrain | **Good Humour** | Tone | Humour moves boosted; laughing people can't be left Speechless |
+| Grassy Terrain | **Tea Break** | Tone | Everyone recovers a little Resolve each turn; Custom moves boosted; Earthquake-style Realism moves halved (practical concerns can wait) |
+| Misty Terrain | **Polite Company** | Tone | No status conditions; Power moves halved (pulling rank is rude) |
+| Psychic Terrain | **Point of Order** | Tone | Priority moves blocked (no interrupting); Protocol moves boosted |
+| Sun | **Heated Debate** | Tone | Rage x1.5, Grief x0.5 |
+| Rain | **Solemn Mood** | Tone | Grief x1.5, Rage x0.5 |
+| Sandstorm | **Gish Gallop** | Tone | Hurts all but Realism, Facts and Maths; Facts Poise x1.5 |
+| Hail | **Doctored Records** (Revisionism) | Tone | Hurts everyone except Memory: only a student of history isn't made to doubt everything |
+| Snow | **Nostalgia** | Tone | Memory Rigour x1.5; hurts no one |
+| Fog | **Din** | Place | Every argument's credibility x0.6. Only from map fog weather: `B_OVERWORLD_FOG` set to `GEN_4` (battle.h:333) |
+| Strong winds | **Inspiring Presence** | Aura (Delta Stream) | A legendary figure who uplifts everyone, even those who disagree: Idealism's weaknesses stop counting |
+| Extreme sun | **Shouting Match** | Aura (Desolate Land) | The ultimate antagonist, a heel who gets everyone going: Grief moves fail outright |
+| Heavy rain | **Vigil** | Aura (Primordial Sea) | A saintly, previously apolitical figure known for pure compassion: Rage moves fail outright |
+
+Shouting Match and Vigil are deliberate opposites.
+
+Weather **move** names (Rain Dance, Sunny Day, Sandstorm, Hail, Snowscape, the terrain moves) belong
+to the moves pass. `B_SNOW_WARNING` (battle.h:335) decides whether the Snow Warning ability causes
+Doctored Records or Nostalgia.
 
 ### Status conditions (effects are hardcoded, names are text)
 
