@@ -1,4 +1,4 @@
-# Resolve RPG: Rename Sheet (draft 5)
+# Resolve RPG: Rename Sheet (draft 6)
 
 Based on `pokeemerald-expansion` at commit `3ecef353`, branch `Resolve-rpg`.
 Goal: get the theme by **using what already exists**, not adding mechanics.
@@ -166,36 +166,34 @@ Text in `src/battle_message.c:155-168` (`gStatNamesTable`) and `src/strings.c` (
 
 ## Full slot list
 
-| Slot | Concept | Family | Fits 8 chars? |
+| Slot | Concept | Family | In-game name |
 |---|---|---|---|
-| Normal | Common Sense | Reason | No (12) |
-| Fighting | Ingenuity | Reason | No (9) |
-| Flying | Idealism | Reason | Yes |
-| Poison | Hope | Emotion | Yes |
-| Ground | Pragmatism | Reason | No (10) |
-| Rock | Assertion | Reason | No (9) |
-| Bug | Self-Interest | Reason | No (13) |
-| Ghost | Fear | Emotion | Yes |
-| Steel | Mathematics | Reason | No (11) |
-| Fire | Rage | Emotion | Yes |
-| Water | Grief | Emotion | Yes |
-| Grass | Tradition | Reason | No (9) |
-| Electric | Dignity | Emotion | Yes |
-| Psychic | Protocol | Officer | Yes |
-| Ice | Memory | Reason | Yes |
-| Dragon | Hierarchy | Officer | No (9) |
-| Dark | Corrupt | Officer | Yes |
-| Fairy | Love | Emotion | Yes |
+| Normal | Common Sense | Reason | Sense |
+| Fighting | Ingenuity | Reason | Vision |
+| Flying | Idealism | Reason | Idealism |
+| Poison | Hope | Emotion | Hope |
+| Ground | Pragmatism | Reason | Realism |
+| Rock | Assertion | Reason | Data |
+| Bug | Self-Interest | Reason | Wealth |
+| Ghost | Fear | Emotion | Fear |
+| Steel | Mathematics | Reason | Maths |
+| Fire | Rage | Emotion | Rage |
+| Water | Grief | Emotion | Grief |
+| Grass | Tradition | Reason | Custom |
+| Electric | Dignity | Emotion | Dignity |
+| Psychic | Protocol | Officer | Protocol |
+| Ice | Memory | Reason | Memory |
+| Dragon | Hierarchy | Officer | Power |
+| Dark | Corrupt | Officer | Corrupt |
+| Fairy | Love | Emotion | Love |
 
 **Name length limit:** `TYPE_NAME_LENGTH` is **8 characters** (`include/constants/global.h:169`).
 Type names appear as text in the battle move menu (`battle_controller_player.c:1735`), the move
-info screen (`menu_specialized.c:781`) and the Pokédex search. The limit can be raised, but the
-battle menu's type box is narrow, so short names are the minimal-change route. The concept name
-and the in-game label can differ.
+info screen (`menu_specialized.c:781`) and the Pokédex search. In-game names are now set in `src/data/types_info.h` and pass the on-screen width tests
+(`test/text.c`). The concept name and the in-game label can differ.
 
 ## Open decisions
 
-1. **In-game short names** (8 characters max) for: Common Sense, Ingenuity, Pragmatism,
-   Assertion, Self-Interest, Mathematics, Tradition, Hierarchy.
+1. In-game name for Assertion: *Data* for now; *Factoid* is the closest word for "a claim presented as fact".
 2. Name for snow, and whether to use hail or snow.
 3. Fighting/Ingenuity family placement (Reason?) and Tradition's family.

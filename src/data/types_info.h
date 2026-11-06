@@ -318,8 +318,8 @@ const struct TypeInfo gTypesInfo[NUMBER_OF_MON_TYPES] =
     },
     [TYPE_GRASS] =
     {
-        .name = _("Faith"),
-        .generic = _("a FAITH move"),
+        .name = _("Custom"),
+        .generic = _("a CUSTOM move"),
         .palette = 15,
         .zMove = MOVE_BLOOM_DOOM,
         .maxMove = MOVE_MAX_OVERGROWTH,
