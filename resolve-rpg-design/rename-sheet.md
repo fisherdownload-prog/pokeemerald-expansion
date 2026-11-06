@@ -1,4 +1,4 @@
-# Resolve RPG: Rename Sheet (draft 2)
+# Resolve RPG: Rename Sheet (draft 3)
 
 Based on `pokeemerald-expansion` at commit `3ecef353`, branch `Resolve-rpg`.
 Goal: get the theme by **using what already exists**, not adding mechanics.
@@ -19,6 +19,8 @@ We work through the code in three tiers:
 - **Emotion slots accepted for now:** Rage = Fire, Grief = Water, Fear = Ghost, Hope = Poison,
   Dignity = Electric, Love = Fairy.
 - **Idealism = Flying, Pragmatism = Ground, Assertion = Rock**, and **Gish Gallop = sandstorm** (see tier 1).
+- **Mathematics = Steel, History = Ice** (name could be *Memory*), **Hail = Revisionism**.
+- **Officer types: Protocol = Psychic, Hierarchy = Dragon**, Corrupt = Dark (tentative).
 
 ---
 
@@ -35,8 +37,8 @@ We work through the code in three tiers:
 | Flying | **Not grounded**: Ground moves can't hit it; ignores Spikes, Toxic Spikes and terrains | **Idealism** | Pragmatic arguments don't reach people with their head in the clouds | battle_util.c:5971, 8181-8318 |
 | Ground | Immune to sandstorm damage | **Pragmatism** | A Gish Gallop doesn't faze a practical person | battle_end_turn.c:148 |
 | Rock | Immune to sandstorm damage; **Sp. Def x1.5 in sandstorm** | **Assertion** | Asserters thrive in a flood of claims: during a Gish Gallop they're harder to move emotionally | battle_end_turn.c:148, battle_util.c:7295 |
-| Steel | Can't be poisoned; immune to sandstorm damage | *open* | Unfazed by doubt and by a Gish Gallop. A strong fit for **Protocol** (authority) | battle_util.c:5305, battle_end_turn.c:148 |
-| Ice | Can't be frozen; immune to hail; Defense x1.5 in snow | *open* | Can't be stunned into silence | battle_util.c:5397, battle_end_turn.c:171, 7300 |
+| Steel | Can't be poisoned; immune to sandstorm damage | **Mathematics** | A proof can't be doubted; a flood of dubious claims doesn't move someone who checks the numbers | battle_util.c:5305, battle_end_turn.c:148 |
+| Ice | Can't be frozen; immune to hail; Defense x1.5 in snow | **History** | People who know history aren't shocked into silence; unhurt by Revisionism; snow boosts Rebuttal | battle_util.c:5397, battle_end_turn.c:171, 7300 |
 | Grass | Immune to Leech Seed (powder immunity is a config, see tier 2) | *open* | | battle_script_commands.c:5256 |
 | Normal | Pure Flying becomes Normal while using Roost | *open* | | battle_util.c:9803 |
 | Water, Bug | Net Ball bonus | | Only matters if Net Ball stays | battle_script_commands.c:7879 |
@@ -58,9 +60,18 @@ We work through the code in three tiers:
 
 | Weather | New name | Who's unaffected (hardcoded) | Bonus (hardcoded) |
 |---|---|---|---|
-| Sandstorm | **Gish Gallop** | Pragmatism, Assertion, Steel slot | Assertion Sp. Def x1.5 |
-| Hail | *open* | Ice slot | none |
-| Snow | *open* | none | Ice slot Defense x1.5 |
+| Sandstorm | **Gish Gallop** | Pragmatism, Assertion, Mathematics | Assertion Sp. Def x1.5 |
+| Hail | **Revisionism** | History | none |
+| Snow | *open* | none | History Defense (Rebuttal) x1.5 |
+
+Hail and snow are alternatives: `B_SNOW_WARNING` (battle.h:335) picks which one Snow Warning summons.
+
+### Other slots (no hardcoded type behavior)
+
+| Slot | New type | Notes |
+|---|---|---|
+| Psychic | **Protocol** (officer) | Only quirk is Psychic Terrain boosting its moves, which could become a "bureaucratic" atmosphere. If the vanilla chart is kept: Corrupt (Dark) is immune to Protocol, and Fear (Ghost) is super effective against it (officers fear their superiors). |
+| Dragon | **Hierarchy** (officer) | Only quirk is Misty Terrain halving its moves. If the vanilla chart is kept: resists Rage, Grief and Dignity; weak to Hierarchy (pulling rank) and History; Love is super effective and immune to it. |
 
 ### Status conditions (effects are hardcoded, names are text)
 
@@ -116,6 +127,10 @@ Emotion matchups agreed so far (attacker ↓, defender →; 2 = super effective,
 
 Also set so far: Assertion → Idealism = 2.
 
+If the vanilla chart is kept for these, History (Ice) is super effective against Idealism (Flying),
+Pragmatism (Ground) and Hierarchy (Dragon), and weak to Rage (Fire), Assertion (Rock), Mathematics (Steel)
+and the Fighting slot.
+
 ### Stats
 
 Text in `src/battle_message.c:155-168` (`gStatNamesTable`) and `src/strings.c` (summary labels).
@@ -149,12 +164,13 @@ Text in `src/battle_message.c:155-168` (`gStatNamesTable`) and `src/strings.c` (
 
 | Tier | Slots | What constrains them |
 |---|---|---|
-| 1: hardcoded quirks | **Steel**, **Ice**, Grass, Normal | Steel: no doubt + Gish Gallop immune. Ice: no stunned silence + hail. |
-| 2: config quirks only | **Dark**, Grass (powder) | Can be switched off |
-| 3: no quirks | Fighting, Bug, Psychic, Dragon | Free choice |
+| 1: hardcoded quirks | Grass, Normal | Grass: immune to Leech Seed. Normal: Roost turns pure Idealism into Normal. |
+| 2: config quirks only | **Dark** (Corrupt, tentative), Grass (powder) | Can be switched off |
+| 3: no quirks | Fighting, Bug | Free choice |
 
 ## Open decisions
 
 1. Name for **Rock**: Assertion, Spin, or something else?
-2. Fill **Steel** next (Protocol?), then **Ice**, since those have the most hardcoded behavior.
-3. Names for hail and snow (they'll follow from whatever Ice becomes).
+2. **History** or **Memory** for Ice?
+3. Name for snow, and whether to use hail or snow.
+4. Confirm **Corrupt = Dark**, then fill Grass, Normal, Fighting and Bug.
