@@ -172,8 +172,8 @@ const struct TypeInfo gTypesInfo[NUMBER_OF_MON_TYPES] =
     },
     [TYPE_ROCK] =
     {
-        .name = _("Data"),
-        .generic = _("a DATA move"),
+        .name = _("Facts"),
+        .generic = _("a FACTS move"),
         .palette = 13,
         .zMove = MOVE_CONTINENTAL_CRUSH,
         .maxMove = MOVE_MAX_ROCKFALL,

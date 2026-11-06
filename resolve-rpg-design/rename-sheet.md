@@ -173,7 +173,7 @@ Text in `src/battle_message.c:155-168` (`gStatNamesTable`) and `src/strings.c` (
 | Flying | Idealism | Reason | Idealism |
 | Poison | Hope | Emotion | Hope |
 | Ground | Pragmatism | Reason | Realism |
-| Rock | Assertion | Reason | Data |
+| Rock | Assertion | Reason | Facts |
 | Bug | Self-Interest | Reason | Wealth |
 | Ghost | Fear | Emotion | Fear |
 | Steel | Mathematics | Reason | Maths |
@@ -194,6 +194,6 @@ info screen (`menu_specialized.c:781`) and the Pokédex search. In-game names ar
 
 ## Open decisions
 
-1. In-game name for Assertion: *Data* for now; *Factoid* is the closest word for "a claim presented as fact".
+1. ~~In-game name for Assertion~~: **Facts**. A person who goes on what they "know" to be true, whether or not it is.
 2. Name for snow, and whether to use hail or snow.
 3. Fighting/Ingenuity family placement (Reason?) and Tradition's family.
