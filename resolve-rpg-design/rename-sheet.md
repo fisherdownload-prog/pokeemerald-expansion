@@ -79,10 +79,10 @@ Three kinds of condition:
 | Snow | **Nostalgia** | Tone | Memory Rigour x1.5; hurts no one |
 | Fog | **Din** | Place | Every argument's credibility x0.6. Only from map fog weather: `B_OVERWORLD_FOG` set to `GEN_4` (battle.h:333) |
 | Strong winds | **Inspiring Presence** | Aura (Delta Stream) | A legendary figure who uplifts everyone, even those who disagree: Idealism's weaknesses stop counting |
-| Extreme sun | **Shouting Match** | Aura (Desolate Land) | The ultimate antagonist, a heel who gets everyone going: Grief moves fail outright |
-| Heavy rain | **Vigil** | Aura (Primordial Sea) | A saintly, previously apolitical figure known for pure compassion: Rage moves fail outright |
+| Extreme sun | **Aura of Fury** | Aura (Desolate Land) | The ultimate antagonist, a heel who gets everyone going: Grief moves fail outright |
+| Heavy rain | **Aura of Sorrow** | Aura (Primordial Sea) | A saintly, previously apolitical figure known for pure compassion: Rage moves fail outright |
 
-Shouting Match and Vigil are deliberate opposites.
+Aura of Fury and Aura of Sorrow are deliberate opposites (working names).
 
 Weather **move** names (Rain Dance, Sunny Day, Sandstorm, Hail, Snowscape, the terrain moves) belong
 to the moves pass. `B_SNOW_WARNING` (battle.h:335) decides whether the Snow Warning ability causes
