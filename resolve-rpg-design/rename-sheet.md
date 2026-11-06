@@ -1,4 +1,4 @@
-# Resolve RPG: Rename Sheet (draft 8)
+# Resolve RPG: Rename Sheet (draft 9)
 
 Based on `pokeemerald-expansion` at commit `3ecef353`, branch `Resolve-rpg`.
 Goal: get the theme by **using what already exists**, not adding mechanics.
@@ -167,7 +167,13 @@ Text in `src/battle_message.c:155-168` (`gStatNamesTable`) and `src/strings.c` (
 ## Current type chart (in the code)
 
 The six Emotion types use the custom matchups among themselves. Every other cell is vanilla,
-except **Humour → Power = 2** (mockery deflates the powerful).
+except these deliberate changes:
+
+- **Humour → Power = 2**: mockery deflates the powerful.
+- **Facts → Rage = 0**: you can't tell an angry person the facts.
+- **Facts → Wealth = 1** (was 2).
+- **Maths → Love = ½** (was 2): the numbers don't win hearts.
+- **Hope → Maths = 2** (was 0): hope defies the odds.
 `src/data/types_info.h` now has a second header row with the new names.
 
 | Type | Super effective against | Not very effective against | No effect on | Weak to | Resists | Immune to |
@@ -175,13 +181,13 @@ except **Humour → Power = 2** (mockery deflates the powerful).
 | **Sense** | - | Facts, Maths | Fear | Vision | - | Fear |
 | **Vision** | Sense, Facts, Maths, Memory, Corrupt | Idealism, Hope, Wealth, Protocol, Love | Fear | Idealism, Protocol, Love | Facts, Wealth, Corrupt | - |
 | **Idealism** | Vision, Wealth, Custom | Facts, Maths, Humour | - | Facts, Humour, Memory | Vision, Wealth, Custom | Realism |
-| **Hope** | Fear, Grief, Custom | Realism, Facts, Rage, Humour | Maths | Realism, Fear, Grief, Protocol | Vision, Wealth, Custom | - |
+| **Hope** | Fear, Maths, Grief, Custom | Realism, Facts, Rage, Humour | - | Realism, Fear, Grief, Protocol | Vision, Wealth, Custom | - |
 | **Realism** | Hope, Facts, Maths, Rage, Humour | Wealth, Custom | Idealism | Grief, Custom, Memory | Hope, Facts | Humour |
-| **Facts** | Idealism, Wealth, Rage, Memory | Vision, Realism, Maths | - | Vision, Realism, Maths, Grief, Custom | Sense, Idealism, Hope, Rage | - |
-| **Wealth** | Custom, Protocol, Corrupt | Vision, Idealism, Hope, Fear, Maths, Rage, Love | - | Idealism, Facts, Rage | Vision, Realism, Custom | - |
+| **Facts** | Idealism, Memory | Vision, Realism, Maths | Rage | Vision, Realism, Maths, Grief, Custom | Sense, Idealism, Hope, Rage | - |
+| **Wealth** | Custom, Protocol, Corrupt | Vision, Idealism, Hope, Fear, Maths, Rage, Love | - | Idealism, Rage | Vision, Realism, Custom | - |
 | **Fear** | Hope, Protocol, Love | Rage, Humour, Corrupt | Sense | Hope, Rage, Humour, Corrupt | Wealth, Love | Sense, Vision |
-| **Maths** | Facts, Memory, Love | Maths, Rage, Grief, Humour | - | Vision, Realism, Rage | Sense, Idealism, Facts, Wealth, Maths, Custom, Protocol, Memory, Power, Love | Hope |
-| **Rage** | Wealth, Fear, Maths, Custom, Humour, Memory | Facts, Rage, Power, Love | - | Realism, Facts, Humour, Love | Hope, Wealth, Fear, Maths, Rage, Grief, Custom, Memory | - |
+| **Maths** | Facts, Memory | Maths, Rage, Grief, Humour, Love | - | Vision, Hope, Realism, Rage | Sense, Idealism, Facts, Wealth, Maths, Custom, Protocol, Memory, Power, Love | - |
+| **Rage** | Wealth, Fear, Maths, Custom, Humour, Memory | Facts, Rage, Power, Love | - | Realism, Humour, Love | Hope, Wealth, Fear, Maths, Rage, Grief, Custom, Memory | Facts |
 | **Grief** | Hope, Realism, Facts, Love | Rage, Grief, Custom, Power | - | Hope, Custom, Love | Maths, Grief, Humour, Memory | - |
 | **Custom** | Realism, Facts, Grief | Idealism, Hope, Wealth, Maths, Rage, Custom, Power | - | Idealism, Hope, Wealth, Rage, Memory | Realism, Grief, Custom, Humour | - |
 | **Humour** | Idealism, Fear, Rage, Power | Grief, Custom, Humour | Realism | Realism, Rage | Idealism, Hope, Fear, Maths, Humour, Love | - |
@@ -189,7 +195,7 @@ except **Humour → Power = 2** (mockery deflates the powerful).
 | **Memory** | Idealism, Realism, Custom, Power | Maths, Rage, Grief, Memory | - | Vision, Facts, Maths, Rage | Memory | - |
 | **Power** | Power | Maths | Love | Humour, Memory, Power, Love | Rage, Grief, Custom | - |
 | **Corrupt** | Fear, Protocol | Vision, Corrupt, Love | - | Vision, Wealth, Love | Fear, Corrupt | Protocol |
-| **Love** | Vision, Rage, Grief, Power, Corrupt | Fear, Maths, Humour | - | Fear, Maths, Grief | Vision, Wealth, Rage, Corrupt | Power |
+| **Love** | Vision, Rage, Grief, Power, Corrupt | Fear, Maths, Humour | - | Fear, Grief | Vision, Wealth, Maths, Rage, Corrupt | Power |
 
 ## Full slot list
 
