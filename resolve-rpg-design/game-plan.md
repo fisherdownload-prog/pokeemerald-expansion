@@ -27,12 +27,60 @@ Mostly **visible, overworld-based** encounters, plus a few deliberate sources of
 | **Soapbox locations** | Busy places (a busy street, a train station, a university) where standing in crowd areas can produce random encounters | Built in: the normal random-encounter tables, attached to "crowd" tiles instead of grass |
 | **The soapbox itself** | A literal soapbox tile or object. Standing on it draws a random listener, with a chance of the police turning up instead | Existing script commands: `random`, `setwildbattle` + `dowildbattle` for a listener, a trainer battle for the police. The police chance could grow with a "heat" variable. |
 
-## Characters: planning next
+## Setting
 
-Characters take the place of Pokémon species, so they come before abilities and moves.
-Questions are in the conversation; decisions get recorded here.
+- **Low tech**, to avoid modern surveillance and technology. Roughly trains, telegraphs, printing
+  presses and newspapers: early 20th century.
+- **A fictional setting resembling the British Empire.** The colonised land is more like India than
+  America, **without being a stereotype**: an invented place with its own names, regions and
+  traditions, inspired by history rather than copying it.
+- Surveillance means informers, censors and police files, which already fits *Din*, Doctored
+  Records and the Protocol, Power and Corrupt officer types.
 
-Relevant facts from the code:
+## Characters
+
+Characters take the place of Pokémon species.
+
+- **Archetypes** (common people, like common species) and **unique individuals** (like legendaries).
+- **Experience is debating experience.**
+- **Evolution happens when someone's life fundamentally changes**, here mostly as they commit more
+  deeply to a cause.
+- **Branching, Digimon-like evolution**: branches reflect different life choices. That also allows
+  role-playing for the player character.
+- **Different kinds of people evolve in different ways.**
+
+### Example: the Student (an Eevee-like branching archetype)
+
+A Student given a **textbook** of a subject specialises in it, without necessarily graduating. Method:
+gain a level **while holding** the book.
+
+### Evolution methods the code already supports
+
+Evolutions can combine several conditions, and a species can have many branches (Eevee has eight).
+
+| Code method or condition | Possible life change |
+|---|---|
+| Level up + `IF_HOLD_ITEM` | Student + textbook → specialist (Historian, Mathematician...) |
+| `IF_MIN_FRIENDSHIP` | **Commitment** to the cause (friendship renamed) |
+| `IF_IN_MAP` / `IF_IN_MAPSEC` | Being somewhere: a pilgrimage, the capital, **prison** |
+| `EVO_SCRIPT_TRIGGER` | A story event: a speech, an arrest, a march |
+| `IF_ATK_GT_DEF` / `EQ` / `LT` | Which way someone leans (Logic against Rigour), as Tyrogue does |
+| `IF_NATURE` / amped / low-key nature | Personality |
+| `IF_USED_MOVE_X_TIMES` | Practice: an Orator after giving enough speeches |
+| `IF_KNOWS_MOVE` / `IF_KNOWS_MOVE_TYPE` | The arguments they've taken up |
+| `IF_CURRENT_DAMAGE_GE` / `IF_RECOIL_DAMAGE_GE` | Enduring hardship: taking punishment without striking back |
+| `IF_SPECIES_IN_PARTY` / `IF_TYPE_IN_PARTY` | Mentorship: travelling with a Teacher or an Organiser |
+| `IF_TIME` / `IF_NOT_TIME` | Night-shift workers, dawn prayers |
+| `IF_WEATHER` | Map weather at the time |
+| `IF_CRITICAL_HITS_GE` + `EVO_BATTLE_END` | A breakthrough moment in a single debate |
+| `IF_DEFEAT_X_WITH_ITEMS` | Winning over enough of a certain kind of person |
+| `IF_BAG_ITEM_COUNT` | Gathering resources (it uses them up) |
+| `EVO_ITEM` | A single defining gift or experience |
+| Contest stats (`IF_MIN_SMARTNESS`...) | If contests are repurposed later |
+
+Not useful here: `EVO_TRADE` (no link play).
+
+### Relevant facts from the code
 - **Species slots:** the expansion has over 1,000. `include/config/species_enabled.h` can switch off
   whole generations, and our characters can reuse the remaining slots.
 - **Gender:** each species can be set to genderless. Charm no longer depends on gender, and only the
