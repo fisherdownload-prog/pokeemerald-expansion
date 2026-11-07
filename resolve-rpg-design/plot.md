@@ -39,6 +39,19 @@ who stop cooperating. When it passes a threshold, Act 3 begins.
   sympathetic clerk), not a number on screen.
 - It gives the player a reason to visit cities again: each city adds its own pressure.
 
+## Big choice 0: the early choice (to be designed)
+
+There is also a **big choice early in the game**, about the movement itself rather than the empire. It sets which
+groups trust the player first, and so who is available as local organisers later. Placeholder options:
+
+| Option | What it means | Who it opens first |
+|---|---|---|
+| **Build from the workplaces** | The movement starts with unions and trades | Workers, dock and rail crews |
+| **Build from the community** | The movement starts with temples, schools and neighbourhood societies | Teachers, faith leaders, families |
+| **Build from the press** | The movement starts with printers, newspapers and the educated | Journalists, students, clerks |
+
+This choice also decides which kinds of allies each city is likely to have, which feeds directly into Act 5.
+
 ## Big choice 1: the action against the empire
 
 Pick one major, non-violent action. It decides which cities matter most and what the empire loses.
@@ -70,16 +83,41 @@ The election is a series of debates against the current establishment (placehold
 the wealthy collaborators), one per city plus a final national debate. The route taken in Big choice 2 changes the
 starting position, who the opponents are, and which settings the debates take place in.
 
-## Act 5: making democracy happen
+## Act 5: the vote in every city
 
-After winning, the player must decide **what kind of democracy goes ahead in each city**:
+After the national result is set in motion, the player goes to **every city** during the run-up to polling to do two jobs, without
+violence:
 
-- **Real democracy:** free, open voting, run by the people.
-- **"Democracy":** a managed version, run through the existing machinery, that looks like a vote but keeps control
-  with those who run it (the player's allies or the old order).
+1. **Stop the regime cheating.** Rigged rolls, bought officials, intimidation, lost ballots.
+2. **Make sure the results go your way.** Back the right local candidate and keep them in the race.
 
-This is a moral choice and it can differ from city to city. It shapes the ending. It stays non-violent either way.
-(To be confirmed: which side runs the "democracy" version, and how bad is it?)
+How the player does each job is open, within non-violence, and **is limited by choices already made**. In some
+cities the player may have no way to stop the cheating at all, because of who they did or did not bring on board.
+
+### Local organisers and candidates
+
+- Every city has a **local organiser** the player put in charge of operations there. They are chosen during Acts 1
+  and 2, usually from the rebel groups or safehouse owners the player won over.
+- The organiser **chooses the local candidates**. Candidates have their own motives (ambition, loyalty, grievance,
+  money, a cause) and may not be who the player would have picked.
+- The player's job in Act 5 is to work with whoever is there, not to hand-pick everyone.
+
+### What decides what is possible
+
+- **Allies are capabilities.** Each group the player won over adds things the city can do. Clerks can audit the rolls,
+  printers can publish the true count, unions can guard polling stations, a temple society can turn out voters.
+  Without a group, that option isn't there.
+- **Corruption prevention can be locked out** of a city where the player has no one able to do it.
+- **Candidates can have problems.** Allegations, old scandals, a rival's smear. The player may need to smooth these
+  over with a debate, a favour or a story task before the vote. Failing doesn't end the game, but it costs that city.
+- Each city's outcome is a mix of two measures, **integrity** (was the vote clean?) and **result** (did the player's
+  side win?). Both feed the ending.
+
+### The managed "democracy" option
+
+Where the player cannot stop the cheating, they may choose to let a managed "democracy" run, so the result goes their
+way even if the vote isn't clean. This is a moral cost to the ending, not a hidden trick. (To be confirmed: does the
+player ever *choose* it over a clean vote when they could have had one?)
 
 ## How the plot uses the map
 
@@ -91,7 +129,8 @@ This is a moral choice and it can differ from city to city. It shapes the ending
 
 ## Open questions
 
-1. **Is the "democracy" ending the player's own choice, or something the player is tricked into or forced to accept?**
-2. **Is each city's ending separate (a patchwork), or one national ending decided by a majority of the cities?**
-3. **Do the big choices come early or late?** Late means the player builds the network first and chooses once, which is
-   simpler to build. Early means the whole game varies.
+1. **Is the early choice about who to build the movement from?** I proposed workplaces, community or press as a
+   placeholder. Is that the kind of choice you meant, or something different?
+2. **Is the ending decided city by city, or one national ending?** City by city is richer but costs more to build.
+3. **Does the player ever choose the managed "democracy" when a clean vote was possible?** It would give the choice
+   more weight if it can be tempting.
