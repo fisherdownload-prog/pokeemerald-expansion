@@ -3866,6 +3866,11 @@ static void PrintEvolutionTargetSpeciesAndMethod(u8 taskId, enum Species species
                     StringAppend(gStringVar4, gStringVar2);
                     StringAppend(gStringVar4, COMPOUND_STRING(" current dmg"));
                     break;
+                case IF_DEFEATS_IN_BATTLE_GE:
+                    ConvertIntToDecimalStringN(gStringVar2, evolutions[i].params[j].arg1, STR_CONV_MODE_LEFT_ALIGN, 2);
+                    StringAppend(gStringVar4, gStringVar2);
+                    StringAppend(gStringVar4, COMPOUND_STRING(" defeats in a battle"));
+                    break;
                 case IF_CRITICAL_HITS_GE:
                     ConvertIntToDecimalStringN(gStringVar2, evolutions[i].params[j].arg1, STR_CONV_MODE_LEFT_ALIGN, 2);
                     StringAppend(gStringVar4, gStringVar2);

@@ -4339,6 +4339,10 @@ bool32 DoesMonMeetAdditionalConditions(struct Pokemon *mon, const struct Evoluti
             if (partyId != PARTY_SIZE && gPartyCriticalHits[partyId] >= params[i].arg1)
                 currentCondition = TRUE;
             break;
+        case IF_DEFEATS_IN_BATTLE_GE:
+            if (partyId != PARTY_SIZE && gPartyDefeats[partyId] >= params[i].arg1)
+                currentCondition = TRUE;
+            break;
         case IF_USED_MOVE_X_TIMES:
             if (evolutionTracker >= params[i].arg2)
                 currentCondition = TRUE;

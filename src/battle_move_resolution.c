@@ -3738,6 +3738,11 @@ static enum MoveEndResult MoveEndFaintBlock(struct BattleCalcValues *cv)
             break;
         case FAINT_BLOCK_FAINT_TARGET:
             TryUpdateEvolutionTracker(IF_DEFEAT_X_WITH_ITEMS, 1, MOVE_NONE);
+            // Resolve RPG: counter for the IF_DEFEATS_IN_BATTLE_GE evolution condition.
+            if (IsOnPlayerSide(cv->battlerAtk) && !IsOnPlayerSide(cv->battlerDef)
+             && !(gBattleTypeFlags & BATTLE_TYPE_MULTI && GetBattlerPosition(cv->battlerAtk) == B_POSITION_PLAYER_LEFT)
+             && gPartyDefeats[gBattlerPartyIndexes[cv->battlerAtk]] < 0xFF)
+                gPartyDefeats[gBattlerPartyIndexes[cv->battlerAtk]]++;
             SetValuesOnFaint(cv->battlerDef);
             BattleScriptCall(BattleScript_FaintBattler);
             result = MOVEEND_RESULT_RUN_SCRIPT;

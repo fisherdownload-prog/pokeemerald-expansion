@@ -128,11 +128,11 @@ Outsiders' **dark paths are about joining the movement for their own ends**.
 The Saviour is drafted for the Colonial Official, and could belong to another outsider instead.
 
 **How the conditions work in code:**
-- **Two or more defeats in one encounter** needs a **small code change**, copying an existing
-  mechanic: Sirfetch'd evolves at the end of a battle in which it landed three critical hits, using a
-  per-battle counter (`gPartyCriticalHits`). A matching per-battle defeat counter and condition, used
-  with `EVO_BATTLE_END`, would do it. In this game a defeat means humiliating someone, which suits the
-  Saviour.
+- **Two or more defeats in one encounter**: `EVO_BATTLE_END` + `IF_DEFEATS_IN_BATTLE_GE` (new,
+  implemented). It copies an existing mechanic: Sirfetch'd evolves at the end of a battle in which it
+  landed three critical hits. A per-battle counter (`gPartyDefeats`) counts opponents each party
+  member knocks out, and resets at the start of every battle. In this game a defeat means humiliating
+  someone, which suits the Saviour. Tests: `test/battle/resolve_rpg.c`.
 - **Writ of Monopoly**: `EVO_ITEM`, which uses the item up. Built in.
 - **Level up in the docks**: `IF_IN_MAP` / `IF_IN_MAPSEC`. Built in.
 

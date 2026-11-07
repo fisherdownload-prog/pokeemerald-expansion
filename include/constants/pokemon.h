@@ -324,6 +324,7 @@ enum EvolutionConditions {
     IF_NOT_REGION,                      // The Player is NOT in the specific region.
     // Resolve RPG
     IF_COLLAPSED_FROM_RECOIL,           // The Pokémon was knocked out by its own recoil (e.g. Struggle). Shares the tracker with IF_RECOIL_DAMAGE_GE.
+    IF_DEFEATS_IN_BATTLE_GE,            // The Pokémon knocked out at least this many opponents in one battle. Use with EVO_BATTLE_END.
     CONDITIONS_END
 };
 

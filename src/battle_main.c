@@ -237,6 +237,7 @@ EWRAM_DATA u16 gLastThrownBall = 0;
 EWRAM_DATA u16 gBallToDisplay = 0;
 EWRAM_DATA bool8 gLastUsedBallMenuPresent = FALSE;
 EWRAM_DATA u8 gPartyCriticalHits[PARTY_SIZE] = {0};
+EWRAM_DATA u8 gPartyDefeats[PARTY_SIZE] = {0}; // Resolve RPG: opponents defeated this battle, for IF_DEFEATS_IN_BATTLE_GE
 EWRAM_DATA u8 gCategoryIconSpriteId = 0;
 
 COMMON_DATA MainCallback gPreBattleCallback1 = NULL;
@@ -2855,6 +2856,7 @@ static void BattleStartClearSetData(void)
             SetItemsToRestoreAfterBattle(trainer, partySlot);
         }
         gPartyCriticalHits[partySlot] = 0;
+        gPartyDefeats[partySlot] = 0;
     }
 
     ClearPursuitValues();

@@ -61,3 +61,38 @@ WILD_BATTLE_TEST("Resolve RPG: collapsing from recoil sets the collapsed flag an
         EXPECT_EQ(GetMonData(&gParties[B_TRAINER_PLAYER][0], MON_DATA_EVOLUTION_TRACKER), EVO_TRACKER_COLLAPSED_FLAG);
     }
 }
+
+// Defeats in a single battle: IF_DEFEATS_IN_BATTLE_GE (e.g. the Saviour), counted in gPartyDefeats.
+
+DOUBLE_BATTLE_TEST("Resolve RPG: defeating two opponents in one battle counts two defeats")
+{
+    GIVEN {
+        ASSUME(GetMoveTarget(MOVE_HYPER_VOICE) == TARGET_BOTH);
+        PLAYER(SPECIES_WOBBUFFET);
+        PLAYER(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_WOBBUFFET) { HP(1); }
+        OPPONENT(SPECIES_WOBBUFFET) { HP(1); }
+    } WHEN {
+        TURN { MOVE(playerLeft, MOVE_HYPER_VOICE); }
+    } SCENE {
+        HP_BAR(opponentLeft, hp: 0);
+        HP_BAR(opponentRight, hp: 0);
+    } THEN {
+        EXPECT_EQ(gPartyDefeats[0], 2);
+        EXPECT_EQ(gPartyDefeats[1], 0);
+    }
+}
+
+WILD_BATTLE_TEST("Resolve RPG: a single defeat counts once")
+{
+    GIVEN {
+        PLAYER(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_WOBBUFFET) { HP(1); }
+    } WHEN {
+        TURN { MOVE(player, MOVE_SCRATCH); }
+    } SCENE {
+        HP_BAR(opponent, hp: 0);
+    } THEN {
+        EXPECT_EQ(gPartyDefeats[0], 1);
+    }
+}
