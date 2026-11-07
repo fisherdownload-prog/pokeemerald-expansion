@@ -140,10 +140,24 @@ To keep branching manageable:
 - Decide early which choices are **permanent forks** and which are **temporary** (they converge later). Permanent
   forks multiply the maps and scripts to maintain.
 - Branches should change **who is in a place and what they say** far more often than the map itself.
+- **Plot branching:** mostly small choices (who is where, what people say, which state a district is in), plus one or
+  two big forks that change which districts and safehouses exist.
+- **Safe and unsafe locations:** every location is flagged safe or unsafe, and the flag can change as the story
+  moves. You can use the fast-travel item to leave from any **safe** location, and it takes you to any unlocked safehouse.
+
+## Safe and unsafe locations
+
+- Each map (or each area within a map) carries a **safe/unsafe** flag. Safehouses are normally safe. Streets can be
+  either, and can flip: a street is safe by day and unsafe under curfew, or safe until a raid.
+- The flag is the single rule for where the item works, replacing "outdoors only". It also lets the story take travel
+  away at the right moment (you're being hunted, so you can't just vanish).
+- Code: a field-use check on the item reads the flag for the current map (or area) and refuses with a line of text if
+  unsafe. The same flag could also drive other things later, such as whether the police can interrupt a soapbox.
+- Keep it simple: store one value per map or district and derive the rest, so we don't track dozens of flags.
 
 ## Questions for you
 
-1. **Where can you use the fast-travel item?** I assumed anywhere outdoors, landing at any unlocked safehouse.
-   Is that right, or only from safehouses?
-2. **How much should the plot branch?** A few big forks that change which districts and safehouses exist, or many
-   small choices that mostly change dialogue and who is where? Big forks look good but cost the most.
+1. **Is "safe" decided per map, or per area inside a map?** A whole district at once is simplest. Per area lets one
+   street be unsafe while the next is fine, but takes more scripting.
+2. **What happens when you can't leave?** Just a refusal message, or does the game give a hint, such as why it's
+   unsafe or the nearest safe place?
