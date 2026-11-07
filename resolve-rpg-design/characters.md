@@ -1,4 +1,4 @@
-# Resolve RPG: Characters (draft 4)
+# Resolve RPG: Characters (draft 5)
 
 Characters take the place of Pokémon species. This is a **first batch to prune and reshape**, not a final list.
 
@@ -52,10 +52,24 @@ Two kinds of positive item, plus two kinds of dark one:
 |---|---|---|
 | **Something you learn from** | Changes how someone thinks | Textbooks (History, Mathematics, Law, Philosophy...), banned books |
 | **A tool you put to use** | Lets someone become what they already were inside | Painting supplies, an instrument, a spinning wheel, a medical kit, printing type |
-| **Something that harms you** | Has a harmful built-in effect | See below |
-| **A dark tool of the movement** | Lets someone fight dirty, still without violence | **Book of Doctrine** (written by your own movement), forger's kit, stolen files |
+| **Something that harms you** | A physical object with a harmful built-in effect | See below |
+| **A dark tool of the movement** | Lets someone fight dirty, still without violence | **Book of Doctrine** (written by your own movement), forger's kit, stolen files, a blacklist, a codebook, a scandal sheet, propaganda leaflets |
 
 The method is the same for all of them: **gain a level while holding it**.
+
+**Every held item is a physical object** you can hand to someone and take back: no abstract
+"items" like a grudge or a debt.
+
+Existing items with harmful built-in effects, as physical objects:
+
+| Existing item | Built-in effect | Could become | Why |
+|---|---|---|---|
+| Flame Orb | Holder becomes Frustrated | **Hair Shirt** | A deliberately uncomfortable garment worn as penance; suits the Wandering Ascetic |
+| Toxic Orb | Holder falls into Deep doubt | **Regime Newspaper** | Reading it every day wears away your certainty |
+| Iron Ball | Holder's Wit halved; grounded (loses Idealism's immunity to Realism) | **Sack of Grain** | Heavy, and it keeps your feet firmly on the ground |
+| Lagging Tail | Holder always acts last | **Wordy Script** | Reading from pages of prepared notes makes you slow to respond |
+| Ring Target | Holder loses their immunities | **Movement Armband** | Wearing the movement's colours openly makes you a target |
+| Sticky Barb | Hurts the holder each turn; jumps to whoever touches them | **Incriminating Letter** | Nerve-racking to carry, and it passes to whoever gets too close |
 
 ### Disguises and badges of office (for infiltration)
 
@@ -65,17 +79,6 @@ The disguised form can have different types, so a member in a constable's unifor
 **Power**/**Protocol** for authority battles and infiltration missions.
 
 Examples: a constable's uniform, a clerk's badge of office, a Party Badge (the regime's pin), forged papers.
-
-Existing items with harmful built-in effects, for dark branches:
-
-| Existing item | Built-in effect | Could become |
-|---|---|---|
-| Flame Orb | Holder becomes Frustrated | **Grudge** |
-| Toxic Orb | Holder falls into Deep doubt | **Propaganda Leaflet** |
-| Iron Ball | Holder's Wit halved; grounded | **Debt** |
-| Lagging Tail | Holder always acts last | **Bad Reputation** |
-| Ring Target | Holder loses immunities | **Wanted Poster** |
-| Sticky Barb | Hurts the holder; jumps to whoever touches them | **Nagging Rumour** |
 
 ### Other conditions used below
 
@@ -95,18 +98,18 @@ movement, never a promotion.
 | **Daydreamer** | Idealism | Always somewhere else in their head | Holding painting supplies → **Artist** (Vision/Humour). Holding a notebook → **Poet** (Idealism/Grief). **Dark:** holding a forger's kit → **Forger** (Vision/Facts), who fakes documents for the movement |
 | **Street Urchin** | Sense | Lives by their wits on the street (not the player's Street Kid) | Commitment → **Lookout** (Sense/Hope), who warns of raids. **Dark:** several cutting remarks in one debate → **Confidence Trickster** (Facts/Wealth) |
 | **Labourer** | Realism | Dock or factory hand | Commitment → **Organiser** (Realism/Love). Endure Struggle recoil → **Picket** (Realism/Grief), who holds the line. **Dark:** collapse from Struggle recoil → **Rabble-Rouser** (Realism/Rage) |
-| **Cultivator** | Custom | Works the land, deeply rooted | Endure heavy damage → **Resister** (Custom/Hope). Commitment → **Village Voice** (Custom/Memory). **Dark:** holding Debt → **Hoarder** (Custom/Wealth), who withholds the harvest as leverage |
-| **Weaver** | Custom | Skilled hand-craftsperson | Holding a spinning wheel → **Homespinner** (Custom/Hope), who makes the cloth that replaces imports. Commitment → **Pattern-Maker** (Custom/Vision), who designs the movement's banners. **Dark:** holding a Grudge → **Boycott Enforcer** (Custom/Power), who pressures neighbours into line |
+| **Cultivator** | Custom | Works the land, deeply rooted | Endure heavy damage → **Resister** (Custom/Hope). Commitment → **Village Voice** (Custom/Memory). **Dark:** holding the **grain store key** → **Hoarder** (Custom/Wealth), who withholds the harvest as leverage |
+| **Weaver** | Custom | Skilled hand-craftsperson | Holding a spinning wheel → **Homespinner** (Custom/Hope), who makes the cloth that replaces imports. Commitment → **Pattern-Maker** (Custom/Vision), who designs the movement's banners. **Dark:** holding a **blacklist** of collaborators' shops → **Boycott Enforcer** (Custom/Power), who pressures neighbours into line |
 | **Shopkeeper** | Wealth | Small trader, worried about stock | Commitment → **Boycotter** (Wealth/Hope), who refuses imperial goods. Commitment + Love in party → **Provider** (Wealth/Love), who feeds the strikers. **Dark:** holding imported goods → **Black Marketeer** (Wealth/Corrupt), who funds the movement by smuggling |
 | **Nurse** | Love | Cares for anyone who comes through the door | Holding a medical kit → **Field Medic** (Love/Realism), at the marches. Endure heavy damage → **Healer** (Love/Grief). **Dark:** holding a Propaganda Leaflet → **Martyr-Maker** (Love/Facts), who stages suffering for the papers |
 | **Teacher** | Memory | Village or city schoolteacher | Mentoring (Student in party) → **Mentor** (Memory/Love). Holding banned books → **Secret Teacher** (Memory/Hope). **Dark:** holding a Propaganda Leaflet → **Propagandist** (Memory/Facts), rewriting history for the cause |
-| **Printer** | Facts | Runs a press, sets type | Holding printing type → **Pamphleteer** (Facts/Vision). **Dark:** holding a Nagging Rumour → **Smear Writer** (Facts/Rage) |
+| **Printer** | Facts | Runs a press, sets type | Holding printing type → **Pamphleteer** (Facts/Vision). **Dark:** holding a **scandal sheet** → **Smear Writer** (Facts/Rage) |
 | **Clerk** | Protocol | Minor civil servant | Commitment → **Whistleblower** (Protocol/Hope). **Dark:** holding stolen files → **Blackmailer** (Protocol/Corrupt) |
-| **Constable** | Power | Local policeman | Commitment → **Defector** (Power/Love). Leans Rigour → **Refuser** (Power/Protocol), who won't carry out orders. **Dark:** holding a Grudge → **Double Agent** (Power/Corrupt), who stays inside and betrays their oath |
+| **Constable** | Power | Local policeman | Commitment → **Defector** (Power/Love). Leans Rigour → **Refuser** (Power/Protocol), who won't carry out orders. **Dark:** holding a **codebook** → **Double Agent** (Power/Corrupt), who stays inside and betrays their oath |
 | **Conscript** | Power | Local soldier in the imperial army | Endure Struggle recoil → **Deserter** (Power/Hope). **Dark:** collapse from Struggle recoil → **Mutineer** (Power/Rage) |
-| **Elder** | Memory | Has seen it all before | Commitment → **Storyteller** (Memory/Humour). **Dark:** holding a Grudge → **Grudge-Keeper** (Memory/Rage), who keeps old feuds alive |
+| **Elder** | Memory | Has seen it all before | Commitment → **Storyteller** (Memory/Humour). **Dark:** holding the **family ledger** of old wrongs → **Grudge-Keeper** (Memory/Rage), who keeps old feuds alive |
 | **Street Musician** | Humour | Busker, songwriter | Holding an instrument → **Protest Singer** (Humour/Hope). Practice a song move → **Satirist** (Humour/Vision). **Dark:** several cutting remarks in one debate → **Heckler** (Humour/Rage), who humiliates opponents |
-| **Newsboy** | Sense | Runs papers and messages; very fast (high Wit) | Commitment → **Courier** (Sense/Hope). **Dark:** holding a Nagging Rumour → **Rumour-Monger** (Sense/Facts) |
+| **Newsboy** | Sense | Runs papers and messages; very fast (high Wit) | Commitment → **Courier** (Sense/Hope). **Dark:** level up in a busy marketplace → **Rumour-Monger** (Sense/Facts) |
 | **Homemaker** | Love | Raising children, full or part time | Endure heavy damage → **Mourning Parent** (Grief/Humour), after mothers' movements. Commitment → **Heart of the Street** (Love/Custom). **Dark:** several cutting remarks in one debate → **Shamer** (Love/Rage), who turns the neighbourhood against people |
 | **Grandee** | Wealth | Rich local, once a collaborator | Commitment (very high) → **Patron of the Cause** (Wealth/Love), a redemption path. **Dark:** holding Bribe Money → **Kingmaker** (Wealth/Power), who buys influence inside the movement |
 
