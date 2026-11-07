@@ -116,14 +116,34 @@ is convenient for the existing gating code.
 
 - **Scope:** multiple cities across a country. Size is kept down because we only build the areas the player visits.
 - **Travel screen:** one drawn map of the country with a selector that jumps between safehouse locations.
+- **Locked districts use soft gates:** a guard, crowd or checkpoint turns you back with a line of dialogue. The
+  gate is a script on the entrance that checks the access flag.
+- **Safehouses:** one per district for now. They matter less than Pokémon Centres, so this can change as we go.
+- **The world changes over time**, and the plan is to use that for a **branching plot** (below).
+
+## A changing world and branching plot
+
+The same flag system that gates districts can also change them. Three tools, from cheapest to most expensive:
+
+1. **Object changes (cheap):** show, hide or move characters and objects. A curfew patrol appears, a market stall
+   vanishes, a crowd gathers for a march. Done with flags on object events.
+2. **Script changes (cheap):** the same person says something different, a gate opens or closes, a safehouse owner
+   reacts to your choices.
+3. **Map variants (costly):** a separate copy of a map for a big physical change (a raided street, a burnt market).
+   Use sparingly, only for major story beats.
+
+Time-of-day changes (curfew at night) can reuse the game clock the engine already has, as well as flags.
+
+To keep branching manageable:
+- Give each district a small number of **named states** (for example open, curfew, raided, liberated) in a single
+  variable, instead of many independent flags. Branches then change which state a district is in.
+- Decide early which choices are **permanent forks** and which are **temporary** (they converge later). Permanent
+  forks multiply the maps and scripts to maintain.
+- Branches should change **who is in a place and what they say** far more often than the map itself.
 
 ## Questions for you
 
-1. **How many safehouses?** One per district, or several? Does every one need a full "win them over" quest, or can some
-   be a single debate and some be big story beats?
-2. **Fast travel from anywhere outdoors, or only from safehouses?** I assumed anywhere outdoors, landing at any
-   unlocked safehouse.
-3. **What stops you walking into a locked district early?** Soft gates (a guard turns you back) or hard gates (no
-   path at all)? Soft gates are cheaper and read better.
-4. **Does the world change over time?** E.g. curfew at night, a march that closes a street, a district raided after a
-   story event. Cheap to do with flags; gives the city a pulse.
+1. **Where can you use the fast-travel item?** I assumed anywhere outdoors, landing at any unlocked safehouse.
+   Is that right, or only from safehouses?
+2. **How much should the plot branch?** A few big forks that change which districts and safehouses exist, or many
+   small choices that mostly change dialogue and who is where? Big forks look good but cost the most.
