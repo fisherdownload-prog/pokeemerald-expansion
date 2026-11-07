@@ -1,4 +1,4 @@
-# Resolve RPG: Characters (draft 5)
+# Resolve RPG: Characters (draft 6)
 
 Characters take the place of Pokémon species. This is a **first batch to prune and reshape**, not a final list.
 
@@ -115,11 +115,26 @@ movement, never a promotion.
 
 ### Imperial outsiders (distinct by fashion)
 
-| Archetype | Type | Branches |
+Outsiders' **dark paths are about joining the movement for their own ends**.
+
+| Archetype | Type | Branches (condition → result) |
 |---|---|---|
-| **Imperial Trooper** | Power | Commitment → **Disillusioned Veteran** (Power/Grief). Dark branch to be decided |
-| **Colonial Official** | Protocol | Leans Logic → **Reformer** (Protocol/Vision). Dark branch to be decided |
-| **Foreign Correspondent** | Facts | Commitment → **Sympathiser** (Facts/Love). Dark branch to be decided |
+| **Colonial Official** | Protocol | Leans Logic → **Reformer** (Protocol/Vision). **Dark:** defeat two or more opponents in a single encounter → **Saviour** (Protocol/Idealism), who believes the locals can't stand up for themselves, or at least not in the right way |
+| **Imperial Trader** | Wealth | Commitment → **Fair Trader** (Wealth/Love). Level up in the docks → **Smuggler** (Wealth/Vision), then **Dark:** use a **Writ of Monopoly** on them (used up) → **Profiteer** (Wealth/Corrupt) |
+| **Tourist** | Sense | Level up holding a travel diary → **Witness** (Facts/Love), who tells the world back home. **Dark:** several cutting remarks in one debate → **Thrill-Seeker** (Sense/Rage), in it for the excitement |
+| **Imperial Trooper** | Power | Commitment → **Disillusioned Veteran** (Power/Grief). **Dark:** level up holding a campaign medal → **Glory-Hunter** (Power/Idealism), who wants to be the hero of the story |
+| **Foreign Correspondent** | Facts | Commitment → **Sympathiser** (Facts/Love). **Dark:** level up holding a telegram from their editor → **Story-Chaser** (Facts/Wealth), who exploits the movement for headlines |
+
+The Saviour is drafted for the Colonial Official, and could belong to another outsider instead.
+
+**How the conditions work in code:**
+- **Two or more defeats in one encounter** needs a **small code change**, copying an existing
+  mechanic: Sirfetch'd evolves at the end of a battle in which it landed three critical hits, using a
+  per-battle counter (`gPartyCriticalHits`). A matching per-battle defeat counter and condition, used
+  with `EVO_BATTLE_END`, would do it. In this game a defeat means humiliating someone, which suits the
+  Saviour.
+- **Writ of Monopoly**: `EVO_ITEM`, which uses the item up. Built in.
+- **Level up in the docks**: `IF_IN_MAP` / `IF_IN_MAPSEC`. Built in.
 
 ## The player character
 
