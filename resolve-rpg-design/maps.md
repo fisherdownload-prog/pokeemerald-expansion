@@ -81,6 +81,16 @@ A **key item you have from the start** (working name: *the Underground Pass*, or
 - Travel is **one-way back to a safehouse**, as you described. You walk (or use the open map) to get out again.
   We should decide whether going *out* from one safehouse to another is also allowed (see questions).
 
+### Travel screen: one drawn map of the country (decided)
+
+- A single **hand-drawn map of the whole country** replaces the Gen 3 grid region map. It shows rivers, rail lines, city
+  and district outlines in our own art style, and doubles as the tunnel map in the fiction.
+- Each unlocked safehouse appears as a **dot**. The **selector jumps from dot to dot** instead of sliding square by
+  square. Locked safehouses are missing or shown as unknown.
+- Code: the Fly screen (`src/region_map.c`) assumes a fixed grid of map sections. We keep the screen but replace the
+  cursor movement with a list of safehouse positions and the background with the drawn map. Safehouses are
+  grouped by city so the selector moves in a sensible order.
+
 ## Dependencies on other design
 
 - **Characters and evolution:** safehouses and districts are good triggers for `IF_IN_MAP` / `IF_IN_MAPSEC`
@@ -102,18 +112,18 @@ is convenient for the existing gating code.
 7. Administrative centre (the regime)
 8. Outlying villages (the colonised land, away from the city)
 
+## Decisions so far
+
+- **Scope:** multiple cities across a country. Size is kept down because we only build the areas the player visits.
+- **Travel screen:** one drawn map of the country with a selector that jumps between safehouse locations.
+
 ## Questions for you
 
-1. **How big is "open world"?** One city and its surroundings, or a whole country with several cities? This sets
-   the number of maps and the art burden more than anything else.
-2. **How many safehouses?** One per district, or several per district? Does every one need a full "win them over"
-   quest, or can some be quick (a single debate) and some be big story beats?
-3. **Fast travel from safehouse to safehouse, or only back to a safehouse?** You said "fly back to any of the safehouses
-   you've unlocked"; I read that as: you can use it from anywhere outdoors, and land at any unlocked safehouse.
-   Which is it?
-4. **What stops you walking into a locked district early?** Soft gates (a guard turns you back) or hard gates (no
+1. **How many safehouses?** One per district, or several? Does every one need a full "win them over" quest, or can some
+   be a single debate and some be big story beats?
+2. **Fast travel from anywhere outdoors, or only from safehouses?** I assumed anywhere outdoors, landing at any
+   unlocked safehouse.
+3. **What stops you walking into a locked district early?** Soft gates (a guard turns you back) or hard gates (no
    path at all)? Soft gates are cheaper and read better.
-5. **Does the world change over time?** E.g. curfew at night, a march that closes a street, a district that is
-   raided after a story event. Cheap to do with flags; gives the city a pulse.
-6. **Do you want a town map screen?** The Gen 3 region map is a grid; for a city it could be a drawn street map
-   with districts, which is a much bigger art job than a recoloured grid.
+4. **Does the world change over time?** E.g. curfew at night, a march that closes a street, a district raided after a
+   story event. Cheap to do with flags; gives the city a pulse.
