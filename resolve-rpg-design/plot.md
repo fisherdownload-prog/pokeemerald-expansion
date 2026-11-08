@@ -84,6 +84,8 @@ player can't fully see at the time**.
 - **At least one consequence cannot be stopped.** One of the bad outcomes always happens, however well the player
   responds. It should be painful and memorable (a lasting loss of a character or a city's trust), and clearly traceable
   to the choice to free everyone.
+- **The unstoppable consequence:** a **major character refuses to join** the movement for good, because of what the
+  freed prisoners did. Which character is still to be chosen. It should be someone the player has reason to want.
 - **More early choices** will be designed later as the story is fleshed out.
 
 ## Big choice 1: the action against the empire
@@ -149,9 +151,20 @@ cities the player may have no way to stop the cheating at all, because of who th
 
 ### The managed "democracy" option
 
-Where the player cannot stop the cheating, they may choose to let a managed "democracy" run, so the result goes their
-way even if the vote isn't clean. This is a moral cost to the ending, not a hidden trick. (To be confirmed: does the
-player ever *choose* it over a clean vote when they could have had one?)
+Where the player cannot stop the cheating, or simply isn't sure they've done enough, they can let a managed
+"democracy" run, so the result goes their way even if the vote isn't clean. Cost: it hurts the **integrity** measure and
+the ending. It is never hidden; the player knows what they are doing.
+
+- **The game does not say whether the player has done enough to win a given city.** The player has to judge from
+  what they see. That makes fixing the result tempting even for a player who is not role-playing a bad character.
+- The temptation is the point: the player must weigh a clean but risky vote against a safe but compromised one.
+
+### One national ending
+
+The ending is **one national result**, decided from all the cities together (how many were won, and how clean the
+votes were). The ending sequence **shows an emblem for each city the player won**, so the player sees the scale of
+what they achieved. Cities lost or won through a managed "democracy" can be shown differently (for example, a tarnished
+or marked emblem), which keeps integrity visible without changing the single ending.
 
 ## How the plot uses the map
 
@@ -163,8 +176,8 @@ player ever *choose* it over a clean vote when they could have had one?)
 
 ## Open questions
 
-1. **Which unstoppable consequence?** It needs to hurt but stay fair. For example, a specific character who refuses
-   the movement for good, or one city whose popularity never fully recovers.
-2. **Is the ending decided city by city, or one national ending?** City by city is richer but costs more to build.
-3. **Does the player ever choose the managed "democracy" when a clean vote was possible?** It would give the choice
-   more weight if it can be tempting.
+1. **Which major character refuses to join?** It needs to be someone the player would genuinely want, and it should be
+   clear afterwards that the prison break was the cause.
+2. **How does the national result get decided?** For example a simple majority of cities, or a weighted total where
+   some cities count for more. Weighted is more interesting but needs the player to understand which matter.
+3. **How are emblems shown?** One per city, in the style of the drawn country map, with a clean or tarnished version.
