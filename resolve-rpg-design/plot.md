@@ -72,14 +72,19 @@ player can't fully see at the time**.
   committing it. The harm is things like theft in the movement's name, informing, public disgrace, or crime that
   gets blamed on the movement.
 
-### Open points for this choice
+### Decided details
 
-- How many prisoners? Enough to feel like a crowd (say 8 to 12 named characters), but few enough to write properly.
-- Can the player see any warning signs (a nervous look, a talking point in a debate), or is it entirely hidden?
-- Can the player later *deal with* a bad prisoner (persuade them to stop, hand them over, send them away), and how
-  much of the damage does that undo?
-
-More early choices of this kind are still to be designed.
+- **Cast size:** 8 to 12 named prisoners.
+- **Information:** the player is told upfront that the prison holds a **mix of political prisoners and petty
+  criminals**, and nothing more. There is **no interview or vetting** beforehand, so the decision to free everyone is
+  made knowing the risk but not who is who.
+- **Mitigation:** the player gets some ways to limit the fallout after the fact (for example persuading someone to
+  stop, handing them over, sending them away, or repairing the damage in a city). These reduce harm but do not
+  remove it.
+- **At least one consequence cannot be stopped.** One of the bad outcomes always happens, however well the player
+  responds. It should be painful and memorable (a lasting loss of a character or a city's trust), and clearly traceable
+  to the choice to free everyone.
+- **More early choices** will be designed later as the story is fleshed out.
 
 ## Big choice 1: the action against the empire
 
@@ -158,11 +163,8 @@ player ever *choose* it over a clean vote when they could have had one?)
 
 ## Open questions
 
-1. **Warning signs:** should the player be able to spot the bad prisoners with attention (dialogue, debates), or is it
-   deliberately impossible to tell?
-2. **Redemption:** can the player later persuade a bad prisoner to stop, and how much damage does that undo?
-3. **Is the ending decided city by city, or one national ending?** City by city is richer but costs more to build.
-4. **Does the player ever choose the managed "democracy" when a clean vote was possible?** It would give the choice
+1. **Which unstoppable consequence?** It needs to hurt but stay fair. For example, a specific character who refuses
+   the movement for good, or one city whose popularity never fully recovers.
+2. **Is the ending decided city by city, or one national ending?** City by city is richer but costs more to build.
+3. **Does the player ever choose the managed "democracy" when a clean vote was possible?** It would give the choice
    more weight if it can be tempting.
-5. **What other early choices should there be?** One or two more of the same pattern (a bold, generous act with a
-   hidden cost) would be enough.
