@@ -88,15 +88,36 @@ against evidence" is a kind matchup.
 - **Build one on one first.** Design the data so each side holds a **list** of speakers, so team debates can be added
   later without a rewrite. Open RPG already supports several combatants per side.
 
+### Counters and items (decided)
+
+- **Counters are generic**, not personal like argument parts. Anyone can always try to poke holes in the reasoning,
+  question where the evidence came from, call an appeal manipulative, and so on. Counters are matched mostly to a
+  part's **kind**.
+- Characters' strengths still change how well they counter (their types and stats).
+- **One-off items** can help in a specific event: a letter, a ledger, a photograph, a witness statement. Each is a
+  physical object, following the rule in `characters.md`, and is used up.
+
+### Damage timing (decided)
+
+Both. **Some parts deal damage up front** when they are played; **others add multipliers** to the completed argument
+when it is delivered. That gives each kind a different feel: quick jabs versus slow build-ups.
+
+### Ending a debate
+
+Design aim: **by the time everyone has run out of arguments, someone has already lost.** This is a numbers target:
+
+- A character's 12 parts, played well, should be able to deal around **two to three times** an opponent's Resolve in
+  total. Counters and lost parts eat into that, so most debates should end with parts still unused.
+- **Safety net:** if both sides have no parts left and nothing is on the table, the debate is **judged**: whoever has
+  more Resolve left (as a share of their maximum) wins. With good tuning this should be rare.
+- **We can test it automatically:** run thousands of AI-against-AI debates and measure how often the safety net is
+  needed and how long debates last. The AI rule (below) makes this easy.
+
 ### Still to settle
 
-- **What are counters made of?** Since countering is unlimited, a character presumably has a separate, small set of
-  **reusable counters**, each with a kind and type it is strong against (like Pokémon's four moves). How many?
-- **What if there is nothing to counter?** If the opponent has no argument on the table and you have no parts left,
-  can you do anything (press the person directly, wait), or does the debate end?
-- **When does the target take damage?** Only when an argument is delivered, or also as each part lands?
 - **Stats:** the six existing stats (Resolve, Logic, Rigour, Spirit, Poise, Wit) still map naturally: build strength,
   resistance to counters, and turn order. To be worked out with the system.
+- **The list of kinds** and the ordering rules between them.
 
 ### Reference
 
