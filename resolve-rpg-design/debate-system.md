@@ -51,27 +51,50 @@ Instead of choosing an attack, on your turn you **assemble your own argument** o
   longer.
 - Type effectiveness and each individual's strengths and weaknesses feed into how hard each part and each counter hits.
 
-### How a turn works (my reading)
+### Two layers: kind and type (decided)
+
+Every argument part has:
+
+- a **kind**, its role in the argument (placeholder list: **claim, evidence, reasoning, appeal, conclusion**). Kinds set
+  the **ordering rules**: for example, evidence after a claim supports it, and a conclusion finishes the argument.
+- a **type** (Facts, Hope, Rage and so on), which sets **effectiveness**.
+
+A counter can be strong against a kind, a type, or both. "Your opponent counters your evidence with something strong
+against evidence" is a kind matchup.
+
+### How a turn works
 
 1. **Arguments stay on the table across turns.** An argument in progress sits in front of the person building it.
 2. **On your turn you either:**
-   - **add a part** to your argument in progress, or
-   - **attack a part** of your opponent's argument, which damages *their* Resolve.
-3. **Finishing an argument** delivers it: it deals Resolve damage to the target, based on the parts that survived.
-4. **Small arguments** finish quickly and are rarely countered, but hit lightly. **Big arguments** hit hard but give the
+   - **add a part** to your own argument in progress, or
+   - **counter a part** of your opponent's argument, which damages *their* Resolve.
+3. **Any part on the table can be countered.**
+4. **Parts get harder to take down the longer they stand.** Not countering a point implicitly accepts it. Each round a
+   part survives without being countered, it gains **standing**, which makes it harder to counter and stronger when
+   the argument is delivered. Ignoring an opponent's argument is therefore dangerous.
+5. **Finishing an argument** (with a conclusion) delivers it: it deals Resolve damage to the target, based on the parts
+   that survived and their standing.
+6. **Small arguments** finish quickly and are rarely countered, but hit lightly. **Big arguments** hit hard but give the
    opponent several turns to pick them apart.
 
-### Things to settle
+### Limits (decided)
 
-- **Are "evidence" and similar words types (Facts) or kinds of part?** One option is two layers: a part's **kind**
-  (claim, evidence, appeal, conclusion) sets the ordering rules, and its **type** sets effectiveness.
-  This is richer but harder to learn. One layer is simpler.
-- **Which parts can be attacked?** Any part on the table, or only the most recent?
-- **When does the target take damage?** Only when an argument is finished, or also as each part lands?
-- **What if you run out of parts?** Suggest a weak fallback ("repeating yourself") that always exists and costs
-  Resolve, like Pokémon's Struggle.
-- **How many parts per character?** Pokémon has four moves. With one use each, something like 8 to 12 seems right.
-- **One on one, or teams?** And can you swap who is speaking mid-debate?
+- **Each character has 12 argument parts**, each usable **once per battle**.
+- **Countering is never limited.** You can always counter your opponent's arguments. Only your own argument parts run
+  out, so a character who has spent their parts can still fight, but only defensively.
+
+### Team debates
+
+- **Build one on one first.** Design the data so each side holds a **list** of speakers, so team debates can be added
+  later without a rewrite. Open RPG already supports several combatants per side.
+
+### Still to settle
+
+- **What are counters made of?** Since countering is unlimited, a character presumably has a separate, small set of
+  **reusable counters**, each with a kind and type it is strong against (like Pokémon's four moves). How many?
+- **What if there is nothing to counter?** If the opponent has no argument on the table and you have no parts left,
+  can you do anything (press the person directly, wait), or does the debate end?
+- **When does the target take damage?** Only when an argument is delivered, or also as each part lands?
 - **Stats:** the six existing stats (Resolve, Logic, Rigour, Spirit, Poise, Wit) still map naturally: build strength,
   resistance to counters, and turn order. To be worked out with the system.
 
@@ -81,7 +104,15 @@ Instead of choosing an attack, on your turn you **assemble your own argument** o
 opponent can attack the arguments or the person. Worth playing as a reference. This design differs in ordered parts,
 once-per-battle parts, and damage to the arguer when parts are countered.
 
-## AI
+## AI (decided rule, for now)
 
-Random choice (what Open RPG ships with) won't work here. The AI must judge which parts to play, in what order, and
-which of your parts to attack. Plan for this from the start, as it shapes how complex the rules can be.
+**The AI always works out the most effective action, then has a percentage chance to pick a random one instead.**
+The more skilled the opponent, the lower that chance. Preferences (favourite kinds or types per character) can be
+weighted in later.
+
+- **Skill** becomes one number per opponent (for example 40% random for a nervous citizen, 0% for a final
+  opponent). Easy to tune.
+- **"Random" means a random legal action**, so a mistake is always something the rules allow.
+- **"Most effective" must value long-term play, not only this turn.** Looking only one turn ahead, the AI would never
+  build big arguments, because their payoff comes later. The scoring needs to count the worth of an argument in
+  progress and the standing of parts on the table, as well as Resolve damage dealt and risked.
