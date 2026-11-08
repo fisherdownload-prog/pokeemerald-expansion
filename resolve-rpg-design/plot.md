@@ -39,18 +39,47 @@ who stop cooperating. When it passes a threshold, Act 3 begins.
   sympathetic clerk), not a number on screen.
 - It gives the player a reason to visit cities again: each city adds its own pressure.
 
-## Big choice 0: the early choice (to be designed)
+## Early choice: the prison break
 
-There is also a **big choice early in the game**, about the movement itself rather than the empire. It sets which
-groups trust the player first, and so who is available as local organisers later. Placeholder options:
+One of the early missions to win someone over means **getting them out of prison**. How the player does it decides
+whether they free just that person or **everyone held there**.
 
-| Option | What it means | Who it opens first |
-|---|---|---|
-| **Build from the workplaces** | The movement starts with unions and trades | Workers, dock and rail crews |
-| **Build from the community** | The movement starts with temples, schools and neighbourhood societies | Teachers, faith leaders, families |
-| **Build from the press** | The movement starts with printers, newspapers and the educated | Journalists, students, clerks |
+- **One person:** a quiet, targeted release (a petition, a favour, a clerical trick). Safe and controlled, but it
+  frees only one.
+- **Everyone:** a mass release (for example, exploiting an amnesty, a paperwork loophole, or a crisis that makes the
+  prison impossible to hold). It costs more and happens only if the player picks the right method.
 
-This choice also decides which kinds of allies each city is likely to have, which feeds directly into Act 5.
+The player **cannot vet the prisoners** in a mass release. They are a mix:
+
+- **Good people locked up for political crimes.** Some of these can be **recruited almost immediately** afterwards, so
+  the early game gets a burst of new characters.
+- **Others who are not good.** Some go on to do bad things later. The consequences:
+  - They **lock out other characters** (someone refuses to work with the movement because of them, or is hurt by
+    what they did).
+  - They **damage the player's popularity in certain cities**.
+
+This is the first example of the pattern the game should repeat: **a generous or bold choice has a real cost the
+player can't fully see at the time**.
+
+### How it could work in the code
+
+- Each prisoner is a character with a hidden **disposition** (good, mixed, bad) set at design time, not visible to
+  the player.
+- Recruitable ones have an early recruit script. Others wander off and appear later as the source of an event.
+- Each city has a **popularity** variable. Bad events subtract from it. Lock-outs are flags that recruitment scripts
+  for the affected characters check before allowing a recruit.
+- A bad prisoner's harm is **not violence by the player** and the game still doesn't show the player's side
+  committing it. The harm is things like theft in the movement's name, informing, public disgrace, or crime that
+  gets blamed on the movement.
+
+### Open points for this choice
+
+- How many prisoners? Enough to feel like a crowd (say 8 to 12 named characters), but few enough to write properly.
+- Can the player see any warning signs (a nervous look, a talking point in a debate), or is it entirely hidden?
+- Can the player later *deal with* a bad prisoner (persuade them to stop, hand them over, send them away), and how
+  much of the damage does that undo?
+
+More early choices of this kind are still to be designed.
 
 ## Big choice 1: the action against the empire
 
@@ -129,8 +158,11 @@ player ever *choose* it over a clean vote when they could have had one?)
 
 ## Open questions
 
-1. **Is the early choice about who to build the movement from?** I proposed workplaces, community or press as a
-   placeholder. Is that the kind of choice you meant, or something different?
-2. **Is the ending decided city by city, or one national ending?** City by city is richer but costs more to build.
-3. **Does the player ever choose the managed "democracy" when a clean vote was possible?** It would give the choice
+1. **Warning signs:** should the player be able to spot the bad prisoners with attention (dialogue, debates), or is it
+   deliberately impossible to tell?
+2. **Redemption:** can the player later persuade a bad prisoner to stop, and how much damage does that undo?
+3. **Is the ending decided city by city, or one national ending?** City by city is richer but costs more to build.
+4. **Does the player ever choose the managed "democracy" when a clean vote was possible?** It would give the choice
    more weight if it can be tempting.
+5. **What other early choices should there be?** One or two more of the same pattern (a bold, generous act with a
+   hidden cost) would be enough.
