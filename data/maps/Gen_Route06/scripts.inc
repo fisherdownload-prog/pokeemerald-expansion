@@ -7,12 +7,12 @@ Gen_Route06_EventScript_Trainer0::
 	end
 
 Gen_Route06_Text_Trainer0Intro:
-	.string "Solid as bedrock! My GROUND team\n"
-	.string "shakes the very ground!$"
+	.string "A strange aura surrounds you...\n"
+	.string "Let me test its strength!$"
 
 Gen_Route06_Text_Trainer0Defeat:
-	.string "I underestimated the power of your\n"
-	.string "bond!$"
+	.string "Impossible... My vision did not\n"
+	.string "show this outcome!$"
 
 Gen_Route06_Text_Trainer0After:
 	.string "You carry a remarkable aura with\n"
@@ -24,16 +24,16 @@ Gen_Route06_EventScript_Trainer1::
 	end
 
 Gen_Route06_Text_Trainer1Intro:
-	.string "You seem confident. Let us see if\n"
-	.string "your skills match your nerve!$"
+	.string "I coordinated my outfit with my\n"
+	.string "POKéMON today. Marvelous, no?$"
 
 Gen_Route06_Text_Trainer1Defeat:
-	.string "Hmph... You actually have quite a\n"
-	.string "bit of flair!$"
+	.string "How dreadful! My flawless record\n"
+	.string "is ruined!$"
 
 Gen_Route06_Text_Trainer1After:
-	.string "Take good care of your POKéMON so\n"
-	.string "they always shine!$"
+	.string "You possess a rare kind of\n"
+	.string "confidence, TRAINER.$"
 
 Gen_Route06_EventScript_Trainer2::
 	trainerbattle_single TRAINER_RICKY_4, Gen_Route06_Text_Trainer2Intro, Gen_Route06_Text_Trainer2Defeat
@@ -41,12 +41,12 @@ Gen_Route06_EventScript_Trainer2::
 	end
 
 Gen_Route06_Text_Trainer2Intro:
-	.string "Strange spirits gather wherever\n"
-	.string "strong TRAINERS walk...$"
+	.string "Do you feel a chill? My POKéMON\n"
+	.string "are thrilled to meet you...$"
 
 Gen_Route06_Text_Trainer2Defeat:
-	.string "My haunting melody ended far too\n"
-	.string "soon...$"
+	.string "Hehe... Even the spirits were\n"
+	.string "startled by you...$"
 
 Gen_Route06_Text_Trainer2After:
 	.string "I will stay here and listen to the\n"
@@ -57,6 +57,5 @@ Gen_Route06_EventScript_Guard::
 	end
 
 Gen_Route06_Text_Guard:
-	.string "Sorry, kid! Come back once you\n"
-	.string "have earned 4 BADGES from GYM\l"
-	.string "LEADERS!$"
+	.string "Checkpoint rule number one: no\n"
+	.string "passing without 4 GYM BADGES!$"

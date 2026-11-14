@@ -6,6 +6,6 @@ Gen_Town09_House3_EventScript_Resident::
 	end
 
 Gen_Town09_House3_Text_Resident:
-	.string "Planning to travel south via ROUTE\n"
-	.string "9? Prepare your team for PSYCHIC\l"
-	.string "moves!$"
+	.string "Be careful exploring south on\n"
+	.string "ROUTE 9! The PSYCHIC POKéMON there\l"
+	.string "are fierce!$"

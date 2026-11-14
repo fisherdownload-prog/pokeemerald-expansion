@@ -7,6 +7,5 @@ Gen_Town10_EventScript_Sign::
 
 Gen_Town10_Text_Sign:
 	.string "SABLEFALL CITY\p"
-	.string "Test your mettle against our\n"
-	.string "town's celebrated WATER GYM\l"
-	.string "LEADER!$"
+	.string "Bring your best strategy if you\n"
+	.string "hope to conquer our WATER GYM!$"

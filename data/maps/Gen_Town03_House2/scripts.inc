@@ -6,6 +6,6 @@ Gen_Town03_House2_EventScript_Resident::
 	end
 
 Gen_Town03_House2_Text_Resident:
-	.string "If you take ROUTE 4 heading west,\n"
-	.string "bring a good counter for ICE\l"
+	.string "If you take ROUTE 3 heading south,\n"
+	.string "bring a good counter for GROUND\l"
 	.string "types!$"

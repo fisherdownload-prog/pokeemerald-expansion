@@ -44,16 +44,15 @@ Gen_Town10_Gym_EventScript_Trainer0::
 	end
 
 Gen_Town10_Gym_Text_Trainer0Intro:
-	.string "Think you can earn a BADGE today?\n"
-	.string "Let us test that confidence!$"
+	.string "Our LEADER only battles TRAINERS\n"
+	.string "who can get past me first!$"
 
 Gen_Town10_Gym_Text_Trainer0Defeat:
-	.string "My ribbon came undone from all\n"
-	.string "that excitement!$"
+	.string "Aww, I thought for sure I had you!$"
 
 Gen_Town10_Gym_Text_Trainer0After:
-	.string "Where did you learn to battle like\n"
-	.string "that?$"
+	.string "I will practice harder so we can\n"
+	.string "have a rematch!$"
 
 Gen_Town10_Gym_EventScript_Trainer1::
 	trainerbattle_single TRAINER_ROSE_5, Gen_Town10_Gym_Text_Trainer1Intro, Gen_Town10_Gym_Text_Trainer1Defeat
@@ -61,13 +60,14 @@ Gen_Town10_Gym_EventScript_Trainer1::
 	end
 
 Gen_Town10_Gym_Text_Trainer1Intro:
-	.string "In this GYM, we push WATER POKéMON\n"
-	.string "to their absolute peak!$"
+	.string "Many challengers walk through\n"
+	.string "those doors, and most turn right\l"
+	.string "back!$"
 
 Gen_Town10_Gym_Text_Trainer1Defeat:
 	.string "Yikes! You wiped out my whole\n"
 	.string "team!$"
 
 Gen_Town10_Gym_Text_Trainer1After:
-	.string "When I grow up, I want to be just\n"
-	.string "as strong as you!$"
+	.string "You really know how to raise\n"
+	.string "POKéMON!$"

@@ -18,15 +18,15 @@ Gen_Town07_Gym_EventScript_Defeated::
 	end
 
 Gen_Town07_Gym_Text_Intro:
-	.string "Few challengers possess the\n"
-	.string "courage to look a dragon in the\l"
-	.string "eye!\p"
-	.string "Show me you are worthy of standing\n"
-	.string "among legends!$"
+	.string "Pride, fury, and ancient majesty\n"
+	.string "define my DRAGON POKéMON!\p"
+	.string "Hold nothing back, or be swept\n"
+	.string "away!$"
 
 Gen_Town07_Gym_Text_Defeat:
-	.string "Truly the heart of a champion! You\n"
-	.string "have earned this BADGE with honor!$"
+	.string "Magnificent! You stood fearless\n"
+	.string "before dragons and triumphed! Take\l"
+	.string "this BADGE!$"
 
 Gen_Town07_Gym_Text_Badge:
 	.string "{PLAYER} received BADGE No. 6 from\n"
@@ -47,12 +47,11 @@ Gen_Town07_Gym_Text_Trainer0Intro:
 	.string "across the entire region!$"
 
 Gen_Town07_Gym_Text_Trainer0Defeat:
-	.string "You totally swept me away in that\n"
-	.string "tide!$"
+	.string "Wow, you are really good at this!$"
 
 Gen_Town07_Gym_Text_Trainer0After:
-	.string "My POKéMON love racing alongside\n"
-	.string "boats!$"
+	.string "Good luck on the rest of your\n"
+	.string "trip!$"
 
 Gen_Town07_Gym_EventScript_Trainer1::
 	trainerbattle_single TRAINER_VIOLET, Gen_Town07_Gym_Text_Trainer1Intro, Gen_Town07_Gym_Text_Trainer1Defeat
@@ -64,9 +63,9 @@ Gen_Town07_Gym_Text_Trainer1Intro:
 	.string "Let us test that confidence!$"
 
 Gen_Town07_Gym_Text_Trainer1Defeat:
-	.string "Oof! You knocked me right off the\n"
-	.string "trail!$"
+	.string "That was a bigger shock than\n"
+	.string "hooking a monster!$"
 
 Gen_Town07_Gym_Text_Trainer1After:
-	.string "A sturdy team is a traveler's best\n"
-	.string "companion!$"
+	.string "Water routes can be tricky if you\n"
+	.string "are unprepared!$"

@@ -6,6 +6,6 @@ Gen_Town08_House1_EventScript_Resident::
 	end
 
 Gen_Town08_House1_Text_Resident:
-	.string "Before you head north onto ROUTE\n"
-	.string "9, check your type matchups\l"
-	.string "against PSYCHIC!$"
+	.string "Keep an eye out for unusual\n"
+	.string "colorations on wild POKéMON! Rare\l"
+	.string "ones are a real treat!$"

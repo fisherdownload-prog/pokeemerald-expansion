@@ -7,12 +7,12 @@ Gen_Route05_EventScript_Trainer0::
 	end
 
 Gen_Route05_Text_Trainer0Intro:
-	.string "I hope you brought a towel,\n"
-	.string "because we are making a splash!$"
+	.string "Soar above the clouds with the\n"
+	.string "swift grace of FLYING POKéMON!$"
 
 Gen_Route05_Text_Trainer0Defeat:
-	.string "What a wipeout! You are a\n"
-	.string "powerhouse!$"
+	.string "Glub... I sank right to the\n"
+	.string "bottom!$"
 
 Gen_Route05_Text_Trainer0After:
 	.string "Remember to stretch before diving\n"
@@ -24,15 +24,16 @@ Gen_Route05_EventScript_Trainer1::
 	end
 
 Gen_Route05_Text_Trainer1Intro:
-	.string "Treading water all day builds\n"
-	.string "serious stamina!$"
+	.string "I hope you brought a towel,\n"
+	.string "because we are making a splash!$"
 
 Gen_Route05_Text_Trainer1Defeat:
 	.string "Awesome match! You rode that wave\n"
 	.string "to victory!$"
 
 Gen_Route05_Text_Trainer1After:
-	.string "Catch you on the next wave!$"
+	.string "My POKéMON love racing alongside\n"
+	.string "boats!$"
 
 Gen_Route05_EventScript_Trainer2::
 	trainerbattle_single TRAINER_LOLA_4, Gen_Route05_Text_Trainer2Intro, Gen_Route05_Text_Trainer2Defeat
@@ -40,16 +41,16 @@ Gen_Route05_EventScript_Trainer2::
 	end
 
 Gen_Route05_Text_Trainer2Intro:
-	.string "From the shadows I strike! Prepare\n"
-	.string "yourself, TRAINER!$"
+	.string "Poof! Surprise! Now you are\n"
+	.string "trapped in a battle!$"
 
 Gen_Route05_Text_Trainer2Defeat:
-	.string "Ack! My smoke bomb failed to save\n"
-	.string "me!$"
+	.string "You saw right through all my\n"
+	.string "illusions!$"
 
 Gen_Route05_Text_Trainer2After:
-	.string "Speed and surprise are everything\n"
-	.string "in battle!$"
+	.string "Check behind every tree! You never\n"
+	.string "know who is watching!$"
 
 Gen_Route05_EventScript_Trainer3::
 	trainerbattle_single TRAINER_LOLA_5, Gen_Route05_Text_Trainer3Intro, Gen_Route05_Text_Trainer3Defeat
@@ -57,12 +58,12 @@ Gen_Route05_EventScript_Trainer3::
 	end
 
 Gen_Route05_Text_Trainer3Intro:
-	.string "My POKéMON have shiny shells and\n"
-	.string "sharp stingers!$"
+	.string "From high in the sky, my FLYING\n"
+	.string "team controls the whole field!$"
 
 Gen_Route05_Text_Trainer3Defeat:
-	.string "Bzzzt... My strategy totally fell\n"
-	.string "apart!$"
+	.string "Back to the tall grass for more\n"
+	.string "training!$"
 
 Gen_Route05_Text_Trainer3After:
 	.string "Keep an eye out for rustling\n"
@@ -74,16 +75,16 @@ Gen_Route05_EventScript_Trainer4::
 	end
 
 Gen_Route05_Text_Trainer4Intro:
-	.string "You cannot catch what rides the\n"
-	.string "wind! Go, my FLYING team!$"
+	.string "My arms are sore from hauling in\n"
+	.string "heavy POKéMON all day!$"
 
 Gen_Route05_Text_Trainer4Defeat:
-	.string "Whoa! You hooked me good in that\n"
-	.string "battle!$"
+	.string "Looks like I caught myself a solid\n"
+	.string "defeat!$"
 
 Gen_Route05_Text_Trainer4After:
-	.string "I think I felt a nibble just now!\n"
-	.string "Let me check!$"
+	.string "Patience is the secret to both\n"
+	.string "fishing and raising POKéMON!$"
 
 Gen_Route05_EventScript_Trainer5::
 	trainerbattle_single TRAINER_SIMON, Gen_Route05_Text_Trainer5Intro, Gen_Route05_Text_Trainer5Defeat
@@ -91,12 +92,12 @@ Gen_Route05_EventScript_Trainer5::
 	end
 
 Gen_Route05_Text_Trainer5Intro:
-	.string "I woke up at dawn to catch these\n"
-	.string "little critters!$"
+	.string "Creepy, crawly, and completely\n"
+	.string "unstoppable! Go, my team!$"
 
 Gen_Route05_Text_Trainer5Defeat:
-	.string "Back to the tall grass for more\n"
-	.string "training!$"
+	.string "Bzzzt... My strategy totally fell\n"
+	.string "apart!$"
 
 Gen_Route05_Text_Trainer5After:
 	.string "Even if they lose, Bug POKéMON are\n"
@@ -108,13 +109,13 @@ Gen_Route05_EventScript_Trainer6::
 	end
 
 Gen_Route05_Text_Trainer6Intro:
-	.string "From high in the sky, my FLYING\n"
-	.string "team controls the whole field!$"
+	.string "Feel the gale-force fury of my\n"
+	.string "FLYING POKéMON!$"
 
 Gen_Route05_Text_Trainer6Defeat:
-	.string "You completely outmaneuvered me\n"
-	.string "out here!$"
+	.string "Oof! That was rougher than\n"
+	.string "sleeping on rocks!$"
 
 Gen_Route05_Text_Trainer6After:
-	.string "Maybe I will move my tent closer\n"
-	.string "to the next town.$"
+	.string "I love comparing notes with other\n"
+	.string "travelers!$"

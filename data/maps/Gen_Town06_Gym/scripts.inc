@@ -24,9 +24,9 @@ Gen_Town06_Gym_Text_Intro:
 	.string "the very end!$"
 
 Gen_Town06_Gym_Text_Defeat:
-	.string "Fufufu... You saw through every\n"
-	.string "trick and endured to the end! Take\l"
-	.string "this BADGE!$"
+	.string "Impressive resilience! Nothing\n"
+	.string "could slow you down today. Here is\l"
+	.string "your BADGE!$"
 
 Gen_Town06_Gym_Text_Badge:
 	.string "{PLAYER} received BADGE No. 5 from\n"
@@ -48,12 +48,11 @@ Gen_Town06_Gym_Text_Trainer0Intro:
 	.string "BADGE!$"
 
 Gen_Town06_Gym_Text_Trainer0Defeat:
-	.string "Incredible! Your spirit\n"
-	.string "overwhelmed my own!$"
+	.string "Gah! My defenses were shattered!$"
 
 Gen_Town06_Gym_Text_Trainer0After:
-	.string "Osu! May your journey make you\n"
-	.string "stronger!$"
+	.string "I will perform one thousand squats\n"
+	.string "before sunset!$"
 
 Gen_Town06_Gym_EventScript_Trainer1::
 	trainerbattle_single TRAINER_ROSE_1, Gen_Town06_Gym_Text_Trainer1Intro, Gen_Town06_Gym_Text_Trainer1Defeat
@@ -66,9 +65,9 @@ Gen_Town06_Gym_Text_Trainer1Intro:
 	.string "here!$"
 
 Gen_Town06_Gym_Text_Trainer1Defeat:
-	.string "Whoa, you chewed right through my\n"
-	.string "bug team!$"
+	.string "The shadows retreat before your\n"
+	.string "light...$"
 
 Gen_Town06_Gym_Text_Trainer1After:
-	.string "Watch your step so you do not\n"
-	.string "squash any little guys!$"
+	.string "Do not forget to heal your poor\n"
+	.string "POKéMON...$"

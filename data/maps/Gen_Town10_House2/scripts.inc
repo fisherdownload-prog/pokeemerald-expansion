@@ -6,6 +6,6 @@ Gen_Town10_House2_EventScript_Resident::
 	end
 
 Gen_Town10_House2_Text_Resident:
-	.string "Be careful exploring south on\n"
-	.string "ROUTE 11! The POISON POKéMON there\l"
-	.string "are fierce!$"
+	.string "The weather in this town has been\n"
+	.string "so pleasant lately. Great for\l"
+	.string "going on walks!$"

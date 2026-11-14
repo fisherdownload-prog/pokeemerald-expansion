@@ -6,6 +6,6 @@ Gen_Town03_House1_EventScript_Resident::
 	end
 
 Gen_Town03_House1_Text_Resident:
-	.string "Having trouble with the GYM in\n"
-	.string "SLATEHOLT? Try catching new\l"
-	.string "teammates out on ROUTE 4!$"
+	.string "Before challenging WINDBURY's GYM,\n"
+	.string "spend some time leveling up along\l"
+	.string "ROUTE 3!$"

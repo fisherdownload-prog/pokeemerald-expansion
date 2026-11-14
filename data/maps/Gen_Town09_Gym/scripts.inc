@@ -24,8 +24,9 @@ Gen_Town09_Gym_Text_Intro:
 	.string "unforgettable GYM battle!$"
 
 Gen_Town09_Gym_Text_Defeat:
-	.string "What a blaze of glory! You have\n"
-	.string "more than earned this GYM BADGE!$"
+	.string "Incredible heat! Your spirit\n"
+	.string "shines brighter than any fire.\l"
+	.string "Here is your BADGE!$"
 
 Gen_Town09_Gym_Text_Badge:
 	.string "{PLAYER} received BADGE No. 7 from\n"
@@ -42,17 +43,16 @@ Gen_Town09_Gym_EventScript_Trainer0::
 	end
 
 Gen_Town09_Gym_Text_Trainer0Intro:
-	.string "You will not reach the LEADER\n"
-	.string "without proving your skill right\l"
-	.string "here!$"
+	.string "Do not look past me toward the\n"
+	.string "LEADER! Focus on our battle!$"
 
 Gen_Town09_Gym_Text_Trainer0Defeat:
-	.string "Oof! I ran out of breath on the\n"
-	.string "last lap!$"
+	.string "You totally swept me away in that\n"
+	.string "tide!$"
 
 Gen_Town09_Gym_Text_Trainer0After:
-	.string "Make sure you have plenty of\n"
-	.string "healing items for long swims!$"
+	.string "I could float out here all\n"
+	.string "afternoon!$"
 
 Gen_Town09_Gym_EventScript_Trainer1::
 	trainerbattle_single TRAINER_ROSE_3, Gen_Town09_Gym_Text_Trainer1Intro, Gen_Town09_Gym_Text_Trainer1Defeat
@@ -60,14 +60,13 @@ Gen_Town09_Gym_EventScript_Trainer1::
 	end
 
 Gen_Town09_Gym_Text_Trainer1Intro:
-	.string "Step forward, challenger! Let us\n"
-	.string "see if you deserve a shot at the\l"
-	.string "BADGE!$"
+	.string "Show me how well you handle FIRE\n"
+	.string "POKéMON under pressure!$"
 
 Gen_Town09_Gym_Text_Trainer1Defeat:
-	.string "A fine contest! Thank you for the\n"
-	.string "thrill!$"
+	.string "Oof! I ran out of breath on the\n"
+	.string "last lap!$"
 
 Gen_Town09_Gym_Text_Trainer1After:
-	.string "Treat your POKéMON with kindness\n"
-	.string "and they will never fail you.$"
+	.string "You certainly know how to handle\n"
+	.string "yourself at sea!$"

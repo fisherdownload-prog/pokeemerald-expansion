@@ -7,16 +7,16 @@ Gen_Route03_EventScript_Trainer0::
 	end
 
 Gen_Route03_Text_Trainer0Intro:
-	.string "A true martial artist respects\n"
-	.string "every opponent. Let us begin!$"
+	.string "Feel the earth tremble beneath my\n"
+	.string "mighty GROUND POKéMON!$"
 
 Gen_Route03_Text_Trainer0Defeat:
-	.string "What power! You struck with true\n"
-	.string "precision!$"
+	.string "Incredible! Your spirit\n"
+	.string "overwhelmed my own!$"
 
 Gen_Route03_Text_Trainer0After:
-	.string "I will perform one thousand squats\n"
-	.string "before sunset!$"
+	.string "Osu! May your journey make you\n"
+	.string "stronger!$"
 
 Gen_Route03_EventScript_Trainer1::
 	trainerbattle_single TRAINER_GABBY_AND_TY_3, Gen_Route03_Text_Trainer1Intro, Gen_Route03_Text_Trainer1Defeat
@@ -24,16 +24,15 @@ Gen_Route03_EventScript_Trainer1::
 	end
 
 Gen_Route03_Text_Trainer1Intro:
-	.string "Nowhere to stand when my GROUND\n"
-	.string "POKéMON split the earth!$"
+	.string "My POKéMON are small, but they\n"
+	.string "pack a huge punch!$"
 
 Gen_Route03_Text_Trainer1Defeat:
-	.string "Aw man, my shorts did not save me\n"
-	.string "this time!$"
+	.string "Whoa, you battle like a real pro!$"
 
 Gen_Route03_Text_Trainer1After:
-	.string "I am going to train my POKéMON\n"
-	.string "until they are huge!$"
+	.string "When I grow up, I want to be just\n"
+	.string "as strong as you!$"
 
 Gen_Route03_EventScript_Trainer2::
 	trainerbattle_single TRAINER_GABBY_AND_TY_4, Gen_Route03_Text_Trainer2Intro, Gen_Route03_Text_Trainer2Defeat
@@ -41,17 +40,15 @@ Gen_Route03_EventScript_Trainer2::
 	end
 
 Gen_Route03_Text_Trainer2Intro:
-	.string "Feel the earth tremble beneath my\n"
-	.string "mighty GROUND POKéMON!$"
+	.string "Fashion fades, darling, but a\n"
+	.string "dazzling victory lasts forever!$"
 
 Gen_Route03_Text_Trainer2Defeat:
-	.string "A stunning performance. I tip my\n"
-	.string "hat to you!$"
+	.string "Unbelievable! You outshone my\n"
+	.string "entire team!$"
 
 Gen_Route03_Text_Trainer2After:
-	.string "I suppose losing builds\n"
-	.string "character... though winning is\l"
-	.string "prettier!$"
+	.string "Until we meet again, darling!$"
 
 Gen_Route03_EventScript_Trainer3::
 	trainerbattle_single TRAINER_GABBY_AND_TY_5, Gen_Route03_Text_Trainer3Intro, Gen_Route03_Text_Trainer3Defeat
@@ -59,13 +56,13 @@ Gen_Route03_EventScript_Trainer3::
 	end
 
 Gen_Route03_Text_Trainer3Intro:
-	.string "Dust, sand, and unstoppable force!\n"
-	.string "That is GROUND power!$"
+	.string "Solid as bedrock! My GROUND team\n"
+	.string "shakes the very ground!$"
 
 Gen_Route03_Text_Trainer3Defeat:
-	.string "A thrilling chill... You are\n"
-	.string "terribly strong...$"
+	.string "My haunting melody ended far too\n"
+	.string "soon...$"
 
 Gen_Route03_Text_Trainer3After:
-	.string "Do not forget to heal your poor\n"
-	.string "POKéMON...$"
+	.string "Until the shadows bring us\n"
+	.string "together again...$"

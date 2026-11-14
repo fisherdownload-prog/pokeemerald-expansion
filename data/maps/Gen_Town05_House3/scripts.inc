@@ -6,5 +6,6 @@ Gen_Town05_House3_EventScript_Resident::
 	end
 
 Gen_Town05_House3_Text_Resident:
-	.string "Nobody without 4 BADGES is allowed\n"
-	.string "past the gate on ROUTE 6!$"
+	.string "I spotted a rare FLYING POKéMON\n"
+	.string "while walking south along ROUTE 5\l"
+	.string "yesterday!$"

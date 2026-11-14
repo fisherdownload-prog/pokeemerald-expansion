@@ -6,6 +6,6 @@ Gen_Town08_House2_EventScript_Resident::
 	end
 
 Gen_Town08_House2_Text_Resident:
-	.string "If a battle looks tough, switching\n"
-	.string "POKéMON to get a better type\l"
-	.string "matchup can save the day!$"
+	.string "Checking your POKéDEX helps you\n"
+	.string "keep track of every species you\l"
+	.string "have seen or caught!$"

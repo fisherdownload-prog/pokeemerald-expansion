@@ -6,6 +6,6 @@ Gen_Town05_House2_EventScript_Resident::
 	end
 
 Gen_Town05_House2_Text_Resident:
-	.string "Before challenging CLOVERVIEW's\n"
-	.string "GYM, spend some time leveling up\l"
-	.string "along ROUTE 6!$"
+	.string "Before you head north onto ROUTE\n"
+	.string "6, check your type matchups\l"
+	.string "against GROUND!$"

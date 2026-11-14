@@ -7,16 +7,17 @@ Gen_Route02_EventScript_Trainer0::
 	end
 
 Gen_Route02_Text_Trainer0Intro:
-	.string "Try not to get starstruck by my\n"
-	.string "dazzling POKéMON!$"
+	.string "Try chipping away at the immovable\n"
+	.string "defense of ROCK POKéMON!$"
 
 Gen_Route02_Text_Trainer0Defeat:
-	.string "You completely stole the spotlight\n"
-	.string "from me!$"
+	.string "A stunning performance. I tip my\n"
+	.string "hat to you!$"
 
 Gen_Route02_Text_Trainer0After:
-	.string "Perhaps I will try a whole new\n"
-	.string "look for my next battle!$"
+	.string "I suppose losing builds\n"
+	.string "character... though winning is\l"
+	.string "prettier!$"
 
 Gen_Route02_EventScript_Trainer1::
 	trainerbattle_single TRAINER_DUSTY_4, Gen_Route02_Text_Trainer1Intro, Gen_Route02_Text_Trainer1Defeat
@@ -24,16 +25,16 @@ Gen_Route02_EventScript_Trainer1::
 	end
 
 Gen_Route02_Text_Trainer1Intro:
-	.string "Try chipping away at the immovable\n"
-	.string "defense of ROCK POKéMON!$"
+	.string "Hard as diamonds and stubborn as\n"
+	.string "boulders! Go, my ROCK team!$"
 
 Gen_Route02_Text_Trainer1Defeat:
 	.string "Well! At least I lost with\n"
 	.string "impeccable grace!$"
 
 Gen_Route02_Text_Trainer1After:
-	.string "You possess a rare kind of\n"
-	.string "confidence, TRAINER.$"
+	.string "Perhaps I will try a whole new\n"
+	.string "look for my next battle!$"
 
 Gen_Route02_EventScript_Trainer2::
 	trainerbattle_single TRAINER_DUSTY_5, Gen_Route02_Text_Trainer2Intro, Gen_Route02_Text_Trainer2Defeat
@@ -45,12 +46,12 @@ Gen_Route02_Text_Trainer2Intro:
 	.string "darkness...$"
 
 Gen_Route02_Text_Trainer2Defeat:
-	.string "Hehe... Even the spirits were\n"
-	.string "startled by you...$"
+	.string "Fufufu... The spirits applaud your\n"
+	.string "victory...$"
 
 Gen_Route02_Text_Trainer2After:
-	.string "The shadows always remember strong\n"
-	.string "TRAINERS...$"
+	.string "Be careful when walking past old,\n"
+	.string "quiet places...$"
 
 Gen_Route02_EventScript_Trainer3::
 	trainerbattle_single TRAINER_GABBY_AND_TY_1, Gen_Route02_Text_Trainer3Intro, Gen_Route02_Text_Trainer3Defeat
@@ -58,13 +59,13 @@ Gen_Route02_EventScript_Trainer3::
 	end
 
 Gen_Route02_Text_Trainer3Intro:
-	.string "Think you can weather the storm my\n"
-	.string "team is about to bring?$"
+	.string "Nothing compares to the thrill of\n"
+	.string "reeling in a massive catch!$"
 
 Gen_Route02_Text_Trainer3Defeat:
-	.string "Haha! You reeled in a well-earned\n"
-	.string "victory!$"
+	.string "Whoa! You hooked me good in that\n"
+	.string "battle!$"
 
 Gen_Route02_Text_Trainer3After:
-	.string "Take care not to drop your POKé\n"
-	.string "BALLS in the drink!$"
+	.string "I think I felt a nibble just now!\n"
+	.string "Let me check!$"

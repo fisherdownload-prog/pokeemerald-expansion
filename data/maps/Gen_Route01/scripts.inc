@@ -7,12 +7,12 @@ Gen_Route01_EventScript_Trainer0::
 	end
 
 Gen_Route01_Text_Trainer0Intro:
-	.string "Experience cannot be bought at any\n"
-	.string "POKé MART!$"
+	.string "Years of study have perfected my\n"
+	.string "team's harmony.$"
 
 Gen_Route01_Text_Trainer0Defeat:
-	.string "Remarkable! Keep walking that\n"
-	.string "path!$"
+	.string "Your bond with your POKéMON is\n"
+	.string "genuine!$"
 
 Gen_Route01_Text_Trainer0After:
 	.string "Go on now. Your destiny awaits!$"
@@ -23,16 +23,16 @@ Gen_Route01_EventScript_Trainer1::
 	end
 
 Gen_Route01_Text_Trainer1Intro:
-	.string "Focus your thoughts, or my PSYCHIC\n"
-	.string "team will overwhelm your mind!$"
+	.string "Hidden telekinetic power surges\n"
+	.string "through my PSYCHIC POKéMON!$"
 
 Gen_Route01_Text_Trainer1Defeat:
-	.string "You proved your worth beyond any\n"
-	.string "doubt!$"
+	.string "I have nothing left to teach you\n"
+	.string "today!$"
 
 Gen_Route01_Text_Trainer1After:
-	.string "You have a good head on your\n"
-	.string "shoulders, youngster.$"
+	.string "True strength comes from trust\n"
+	.string "between human and POKéMON.$"
 
 Gen_Route01_EventScript_Trainer2::
 	trainerbattle_single TRAINER_FOSTER, Gen_Route01_Text_Trainer2Intro, Gen_Route01_Text_Trainer2Defeat
@@ -40,16 +40,16 @@ Gen_Route01_EventScript_Trainer2::
 	end
 
 Gen_Route01_Text_Trainer2Intro:
-	.string "Watch your step! The rocks around\n"
-	.string "here bite back!$"
+	.string "Wahaha! Nothing beats the fresh\n"
+	.string "air out on the mountain trails!$"
 
 Gen_Route01_Text_Trainer2Defeat:
-	.string "Wahaha! What an avalanche of power\n"
-	.string "you have!$"
+	.string "My knees are shaking after a bout\n"
+	.string "like that!$"
 
 Gen_Route01_Text_Trainer2After:
-	.string "Always carry plenty of POTIONS\n"
-	.string "when exploring far from town!$"
+	.string "Wahaha! Come back anytime for\n"
+	.string "another round!$"
 
 Gen_Route01_EventScript_Trainer3::
 	trainerbattle_single TRAINER_DUSTY_2, Gen_Route01_Text_Trainer3Intro, Gen_Route01_Text_Trainer3Defeat
@@ -61,8 +61,9 @@ Gen_Route01_Text_Trainer3Intro:
 	.string "match with utmost honor!$"
 
 Gen_Route01_Text_Trainer3Defeat:
-	.string "Bravo! A truly masterful display!$"
+	.string "Remarkable! Youthful energy\n"
+	.string "triumphs today!$"
 
 Gen_Route01_Text_Trainer3After:
-	.string "May fortune favor your travels\n"
-	.string "across the land!$"
+	.string "I believe I shall enjoy a quiet\n"
+	.string "cup of tea now.$"

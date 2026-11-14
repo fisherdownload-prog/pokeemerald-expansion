@@ -6,6 +6,6 @@ Gen_Town04_House1_EventScript_Resident::
 	end
 
 Gen_Town04_House1_Text_Resident:
-	.string "Every TRAINER has their own style.\n"
-	.string "Find the team that feels right for\l"
-	.string "you!$"
+	.string "Make sure you teach SURF to one of\n"
+	.string "your POKéMON before tackling ROUTE\l"
+	.string "5!$"

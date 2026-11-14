@@ -7,15 +7,16 @@ Gen_Route04_EventScript_Trainer0::
 	end
 
 Gen_Route04_Text_Trainer0Intro:
-	.string "I coordinated my outfit with my\n"
-	.string "POKéMON today. Marvelous, no?$"
+	.string "Try not to get starstruck by my\n"
+	.string "dazzling POKéMON!$"
 
 Gen_Route04_Text_Trainer0Defeat:
-	.string "Unbelievable! You outshone my\n"
-	.string "entire team!$"
+	.string "Hmph... You actually have quite a\n"
+	.string "bit of flair!$"
 
 Gen_Route04_Text_Trainer0After:
-	.string "Until we meet again, darling!$"
+	.string "Do try not to get too dusty out\n"
+	.string "here on the road!$"
 
 Gen_Route04_EventScript_Trainer1::
 	trainerbattle_single TRAINER_LOLA_1, Gen_Route04_Text_Trainer1Intro, Gen_Route04_Text_Trainer1Defeat
@@ -23,16 +24,16 @@ Gen_Route04_EventScript_Trainer1::
 	end
 
 Gen_Route04_Text_Trainer1Intro:
-	.string "Sharp as icicles and cold as\n"
-	.string "winter wind! Go, my ICE team!$"
+	.string "One touch from my ICE POKéMON will\n"
+	.string "freeze your strategy solid!$"
 
 Gen_Route04_Text_Trainer1Defeat:
-	.string "That was a bigger shock than\n"
-	.string "hooking a monster!$"
+	.string "I got completely washed out by\n"
+	.string "your team!$"
 
 Gen_Route04_Text_Trainer1After:
-	.string "Water routes can be tricky if you\n"
-	.string "are unprepared!$"
+	.string "If you find a good fishing spot,\n"
+	.string "keep it a secret!$"
 
 Gen_Route04_EventScript_Trainer2::
 	trainerbattle_single TRAINER_AUSTINA, Gen_Route04_Text_Trainer2Intro, Gen_Route04_Text_Trainer2Defeat
@@ -40,12 +41,12 @@ Gen_Route04_EventScript_Trainer2::
 	end
 
 Gen_Route04_Text_Trainer2Intro:
-	.string "Come then! Show an old hand what\n"
-	.string "the new generation can do!$"
+	.string "Let us see if you understand the\n"
+	.string "deeper flow of combat.$"
 
 Gen_Route04_Text_Trainer2Defeat:
-	.string "Ah, my old tactics met their match\n"
-	.string "today!$"
+	.string "Remarkable! Keep walking that\n"
+	.string "path!$"
 
 Gen_Route04_Text_Trainer2After:
 	.string "Never grow complacent, no matter\n"
@@ -57,13 +58,13 @@ Gen_Route04_EventScript_Trainer3::
 	end
 
 Gen_Route04_Text_Trainer3Intro:
-	.string "I have been reading my survival\n"
-	.string "guide, and step one is winning!$"
+	.string "Brrr! Can you handle the sub-zero\n"
+	.string "chill of my ICE POKéMON?$"
 
 Gen_Route04_Text_Trainer3Defeat:
 	.string "Back to the drawing board around\n"
 	.string "the lantern tonight!$"
 
 Gen_Route04_Text_Trainer3After:
-	.string "Make sure you stock up on supplies\n"
-	.string "before heading out!$"
+	.string "Nothing beats sleeping under a\n"
+	.string "blanket of bright stars!$"

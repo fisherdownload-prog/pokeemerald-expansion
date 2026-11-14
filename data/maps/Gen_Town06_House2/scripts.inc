@@ -6,6 +6,6 @@ Gen_Town06_House2_EventScript_Resident::
 	end
 
 Gen_Town06_House2_Text_Resident:
-	.string "The GYM in HEATHWOOD is no joke!\n"
-	.string "Prepare your team out on ROUTE 7\l"
-	.string "first!$"
+	.string "Every TRAINER has their own style.\n"
+	.string "Find the team that feels right for\l"
+	.string "you!$"

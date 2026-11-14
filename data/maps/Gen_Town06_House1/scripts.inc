@@ -6,6 +6,6 @@ Gen_Town06_House1_EventScript_Resident::
 	end
 
 Gen_Town06_House1_Text_Resident:
-	.string "I heard PROF. TEAK is always\n"
-	.string "excited to see how many species\l"
-	.string "TRAINERS discover!$"
+	.string "Earn 5 BADGES first, then the\n"
+	.string "officials on ROUTE 7 will wave you\l"
+	.string "right through!$"

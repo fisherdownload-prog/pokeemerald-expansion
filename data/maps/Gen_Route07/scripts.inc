@@ -7,16 +7,16 @@ Gen_Route07_EventScript_Trainer0::
 	end
 
 Gen_Route07_Text_Trainer0Intro:
-	.string "I have climbed every peak around\n"
-	.string "here without breaking a sweat!$"
+	.string "Ho there, traveler! Care for a\n"
+	.string "hearty battle to warm up?$"
 
 Gen_Route07_Text_Trainer0Defeat:
-	.string "Ha! I stumbled on the final\n"
-	.string "stretch!$"
+	.string "Magnificent! You are tougher than\n"
+	.string "granite!$"
 
 Gen_Route07_Text_Trainer0After:
-	.string "Wahaha! Come back anytime for\n"
-	.string "another round!$"
+	.string "Always carry plenty of POTIONS\n"
+	.string "when exploring far from town!$"
 
 Gen_Route07_EventScript_Trainer1::
 	trainerbattle_single TRAINER_RANDALL, Gen_Route07_Text_Trainer1Intro, Gen_Route07_Text_Trainer1Defeat
@@ -24,12 +24,12 @@ Gen_Route07_EventScript_Trainer1::
 	end
 
 Gen_Route07_Text_Trainer1Intro:
-	.string "Sparkling charm hides fierce\n"
-	.string "power! Behold my FAIRY POKéMON!$"
+	.string "Do not be fooled by their sweet\n"
+	.string "smiles! FAIRY POKéMON are tough!$"
 
 Gen_Route07_Text_Trainer1Defeat:
-	.string "Magnificent! You are tougher than\n"
-	.string "granite!$"
+	.string "Splendid battle! You have the\n"
+	.string "heart of a mountaineer!$"
 
 Gen_Route07_Text_Trainer1After:
 	.string "Take care out there on the rocky\n"
@@ -41,8 +41,8 @@ Gen_Route07_EventScript_Trainer2::
 	end
 
 Gen_Route07_Text_Trainer2Intro:
-	.string "My moves are swift as the wind and\n"
-	.string "silent as night!$"
+	.string "A true ninja masters stealth,\n"
+	.string "speed, and POKéMON tactics!$"
 
 Gen_Route07_Text_Trainer2Defeat:
 	.string "My secret techniques were\n"
@@ -57,5 +57,6 @@ Gen_Route07_EventScript_Guard::
 	end
 
 Gen_Route07_Text_Guard:
-	.string "Safety regulations require 5 GYM\n"
-	.string "BADGES to enter the road ahead!$"
+	.string "This route is dangerous! Show me 5\n"
+	.string "BADGES before I can let you\l"
+	.string "through!$"

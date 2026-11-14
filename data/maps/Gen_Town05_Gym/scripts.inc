@@ -18,16 +18,15 @@ Gen_Town05_Gym_EventScript_Defeated::
 	end
 
 Gen_Town05_Gym_Text_Intro:
-	.string "A GYM battle is a conversation\n"
-	.string "held with fists, grit, and\l"
-	.string "courage!\p"
-	.string "Show me the discipline you and\n"
-	.string "your POKéMON share!$"
+	.string "No fear! No hesitation! Only pure,\n"
+	.string "honest combat!\p"
+	.string "Come at me with your strongest\n"
+	.string "spirit!$"
 
 Gen_Town05_Gym_Text_Defeat:
-	.string "I bow to a true warrior! You have\n"
-	.string "earned the right to carry this\l"
-	.string "BADGE!$"
+	.string "What power and heart! You defeated\n"
+	.string "me cleanly. Wear this BADGE\l"
+	.string "proudly!$"
 
 Gen_Town05_Gym_Text_Badge:
 	.string "{PLAYER} received BADGE No. 4 from\n"
@@ -48,12 +47,12 @@ Gen_Town05_Gym_Text_Trainer0Intro:
 	.string "the honor of our GYM!$"
 
 Gen_Town05_Gym_Text_Trainer0Defeat:
-	.string "No way! Even my toughest shell\n"
-	.string "cracked!$"
+	.string "You completely stole the spotlight\n"
+	.string "from me!$"
 
 Gen_Town05_Gym_Text_Trainer0After:
-	.string "One day my bugs will surprise\n"
-	.string "everybody!$"
+	.string "Take good care of your POKéMON so\n"
+	.string "they always shine!$"
 
 Gen_Town05_Gym_EventScript_Trainer1::
 	trainerbattle_single TRAINER_LEAH, Gen_Town05_Gym_Text_Trainer1Intro, Gen_Town05_Gym_Text_Trainer1Defeat
@@ -65,9 +64,9 @@ Gen_Town05_Gym_Text_Trainer1Intro:
 	.string "who can get past me first!$"
 
 Gen_Town05_Gym_Text_Trainer1Defeat:
-	.string "How dreadful! My flawless record\n"
-	.string "is ruined!$"
+	.string "Haha! You reeled in a well-earned\n"
+	.string "victory!$"
 
 Gen_Town05_Gym_Text_Trainer1After:
-	.string "Do try not to get too dusty out\n"
-	.string "here on the road!$"
+	.string "Take care not to drop your POKé\n"
+	.string "BALLS in the drink!$"

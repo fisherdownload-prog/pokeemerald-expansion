@@ -6,6 +6,6 @@ Gen_Town07_House3_EventScript_Resident::
 	end
 
 Gen_Town07_House3_Text_Resident:
-	.string "A traveler from the east said\n"
-	.string "ROUTE 7 is packed with strong\l"
-	.string "FAIRY teams!$"
+	.string "Planning to travel east via ROUTE\n"
+	.string "7? Prepare your team for FAIRY\l"
+	.string "moves!$"

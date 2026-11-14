@@ -6,6 +6,6 @@ Gen_Town09_House2_EventScript_Resident::
 	end
 
 Gen_Town09_House2_Text_Resident:
-	.string "I spotted a rare PSYCHIC POKéMON\n"
-	.string "while walking south along ROUTE 9\l"
-	.string "yesterday!$"
+	.string "Our GYM LEADER loves FIRE-type\n"
+	.string "POKéMON. Beat them and you get the\l"
+	.string "HM for ROCK SMASH.$"

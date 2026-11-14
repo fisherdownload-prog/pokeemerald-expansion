@@ -6,6 +6,6 @@ Gen_Town04_House2_EventScript_Resident::
 	end
 
 Gen_Town04_House2_Text_Resident:
-	.string "Make sure you teach SURF to one of\n"
-	.string "your POKéMON before tackling ROUTE\l"
-	.string "5!$"
+	.string "The LEADER over in BRAMPORT uses a\n"
+	.string "tough strategy, so train well on\l"
+	.string "ROUTE 5 first!$"

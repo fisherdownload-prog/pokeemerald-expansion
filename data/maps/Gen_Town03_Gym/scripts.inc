@@ -18,15 +18,15 @@ Gen_Town03_Gym_EventScript_Defeated::
 	end
 
 Gen_Town03_Gym_Text_Intro:
-	.string "Welcome! Only through heat and\n"
-	.string "hammer blows does raw ore become a\l"
-	.string "blade!\p"
-	.string "Let me test your mettle!$"
+	.string "Precision, resilience, and\n"
+	.string "unyielding resolve!\p"
+	.string "Try to dent the iron defense of my\n"
+	.string "STEEL POKéMON!$"
 
 Gen_Town03_Gym_Text_Defeat:
-	.string "Unbreakable will! You passed the\n"
-	.string "ultimate test of mettle. Here is\l"
-	.string "your BADGE!$"
+	.string "Clang! Your resolve rang truer\n"
+	.string "than tempered steel! Take this\l"
+	.string "BADGE!$"
 
 Gen_Town03_Gym_Text_Badge:
 	.string "{PLAYER} received BADGE No. 2 from\n"
@@ -47,12 +47,12 @@ Gen_Town03_Gym_Text_Trainer0Intro:
 	.string "to their absolute peak!$"
 
 Gen_Town03_Gym_Text_Trainer0Defeat:
-	.string "Oh no! My poor POKéMON got all\n"
-	.string "scuffed up!$"
+	.string "My training is still far from\n"
+	.string "complete!$"
 
 Gen_Town03_Gym_Text_Trainer0After:
-	.string "Traveling with POKéMON is the best\n"
-	.string "thing ever!$"
+	.string "Defeat is merely the first step\n"
+	.string "toward true mastery!$"
 
 Gen_Town03_Gym_EventScript_Trainer1::
 	trainerbattle_single TRAINER_ALBERTO, Gen_Town03_Gym_Text_Trainer1Intro, Gen_Town03_Gym_Text_Trainer1Defeat
@@ -64,9 +64,8 @@ Gen_Town03_Gym_Text_Trainer1Intro:
 	.string "picked by our LEADER!$"
 
 Gen_Town03_Gym_Text_Trainer1Defeat:
-	.string "Hmph! Well played, very well\n"
-	.string "played indeed!$"
+	.string "What a wipeout! You are a\n"
+	.string "powerhouse!$"
 
 Gen_Town03_Gym_Text_Trainer1After:
-	.string "True strength comes from trust\n"
-	.string "between human and POKéMON.$"
+	.string "Catch you on the next wave!$"

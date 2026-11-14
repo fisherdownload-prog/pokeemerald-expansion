@@ -7,16 +7,16 @@ Gen_Route10_EventScript_Trainer0::
 	end
 
 Gen_Route10_Text_Trainer0Intro:
-	.string "Sunshine and fresh soil gave my\n"
-	.string "GRASS team unstoppable vigor!$"
+	.string "Training in secret makes my\n"
+	.string "POKéMON unpredictable!$"
 
 Gen_Route10_Text_Trainer0Defeat:
 	.string "Defeated! I must vanish into\n"
 	.string "training!$"
 
 Gen_Route10_Text_Trainer0After:
-	.string "Check behind every tree! You never\n"
-	.string "know who is watching!$"
+	.string "Speed and surprise are everything\n"
+	.string "in battle!$"
 
 Gen_Route10_EventScript_Trainer1::
 	trainerbattle_single TRAINER_VITO, Gen_Route10_Text_Trainer1Intro, Gen_Route10_Text_Trainer1Defeat
@@ -24,15 +24,16 @@ Gen_Route10_EventScript_Trainer1::
 	end
 
 Gen_Route10_Text_Trainer1Intro:
-	.string "Do not let their gentle leaves\n"
-	.string "fool you! GRASS POKéMON bite back!$"
+	.string "Keep your eyes sharp, or you will\n"
+	.string "miss my whole team!$"
 
 Gen_Route10_Text_Trainer1Defeat:
-	.string "You saw right through all my\n"
-	.string "illusions!$"
+	.string "Ack! My smoke bomb failed to save\n"
+	.string "me!$"
 
 Gen_Route10_Text_Trainer1After:
-	.string "Nin-nin! Farewell for now!$"
+	.string "I must go report this defeat to my\n"
+	.string "secret master!$"
 
 Gen_Route10_EventScript_Trainer2::
 	trainerbattle_single TRAINER_OWEN, Gen_Route10_Text_Trainer2Intro, Gen_Route10_Text_Trainer2Defeat
@@ -40,13 +41,13 @@ Gen_Route10_EventScript_Trainer2::
 	end
 
 Gen_Route10_Text_Trainer2Intro:
-	.string "Nature's roots run deep! Feel the\n"
-	.string "wild energy of GRASS POKéMON!$"
+	.string "A true martial artist respects\n"
+	.string "every opponent. Let us begin!$"
 
 Gen_Route10_Text_Trainer2Defeat:
-	.string "I bow to your superior strength\n"
-	.string "and focus!$"
+	.string "A worthy defeat! I will train\n"
+	.string "twice as hard!$"
 
 Gen_Route10_Text_Trainer2After:
-	.string "Never neglect the fundamentals of\n"
-	.string "type matchups!$"
+	.string "Keep honing your skills every\n"
+	.string "single day!$"

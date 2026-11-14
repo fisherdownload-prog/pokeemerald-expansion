@@ -44,10 +44,10 @@ Gen_Town11_League_EventScript_Member2::
 	end
 
 Gen_Town11_League_Text_Member2Intro:
-	.string "Legends are born in the roar of\n"
-	.string "dragons!\p"
-	.string "Prove you possess the soul of a\n"
-	.string "true CHAMPION!$"
+	.string "You stand before the apex of\n"
+	.string "POKéMON might! Tremble or triumph!\p"
+	.string "Face the sovereign fury of DRAGON\n"
+	.string "POKéMON!$"
 
 Gen_Town11_League_Text_Member2Defeat:
 	.string "Truly worthy of legend! Step\n"

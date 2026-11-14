@@ -18,10 +18,10 @@ Gen_Town04_Gym_EventScript_Defeated::
 	end
 
 Gen_Town04_Gym_Text_Intro:
-	.string "Mountains do not move for the\n"
-	.string "wind, and I do not yield easily!\p"
-	.string "Show me the strength to shake my\n"
-	.string "GYM!$"
+	.string "Everything you build rests upon\n"
+	.string "the ground beneath your feet.\p"
+	.string "Feel the unstoppable weight of my\n"
+	.string "GROUND POKéMON!$"
 
 Gen_Town04_Gym_Text_Defeat:
 	.string "What earth-shattering strength!\n"
@@ -48,11 +48,12 @@ Gen_Town04_Gym_Text_Trainer0Intro:
 	.string "back!$"
 
 Gen_Town04_Gym_Text_Trainer0Defeat:
-	.string "Gah! My defenses were shattered!$"
+	.string "Whoa! You are way stronger than I\n"
+	.string "thought!$"
 
 Gen_Town04_Gym_Text_Trainer0After:
-	.string "Defeat is merely the first step\n"
-	.string "toward true mastery!$"
+	.string "Next time we meet, I will\n"
+	.string "definitely win!$"
 
 Gen_Town04_Gym_EventScript_Trainer1::
 	trainerbattle_single TRAINER_DECLAN, Gen_Town04_Gym_Text_Trainer1Intro, Gen_Town04_Gym_Text_Trainer1Defeat
@@ -65,9 +66,9 @@ Gen_Town04_Gym_Text_Trainer1Intro:
 	.string "LEADER!$"
 
 Gen_Town04_Gym_Text_Trainer1Defeat:
-	.string "How eerie... You broke right\n"
-	.string "through my hex...$"
+	.string "Ah, my old tactics met their match\n"
+	.string "today!$"
 
 Gen_Town04_Gym_Text_Trainer1After:
-	.string "Hehe... My POKéMON seem to have\n"
-	.string "taken a liking to you...$"
+	.string "The road ahead holds far tougher\n"
+	.string "challenges than me!$"

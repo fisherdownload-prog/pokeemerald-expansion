@@ -6,6 +6,6 @@ Gen_Town06_House3_EventScript_Resident::
 	end
 
 Gen_Town06_House3_Text_Resident:
-	.string "The LEADER over in HEATHWOOD uses\n"
-	.string "a tough strategy, so train well on\l"
-	.string "ROUTE 7 first!$"
+	.string "I heard PROF. TEAK is always\n"
+	.string "excited to see how many species\l"
+	.string "TRAINERS discover!$"

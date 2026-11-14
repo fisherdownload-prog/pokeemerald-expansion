@@ -7,16 +7,16 @@ Gen_Route11_EventScript_Trainer0::
 	end
 
 Gen_Route11_Text_Trainer0Intro:
-	.string "Slowly but surely, my POISON\n"
-	.string "POKéMON wear down every foe!$"
+	.string "Mental focus bends reality itself.\n"
+	.string "Witness my power!$"
 
 Gen_Route11_Text_Trainer0Defeat:
 	.string "The future shifted right before my\n"
 	.string "eyes!$"
 
 Gen_Route11_Text_Trainer0After:
-	.string "We shall cross paths again when\n"
-	.string "fate decides...$"
+	.string "Your future is clouded in bright,\n"
+	.string "unpredictable energy...$"
 
 Gen_Route11_EventScript_Trainer1::
 	trainerbattle_single TRAINER_WILTON_3, Gen_Route11_Text_Trainer1Intro, Gen_Route11_Text_Trainer1Defeat
@@ -28,12 +28,12 @@ Gen_Route11_Text_Trainer1Intro:
 	.string "practice my battle skills?$"
 
 Gen_Route11_Text_Trainer1Defeat:
-	.string "You beat me fair and square. That\n"
-	.string "was fun!$"
+	.string "Oh no! My poor POKéMON got all\n"
+	.string "scuffed up!$"
 
 Gen_Route11_Text_Trainer1After:
-	.string "I should visit a POKéMON CENTER\n"
-	.string "before my next match!$"
+	.string "Where did you learn to battle like\n"
+	.string "that?$"
 
 Gen_Route11_EventScript_Trainer2::
 	trainerbattle_single TRAINER_WILTON_4, Gen_Route11_Text_Trainer2Intro, Gen_Route11_Text_Trainer2Defeat
@@ -41,17 +41,16 @@ Gen_Route11_EventScript_Trainer2::
 	end
 
 Gen_Route11_Text_Trainer2Intro:
-	.string "Sweet aroma or noxious fume,\n"
-	.string "POISON POKéMON always leave a\l"
-	.string "mark!$"
+	.string "Let us have a clean, fair battle\n"
+	.string "right here!$"
 
 Gen_Route11_Text_Trainer2Defeat:
-	.string "Hmph! You did not have to go that\n"
-	.string "hard on me!$"
+	.string "My ribbon came undone from all\n"
+	.string "that excitement!$"
 
 Gen_Route11_Text_Trainer2After:
-	.string "My POKéMON still look adorable,\n"
-	.string "even when tired!$"
+	.string "Traveling with POKéMON is the best\n"
+	.string "thing ever!$"
 
 Gen_Route11_EventScript_Trainer3::
 	trainerbattle_single TRAINER_WILTON_5, Gen_Route11_Text_Trainer3Intro, Gen_Route11_Text_Trainer3Defeat
@@ -59,22 +58,22 @@ Gen_Route11_EventScript_Trainer3::
 	end
 
 Gen_Route11_Text_Trainer3Intro:
-	.string "Toxic clouds and venomous fangs!\n"
-	.string "Beware my POISON team!$"
+	.string "How delightful to meet a fellow\n"
+	.string "enthusiast on the road!$"
 
 Gen_Route11_Text_Trainer3Defeat:
-	.string "Remarkable! Youthful energy\n"
-	.string "triumphs today!$"
+	.string "A fine contest! Thank you for the\n"
+	.string "thrill!$"
 
 Gen_Route11_Text_Trainer3After:
-	.string "It was a genuine pleasure crossing\n"
-	.string "swords with you!$"
+	.string "May fortune favor your travels\n"
+	.string "across the land!$"
 
 Gen_Route11_EventScript_Guard::
 	msgbox Gen_Route11_Text_Guard, MSGBOX_NPC
 	end
 
 Gen_Route11_Text_Guard:
-	.string "Halt! Only TRAINERS with at least\n"
-	.string "8 BADGES may proceed past this\l"
-	.string "checkpoint!$"
+	.string "Sorry, kid! Come back once you\n"
+	.string "have earned 8 BADGES from GYM\l"
+	.string "LEADERS!$"

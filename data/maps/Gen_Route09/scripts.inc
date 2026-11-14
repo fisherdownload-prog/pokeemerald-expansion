@@ -7,12 +7,12 @@ Gen_Route09_EventScript_Trainer0::
 	end
 
 Gen_Route09_Text_Trainer0Intro:
-	.string "My boots are dusty and my POKéMON\n"
-	.string "are solid as stone!$"
+	.string "Focus your thoughts, or my PSYCHIC\n"
+	.string "team will overwhelm your mind!$"
 
 Gen_Route09_Text_Trainer0Defeat:
-	.string "My knees are shaking after a bout\n"
-	.string "like that!$"
+	.string "Oof! You knocked me right off the\n"
+	.string "trail!$"
 
 Gen_Route09_Text_Trainer0After:
 	.string "My legs are tired, so I think I\n"
@@ -24,16 +24,16 @@ Gen_Route09_EventScript_Trainer1::
 	end
 
 Gen_Route09_Text_Trainer1Intro:
-	.string "Hey! You are in my favorite\n"
-	.string "training spot! Let us settle this!$"
+	.string "I packed extra POKé BALLS and\n"
+	.string "plenty of grit for this trip!$"
 
 Gen_Route09_Text_Trainer1Defeat:
-	.string "Oof! That was rougher than\n"
-	.string "sleeping on rocks!$"
+	.string "You completely outmaneuvered me\n"
+	.string "out here!$"
 
 Gen_Route09_Text_Trainer1After:
-	.string "Nothing beats sleeping under a\n"
-	.string "blanket of bright stars!$"
+	.string "Maybe I will move my tent closer\n"
+	.string "to the next town.$"
 
 Gen_Route09_EventScript_Trainer2::
 	trainerbattle_single TRAINER_ALBERT, Gen_Route09_Text_Trainer2Intro, Gen_Route09_Text_Trainer2Defeat
@@ -41,13 +41,13 @@ Gen_Route09_EventScript_Trainer2::
 	end
 
 Gen_Route09_Text_Trainer2Intro:
-	.string "Shh! They are biting! Oh, wait,\n"
-	.string "that was just my shoe!$"
+	.string "You scared off a whopper! You\n"
+	.string "better make up for it in battle!$"
 
 Gen_Route09_Text_Trainer2Defeat:
-	.string "Looks like I caught myself a solid\n"
-	.string "defeat!$"
+	.string "Haha! You reeled in a well-earned\n"
+	.string "victory!$"
 
 Gen_Route09_Text_Trainer2After:
-	.string "Patience is the secret to both\n"
-	.string "fishing and raising POKéMON!$"
+	.string "Take care not to drop your POKé\n"
+	.string "BALLS in the drink!$"

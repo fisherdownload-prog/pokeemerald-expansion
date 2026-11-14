@@ -6,6 +6,6 @@ Gen_Town02_House2_EventScript_Resident::
 	end
 
 Gen_Town02_House2_Text_Resident:
-	.string "I beat the FLINTMERE GYM only\n"
-	.string "after training my team thoroughly\l"
-	.string "on ROUTE 2!$"
+	.string "Our GYM LEADER loves FLYING-type\n"
+	.string "POKéMON. Beat them and you get the\l"
+	.string "HM for CUT.$"

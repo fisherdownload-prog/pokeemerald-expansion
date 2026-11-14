@@ -6,6 +6,5 @@ Gen_Town10_House1_EventScript_Resident::
 	end
 
 Gen_Town10_House1_Text_Resident:
-	.string "Keep an eye out for unusual\n"
-	.string "colorations on wild POKéMON! Rare\l"
-	.string "ones are a real treat!$"
+	.string "Lots of GRASS POKéMON gather along\n"
+	.string "ROUTE 10, just north of town!$"

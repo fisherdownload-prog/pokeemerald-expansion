@@ -6,6 +6,6 @@ Gen_Town07_House1_EventScript_Resident::
 	end
 
 Gen_Town07_House1_Text_Resident:
-	.string "Our GYM LEADER loves DRAGON-type\n"
-	.string "POKéMON. Beat them and you get the\l"
-	.string "HM for WATERFALL.$"
+	.string "If a battle looks tough, switching\n"
+	.string "POKéMON to get a better type\l"
+	.string "matchup can save the day!$"

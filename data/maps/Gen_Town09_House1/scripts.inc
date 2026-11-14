@@ -6,6 +6,5 @@ Gen_Town09_House1_EventScript_Resident::
 	end
 
 Gen_Town09_House1_Text_Resident:
-	.string "Our GYM LEADER loves FIRE-type\n"
-	.string "POKéMON. Beat them and you get the\l"
-	.string "HM for ROCK SMASH.$"
+	.string "I saved up my allowance all month\n"
+	.string "just to buy ten POKé BALLS!$"
