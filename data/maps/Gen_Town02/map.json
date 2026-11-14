@@ -1,0 +1,79 @@
+{
+  "id": "MAP_GEN_TOWN02",
+  "name": "Gen_Town02",
+  "layout": "LAYOUT_GEN_TOWN02",
+  "music": "MUS_RUSTBORO",
+  "region": "REGION_HOENN",
+  "region_map_section": "MAPSEC_DEWFORD_TOWN",
+  "requires_flash": false,
+  "weather": "WEATHER_SUNNY",
+  "map_type": "MAP_TYPE_CITY",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_GEN_ROUTE02",
+      "offset": 8,
+      "direction": "left"
+    }
+  ],
+  "object_events": [],
+  "warp_events": [
+    {
+      "x": 22,
+      "y": 11,
+      "elevation": 0,
+      "dest_map": "MAP_GEN_TOWN02_GYM",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 15,
+      "y": 11,
+      "elevation": 0,
+      "dest_map": "MAP_GEN_TOWN02_POKEMONCENTER",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 10,
+      "y": 12,
+      "elevation": 0,
+      "dest_map": "MAP_GEN_TOWN02_MART",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 5,
+      "y": 9,
+      "elevation": 0,
+      "dest_map": "MAP_GEN_TOWN02_HOUSE1",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 16,
+      "y": 19,
+      "elevation": 0,
+      "dest_map": "MAP_GEN_TOWN02_HOUSE2",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 21,
+      "y": 22,
+      "elevation": 0,
+      "dest_map": "MAP_GEN_TOWN02_HOUSE3",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [],
+  "bg_events": [
+    {
+      "type": "sign",
+      "x": 7,
+      "y": 12,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Gen_Town02_EventScript_Sign"
+    }
+  ]
+}

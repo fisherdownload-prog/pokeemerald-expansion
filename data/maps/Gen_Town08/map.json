@@ -1,0 +1,66 @@
+{
+  "id": "MAP_GEN_TOWN08",
+  "name": "Gen_Town08",
+  "layout": "LAYOUT_GEN_TOWN08",
+  "music": "MUS_SOOTOPOLIS",
+  "region": "REGION_HOENN",
+  "region_map_section": "MAPSEC_SLATEPORT_CITY",
+  "requires_flash": false,
+  "weather": "WEATHER_SUNNY",
+  "map_type": "MAP_TYPE_TOWN",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_GEN_ROUTE08",
+      "offset": 2,
+      "direction": "right"
+    },
+    {
+      "map": "MAP_GEN_ROUTE09",
+      "offset": 2,
+      "direction": "up"
+    },
+    {
+      "map": "MAP_GEN_ROUTE10",
+      "offset": 2,
+      "direction": "down"
+    }
+  ],
+  "object_events": [],
+  "warp_events": [
+    {
+      "x": 4,
+      "y": 11,
+      "elevation": 0,
+      "dest_map": "MAP_GEN_TOWN08_POKEMONCENTER",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 18,
+      "y": 12,
+      "elevation": 0,
+      "dest_map": "MAP_GEN_TOWN08_MART",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 9,
+      "y": 12,
+      "elevation": 0,
+      "dest_map": "MAP_GEN_TOWN08_HOUSE1",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 17,
+      "y": 6,
+      "elevation": 0,
+      "dest_map": "MAP_GEN_TOWN08_HOUSE2",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [],
+  "bg_events": []
+}

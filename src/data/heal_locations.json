@@ -349,6 +349,100 @@
       "y": 12,
       "respawn_map": "MAP_SIX_ISLAND_POKEMON_CENTER_1F",
       "respawn_npc": "LOCALID_SIX_ISLAND_NURSE"
+    },
+    {
+      "id": "HEAL_LOCATION_GEN_TOWN00",
+      "map": "MAP_GEN_TOWN00",
+      "x": 18,
+      "y": 9
+    },
+    {
+      "id": "HEAL_LOCATION_GEN_TOWN01",
+      "map": "MAP_GEN_TOWN01",
+      "x": 5,
+      "y": 10,
+      "respawn_map": "MAP_GEN_TOWN01_POKEMONCENTER",
+      "respawn_npc": "LOCALID_GEN_TOWN01_POKEMONCENTER_NURSE"
+    },
+    {
+      "id": "HEAL_LOCATION_GEN_TOWN02",
+      "map": "MAP_GEN_TOWN02",
+      "x": 15,
+      "y": 12,
+      "respawn_map": "MAP_GEN_TOWN02_POKEMONCENTER",
+      "respawn_npc": "LOCALID_GEN_TOWN02_POKEMONCENTER_NURSE"
+    },
+    {
+      "id": "HEAL_LOCATION_GEN_TOWN03",
+      "map": "MAP_GEN_TOWN03",
+      "x": 5,
+      "y": 11,
+      "respawn_map": "MAP_GEN_TOWN03_POKEMONCENTER",
+      "respawn_npc": "LOCALID_GEN_TOWN03_POKEMONCENTER_NURSE"
+    },
+    {
+      "id": "HEAL_LOCATION_GEN_TOWN04",
+      "map": "MAP_GEN_TOWN04",
+      "x": 4,
+      "y": 15,
+      "respawn_map": "MAP_GEN_TOWN04_POKEMONCENTER",
+      "respawn_npc": "LOCALID_GEN_TOWN04_POKEMONCENTER_NURSE"
+    },
+    {
+      "id": "HEAL_LOCATION_GEN_TOWN05",
+      "map": "MAP_GEN_TOWN05",
+      "x": 23,
+      "y": 12,
+      "respawn_map": "MAP_GEN_TOWN05_POKEMONCENTER",
+      "respawn_npc": "LOCALID_GEN_TOWN05_POKEMONCENTER_NURSE"
+    },
+    {
+      "id": "HEAL_LOCATION_GEN_TOWN06",
+      "map": "MAP_GEN_TOWN06",
+      "x": 4,
+      "y": 12,
+      "respawn_map": "MAP_GEN_TOWN06_POKEMONCENTER",
+      "respawn_npc": "LOCALID_GEN_TOWN06_POKEMONCENTER_NURSE"
+    },
+    {
+      "id": "HEAL_LOCATION_GEN_TOWN07",
+      "map": "MAP_GEN_TOWN07",
+      "x": 17,
+      "y": 8,
+      "respawn_map": "MAP_GEN_TOWN07_POKEMONCENTER",
+      "respawn_npc": "LOCALID_GEN_TOWN07_POKEMONCENTER_NURSE"
+    },
+    {
+      "id": "HEAL_LOCATION_GEN_TOWN08",
+      "map": "MAP_GEN_TOWN08",
+      "x": 4,
+      "y": 12,
+      "respawn_map": "MAP_GEN_TOWN08_POKEMONCENTER",
+      "respawn_npc": "LOCALID_GEN_TOWN08_POKEMONCENTER_NURSE"
+    },
+    {
+      "id": "HEAL_LOCATION_GEN_TOWN09",
+      "map": "MAP_GEN_TOWN09",
+      "x": 5,
+      "y": 15,
+      "respawn_map": "MAP_GEN_TOWN09_POKEMONCENTER",
+      "respawn_npc": "LOCALID_GEN_TOWN09_POKEMONCENTER_NURSE"
+    },
+    {
+      "id": "HEAL_LOCATION_GEN_TOWN10",
+      "map": "MAP_GEN_TOWN10",
+      "x": 4,
+      "y": 16,
+      "respawn_map": "MAP_GEN_TOWN10_POKEMONCENTER",
+      "respawn_npc": "LOCALID_GEN_TOWN10_POKEMONCENTER_NURSE"
+    },
+    {
+      "id": "HEAL_LOCATION_GEN_TOWN11",
+      "map": "MAP_GEN_TOWN11",
+      "x": 11,
+      "y": 9,
+      "respawn_map": "MAP_GEN_TOWN11_POKEMONCENTER",
+      "respawn_npc": "LOCALID_GEN_TOWN11_POKEMONCENTER_NURSE"
     }
   ]
 }

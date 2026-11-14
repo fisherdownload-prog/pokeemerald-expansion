@@ -1,0 +1,63 @@
+{
+  "id": "MAP_GEN_TOWN00",
+  "name": "Gen_Town00",
+  "layout": "LAYOUT_GEN_TOWN00",
+  "music": "MUS_LITTLEROOT",
+  "region": "REGION_HOENN",
+  "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
+  "requires_flash": false,
+  "weather": "WEATHER_SUNNY",
+  "map_type": "MAP_TYPE_TOWN",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_GEN_ROUTE01",
+      "offset": 0,
+      "direction": "right"
+    },
+    {
+      "map": "MAP_GEN_ROUTE03",
+      "offset": 2,
+      "direction": "up"
+    }
+  ],
+  "object_events": [],
+  "warp_events": [
+    {
+      "x": 18,
+      "y": 8,
+      "elevation": 0,
+      "dest_map": "MAP_GEN_TOWN00_LAB",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 6,
+      "y": 8,
+      "elevation": 0,
+      "dest_map": "MAP_GEN_TOWN00_PLAYERHOUSE",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 16,
+      "y": 18,
+      "elevation": 0,
+      "dest_map": "MAP_GEN_TOWN00_HOUSE0",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [],
+  "bg_events": [
+    {
+      "type": "sign",
+      "x": 12,
+      "y": 9,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Gen_Town00_EventScript_Sign"
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "id": "MAP_GEN_TOWN06",
+  "name": "Gen_Town06",
+  "layout": "LAYOUT_GEN_TOWN06",
+  "music": "MUS_FORTREE",
+  "region": "REGION_HOENN",
+  "region_map_section": "MAPSEC_PACIFIDLOG_TOWN",
+  "requires_flash": false,
+  "weather": "WEATHER_SUNNY",
+  "map_type": "MAP_TYPE_CITY",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_GEN_ROUTE06",
+      "offset": -2,
+      "direction": "down"
+    },
+    {
+      "map": "MAP_GEN_ROUTE07",
+      "offset": 2,
+      "direction": "left"
+    }
+  ],
+  "object_events": [],
+  "warp_events": [
+    {
+      "x": 11,
+      "y": 10,
+      "elevation": 0,
+      "dest_map": "MAP_GEN_TOWN06_GYM",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 4,
+      "y": 11,
+      "elevation": 0,
+      "dest_map": "MAP_GEN_TOWN06_POKEMONCENTER",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 22,
+      "y": 10,
+      "elevation": 0,
+      "dest_map": "MAP_GEN_TOWN06_MART",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 16,
+      "y": 9,
+      "elevation": 0,
+      "dest_map": "MAP_GEN_TOWN06_HOUSE1",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 15,
+      "y": 22,
+      "elevation": 0,
+      "dest_map": "MAP_GEN_TOWN06_HOUSE2",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 6,
+      "y": 19,
+      "elevation": 0,
+      "dest_map": "MAP_GEN_TOWN06_HOUSE3",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [],
+  "bg_events": [
+    {
+      "type": "sign",
+      "x": 18,
+      "y": 11,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Gen_Town06_EventScript_Sign"
+    }
+  ]
+}
