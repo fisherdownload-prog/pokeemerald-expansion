@@ -7,8 +7,8 @@ Gen_Route04_EventScript_Trainer0::
 	end
 
 Gen_Route04_Text_Trainer0Intro:
-	.string "Our eyes met. You know what that\n"
-	.string "means!$"
+	.string "I only train ICE-type POKéMON.\n"
+	.string "Want to see why?$"
 
 Gen_Route04_Text_Trainer0Defeat:
 	.string "You're tougher than you look.$"
@@ -22,8 +22,8 @@ Gen_Route04_EventScript_Trainer1::
 	end
 
 Gen_Route04_Text_Trainer1Intro:
-	.string "Our eyes met. You know what that\n"
-	.string "means!$"
+	.string "Hold it! You look like you could\n"
+	.string "use a battle.$"
 
 Gen_Route04_Text_Trainer1Defeat:
 	.string "You're tougher than you look.$"
@@ -37,8 +37,8 @@ Gen_Route04_EventScript_Trainer2::
 	end
 
 Gen_Route04_Text_Trainer2Intro:
-	.string "I only train ICE-type POKéMON.\n"
-	.string "Want to see why?$"
+	.string "Hold it! You look like you could\n"
+	.string "use a battle.$"
 
 Gen_Route04_Text_Trainer2Defeat:
 	.string "You're tougher than you look.$"

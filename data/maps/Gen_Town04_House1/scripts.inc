@@ -6,5 +6,5 @@ Gen_Town04_House1_EventScript_Resident::
 	end
 
 Gen_Town04_House1_Text_Resident:
-	.string "POKéMON from ROUTE 5 do well\n"
-	.string "against the GYM in BRAMPORT.$"
+	.string "ROUTE 4 to the east is full of\n"
+	.string "ICE-type POKéMON.$"

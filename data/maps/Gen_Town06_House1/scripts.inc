@@ -6,5 +6,5 @@ Gen_Town06_House1_EventScript_Resident::
 	end
 
 Gen_Town06_House1_Text_Resident:
-	.string "POKéMON from ROUTE 6 do well\n"
-	.string "against the GYM in CLOVERVIEW.$"
+	.string "You can't get far on ROUTE 7\n"
+	.string "without 5 BADGES.$"

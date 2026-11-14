@@ -6,6 +6,5 @@ Gen_Town07_House3_EventScript_Resident::
 	end
 
 Gen_Town07_House3_Text_Resident:
-	.string "Our GYM LEADER loves DRAGON-type\n"
-	.string "POKéMON. Beat them and you get the\l"
-	.string "HM for WATERFALL.$"
+	.string "POKéMON from ROUTE 7 do well\n"
+	.string "against the GYM in HEATHWOOD.$"

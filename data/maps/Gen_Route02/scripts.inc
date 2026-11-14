@@ -22,8 +22,8 @@ Gen_Route02_EventScript_Trainer1::
 	end
 
 Gen_Route02_Text_Trainer1Intro:
-	.string "Hold it! You look like you could\n"
-	.string "use a battle.$"
+	.string "I only train ROCK-type POKéMON.\n"
+	.string "Want to see why?$"
 
 Gen_Route02_Text_Trainer1Defeat:
 	.string "You're tougher than you look.$"
@@ -51,7 +51,8 @@ Gen_Route02_EventScript_Trainer3::
 	end
 
 Gen_Route02_Text_Trainer3Intro:
-	.string "ROUTE 2 is my turf. Let's battle!$"
+	.string "I only train ROCK-type POKéMON.\n"
+	.string "Want to see why?$"
 
 Gen_Route02_Text_Trainer3Defeat:
 	.string "You're tougher than you look.$"

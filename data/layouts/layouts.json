@@ -9504,7 +9504,7 @@
       "id": "LAYOUT_GEN_ROUTE05",
       "name": "Gen_Route05_Layout",
       "width": 20,
-      "height": 56,
+      "height": 66,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/Gen_Route05/border.bin",

@@ -7,8 +7,8 @@ Gen_Route01_EventScript_Trainer0::
 	end
 
 Gen_Route01_Text_Trainer0Intro:
-	.string "Hold it! You look like you could\n"
-	.string "use a battle.$"
+	.string "I only train PSYCHIC-type POKéMON.\n"
+	.string "Want to see why?$"
 
 Gen_Route01_Text_Trainer0Defeat:
 	.string "You're tougher than you look.$"
@@ -22,8 +22,7 @@ Gen_Route01_EventScript_Trainer1::
 	end
 
 Gen_Route01_Text_Trainer1Intro:
-	.string "Hold it! You look like you could\n"
-	.string "use a battle.$"
+	.string "ROUTE 1 is my turf. Let's battle!$"
 
 Gen_Route01_Text_Trainer1Defeat:
 	.string "You're tougher than you look.$"
@@ -37,7 +36,8 @@ Gen_Route01_EventScript_Trainer2::
 	end
 
 Gen_Route01_Text_Trainer2Intro:
-	.string "ROUTE 1 is my turf. Let's battle!$"
+	.string "Hold it! You look like you could\n"
+	.string "use a battle.$"
 
 Gen_Route01_Text_Trainer2Defeat:
 	.string "You're tougher than you look.$"
@@ -51,8 +51,7 @@ Gen_Route01_EventScript_Trainer3::
 	end
 
 Gen_Route01_Text_Trainer3Intro:
-	.string "I only train PSYCHIC-type POKéMON.\n"
-	.string "Want to see why?$"
+	.string "ROUTE 1 is my turf. Let's battle!$"
 
 Gen_Route01_Text_Trainer3Defeat:
 	.string "You're tougher than you look.$"

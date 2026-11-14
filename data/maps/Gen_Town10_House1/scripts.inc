@@ -6,6 +6,5 @@ Gen_Town10_House1_EventScript_Resident::
 	end
 
 Gen_Town10_House1_Text_Resident:
-	.string "Our GYM LEADER loves WATER-type\n"
-	.string "POKéMON. Beat them and you get the\l"
-	.string "HM for FLY.$"
+	.string "You can't get far on ROUTE 11\n"
+	.string "without 8 BADGES.$"

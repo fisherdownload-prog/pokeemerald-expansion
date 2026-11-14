@@ -6,5 +6,6 @@ Gen_Town02_House1_EventScript_Resident::
 	end
 
 Gen_Town02_House1_Text_Resident:
-	.string "POKéMON from ROUTE 2 do well\n"
-	.string "against the GYM in FLINTMERE.$"
+	.string "Our GYM LEADER loves FLYING-type\n"
+	.string "POKéMON. Beat them and you get the\l"
+	.string "HM for CUT.$"

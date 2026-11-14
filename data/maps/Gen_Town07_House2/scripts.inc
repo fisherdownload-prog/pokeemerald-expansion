@@ -6,5 +6,5 @@ Gen_Town07_House2_EventScript_Resident::
 	end
 
 Gen_Town07_House2_Text_Resident:
-	.string "POKéMON from ROUTE 8 do well\n"
-	.string "against the GYM in EMBERBROOK.$"
+	.string "POKéMON from ROUTE 7 do well\n"
+	.string "against the GYM in HEATHWOOD.$"

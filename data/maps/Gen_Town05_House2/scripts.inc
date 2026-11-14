@@ -6,6 +6,5 @@ Gen_Town05_House2_EventScript_Resident::
 	end
 
 Gen_Town05_House2_Text_Resident:
-	.string "Our GYM LEADER loves FIGHTING-type\n"
-	.string "POKéMON. Beat them and you get the\l"
-	.string "HM for DIVE.$"
+	.string "ROUTE 6 to the north is full of\n"
+	.string "GROUND-type POKéMON.$"
