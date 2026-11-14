@@ -6,5 +6,5 @@ Gen_Town01_House2_EventScript_Resident::
 	end
 
 Gen_Town01_House2_Text_Resident:
-	.string "ROUTE 1 to the west is full of\n"
-	.string "PSYCHIC-type POKéMON.$"
+	.string "My cousin went east down ROUTE 2\n"
+	.string "and saw dozens of ROCK POKéMON!$"

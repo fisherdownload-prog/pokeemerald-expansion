@@ -7,14 +7,16 @@ Gen_Route03_EventScript_Trainer0::
 	end
 
 Gen_Route03_Text_Trainer0Intro:
-	.string "Our eyes met. You know what that\n"
-	.string "means!$"
+	.string "A true martial artist respects\n"
+	.string "every opponent. Let us begin!$"
 
 Gen_Route03_Text_Trainer0Defeat:
-	.string "You're tougher than you look.$"
+	.string "What power! You struck with true\n"
+	.string "precision!$"
 
 Gen_Route03_Text_Trainer0After:
-	.string "I need to train harder.$"
+	.string "I will perform one thousand squats\n"
+	.string "before sunset!$"
 
 Gen_Route03_EventScript_Trainer1::
 	trainerbattle_single TRAINER_GABBY_AND_TY_3, Gen_Route03_Text_Trainer1Intro, Gen_Route03_Text_Trainer1Defeat
@@ -22,14 +24,16 @@ Gen_Route03_EventScript_Trainer1::
 	end
 
 Gen_Route03_Text_Trainer1Intro:
-	.string "Our eyes met. You know what that\n"
-	.string "means!$"
+	.string "Nowhere to stand when my GROUND\n"
+	.string "POKéMON split the earth!$"
 
 Gen_Route03_Text_Trainer1Defeat:
-	.string "You're tougher than you look.$"
+	.string "Aw man, my shorts did not save me\n"
+	.string "this time!$"
 
 Gen_Route03_Text_Trainer1After:
-	.string "I need to train harder.$"
+	.string "I am going to train my POKéMON\n"
+	.string "until they are huge!$"
 
 Gen_Route03_EventScript_Trainer2::
 	trainerbattle_single TRAINER_GABBY_AND_TY_4, Gen_Route03_Text_Trainer2Intro, Gen_Route03_Text_Trainer2Defeat
@@ -37,14 +41,17 @@ Gen_Route03_EventScript_Trainer2::
 	end
 
 Gen_Route03_Text_Trainer2Intro:
-	.string "Hold it! You look like you could\n"
-	.string "use a battle.$"
+	.string "Feel the earth tremble beneath my\n"
+	.string "mighty GROUND POKéMON!$"
 
 Gen_Route03_Text_Trainer2Defeat:
-	.string "You're tougher than you look.$"
+	.string "A stunning performance. I tip my\n"
+	.string "hat to you!$"
 
 Gen_Route03_Text_Trainer2After:
-	.string "I need to train harder.$"
+	.string "I suppose losing builds\n"
+	.string "character... though winning is\l"
+	.string "prettier!$"
 
 Gen_Route03_EventScript_Trainer3::
 	trainerbattle_single TRAINER_GABBY_AND_TY_5, Gen_Route03_Text_Trainer3Intro, Gen_Route03_Text_Trainer3Defeat
@@ -52,10 +59,13 @@ Gen_Route03_EventScript_Trainer3::
 	end
 
 Gen_Route03_Text_Trainer3Intro:
-	.string "ROUTE 3 is my turf. Let's battle!$"
+	.string "Dust, sand, and unstoppable force!\n"
+	.string "That is GROUND power!$"
 
 Gen_Route03_Text_Trainer3Defeat:
-	.string "You're tougher than you look.$"
+	.string "A thrilling chill... You are\n"
+	.string "terribly strong...$"
 
 Gen_Route03_Text_Trainer3After:
-	.string "I need to train harder.$"
+	.string "Do not forget to heal your poor\n"
+	.string "POKéMON...$"

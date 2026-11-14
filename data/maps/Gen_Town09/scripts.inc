@@ -7,4 +7,5 @@ Gen_Town09_EventScript_Sign::
 
 Gen_Town09_Text_Sign:
 	.string "EMBERBROOK CITY\p"
-	.string "Home of the FIRE-type GYM.$"
+	.string "Where dedicated TRAINERS gather to\n"
+	.string "master the art of FIRE battles!$"

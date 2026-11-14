@@ -6,5 +6,6 @@ Gen_Town03_House3_EventScript_Resident::
 	end
 
 Gen_Town03_House3_Text_Resident:
-	.string "ROUTE 3 to the south is full of\n"
-	.string "GROUND-type POKéMON.$"
+	.string "TRAINERS on ROUTE 4 to the west\n"
+	.string "love using ICE POKéMON. Pack\l"
+	.string "accordingly!$"

@@ -6,6 +6,6 @@ Gen_Town09_House3_EventScript_Resident::
 	end
 
 Gen_Town09_House3_Text_Resident:
-	.string "Our GYM LEADER loves FIRE-type\n"
-	.string "POKéMON. Beat them and you get the\l"
-	.string "HM for ROCK SMASH.$"
+	.string "Planning to travel south via ROUTE\n"
+	.string "9? Prepare your team for PSYCHIC\l"
+	.string "moves!$"

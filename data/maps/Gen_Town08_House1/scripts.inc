@@ -6,5 +6,6 @@ Gen_Town08_House1_EventScript_Resident::
 	end
 
 Gen_Town08_House1_Text_Resident:
-	.string "ROUTE 10 to the south is full of\n"
-	.string "GRASS-type POKéMON.$"
+	.string "Before you head north onto ROUTE\n"
+	.string "9, check your type matchups\l"
+	.string "against PSYCHIC!$"

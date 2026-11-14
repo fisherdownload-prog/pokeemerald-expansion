@@ -7,4 +7,6 @@ Gen_Town02_EventScript_Sign::
 
 Gen_Town02_Text_Sign:
 	.string "FLINTMERE CITY\p"
-	.string "Home of the FLYING-type GYM.$"
+	.string "Step up to the FLYING GYM and\n"
+	.string "prove your strength to the whole\l"
+	.string "town!$"

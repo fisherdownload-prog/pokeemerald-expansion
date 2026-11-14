@@ -18,13 +18,15 @@ Gen_Town06_Gym_EventScript_Defeated::
 	end
 
 Gen_Town06_Gym_Text_Intro:
-	.string "Welcome to the CLOVERVIEW GYM! My\n"
-	.string "POISON-type POKéMON and I have\l"
-	.string "been waiting for a challenger like\l"
-	.string "you.$"
+	.string "Fufufu... Careful where you step\n"
+	.string "in my GYM, challenger!\p"
+	.string "One tiny mistake can linger until\n"
+	.string "the very end!$"
 
 Gen_Town06_Gym_Text_Defeat:
-	.string "Well fought! You have earned this.$"
+	.string "Fufufu... You saw through every\n"
+	.string "trick and endured to the end! Take\l"
+	.string "this BADGE!$"
 
 Gen_Town06_Gym_Text_Badge:
 	.string "{PLAYER} received BADGE No. 5 from\n"
@@ -41,14 +43,17 @@ Gen_Town06_Gym_EventScript_Trainer0::
 	end
 
 Gen_Town06_Gym_Text_Trainer0Intro:
-	.string "The LEADER is too busy for you.\n"
-	.string "Battle me first!$"
+	.string "Step forward, challenger! Let us\n"
+	.string "see if you deserve a shot at the\l"
+	.string "BADGE!$"
 
 Gen_Town06_Gym_Text_Trainer0Defeat:
-	.string "You might just have a chance.$"
+	.string "Incredible! Your spirit\n"
+	.string "overwhelmed my own!$"
 
 Gen_Town06_Gym_Text_Trainer0After:
-	.string "The LEADER is straight ahead.$"
+	.string "Osu! May your journey make you\n"
+	.string "stronger!$"
 
 Gen_Town06_Gym_EventScript_Trainer1::
 	trainerbattle_single TRAINER_ROSE_1, Gen_Town06_Gym_Text_Trainer1Intro, Gen_Town06_Gym_Text_Trainer1Defeat
@@ -56,11 +61,14 @@ Gen_Town06_Gym_EventScript_Trainer1::
 	end
 
 Gen_Town06_Gym_Text_Trainer1Intro:
-	.string "The LEADER is too busy for you.\n"
-	.string "Battle me first!$"
+	.string "You will not reach the LEADER\n"
+	.string "without proving your skill right\l"
+	.string "here!$"
 
 Gen_Town06_Gym_Text_Trainer1Defeat:
-	.string "You might just have a chance.$"
+	.string "Whoa, you chewed right through my\n"
+	.string "bug team!$"
 
 Gen_Town06_Gym_Text_Trainer1After:
-	.string "The LEADER is straight ahead.$"
+	.string "Watch your step so you do not\n"
+	.string "squash any little guys!$"

@@ -6,5 +6,6 @@ Gen_Town08_House2_EventScript_Resident::
 	end
 
 Gen_Town08_House2_Text_Resident:
-	.string "ROUTE 8 to the east is full of\n"
-	.string "WATER-type POKéMON.$"
+	.string "If a battle looks tough, switching\n"
+	.string "POKéMON to get a better type\l"
+	.string "matchup can save the day!$"

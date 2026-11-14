@@ -7,4 +7,5 @@ Gen_Town01_EventScript_Sign::
 
 Gen_Town01_Text_Sign:
 	.string "GOLDWARD TOWN\p"
-	.string "A quiet stop for weary TRAINERS.$"
+	.string "Stop by the local shops and see\n"
+	.string "what treasures you might find!$"

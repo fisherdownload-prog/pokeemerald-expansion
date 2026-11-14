@@ -18,12 +18,16 @@ Gen_Town10_Gym_EventScript_Defeated::
 	end
 
 Gen_Town10_Gym_Text_Intro:
-	.string "Welcome to the SABLEFALL GYM! My\n"
-	.string "WATER-type POKéMON and I have been\l"
-	.string "waiting for a challenger like you.$"
+	.string "Welcome, traveler! Like the tide,\n"
+	.string "a true TRAINER must be both gentle\l"
+	.string "and relentless.\p"
+	.string "Let us test your resolve against\n"
+	.string "the waves!$"
 
 Gen_Town10_Gym_Text_Defeat:
-	.string "Well fought! You have earned this.$"
+	.string "Your adaptability is\n"
+	.string "extraordinary! Take this BADGE and\l"
+	.string "keep sailing forward!$"
 
 Gen_Town10_Gym_Text_Badge:
 	.string "{PLAYER} received BADGE No. 8 from\n"
@@ -40,14 +44,16 @@ Gen_Town10_Gym_EventScript_Trainer0::
 	end
 
 Gen_Town10_Gym_Text_Trainer0Intro:
-	.string "The LEADER is too busy for you.\n"
-	.string "Battle me first!$"
+	.string "Think you can earn a BADGE today?\n"
+	.string "Let us test that confidence!$"
 
 Gen_Town10_Gym_Text_Trainer0Defeat:
-	.string "You might just have a chance.$"
+	.string "My ribbon came undone from all\n"
+	.string "that excitement!$"
 
 Gen_Town10_Gym_Text_Trainer0After:
-	.string "The LEADER is straight ahead.$"
+	.string "Where did you learn to battle like\n"
+	.string "that?$"
 
 Gen_Town10_Gym_EventScript_Trainer1::
 	trainerbattle_single TRAINER_ROSE_5, Gen_Town10_Gym_Text_Trainer1Intro, Gen_Town10_Gym_Text_Trainer1Defeat
@@ -55,11 +61,13 @@ Gen_Town10_Gym_EventScript_Trainer1::
 	end
 
 Gen_Town10_Gym_Text_Trainer1Intro:
-	.string "The LEADER is too busy for you.\n"
-	.string "Battle me first!$"
+	.string "In this GYM, we push WATER POKéMON\n"
+	.string "to their absolute peak!$"
 
 Gen_Town10_Gym_Text_Trainer1Defeat:
-	.string "You might just have a chance.$"
+	.string "Yikes! You wiped out my whole\n"
+	.string "team!$"
 
 Gen_Town10_Gym_Text_Trainer1After:
-	.string "The LEADER is straight ahead.$"
+	.string "When I grow up, I want to be just\n"
+	.string "as strong as you!$"

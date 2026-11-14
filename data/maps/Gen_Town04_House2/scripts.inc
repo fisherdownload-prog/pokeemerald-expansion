@@ -6,5 +6,6 @@ Gen_Town04_House2_EventScript_Resident::
 	end
 
 Gen_Town04_House2_Text_Resident:
-	.string "ROUTE 5 to the north is full of\n"
-	.string "FLYING-type POKéMON.$"
+	.string "Make sure you teach SURF to one of\n"
+	.string "your POKéMON before tackling ROUTE\l"
+	.string "5!$"

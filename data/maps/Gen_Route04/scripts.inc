@@ -7,14 +7,15 @@ Gen_Route04_EventScript_Trainer0::
 	end
 
 Gen_Route04_Text_Trainer0Intro:
-	.string "I only train ICE-type POKéMON.\n"
-	.string "Want to see why?$"
+	.string "I coordinated my outfit with my\n"
+	.string "POKéMON today. Marvelous, no?$"
 
 Gen_Route04_Text_Trainer0Defeat:
-	.string "You're tougher than you look.$"
+	.string "Unbelievable! You outshone my\n"
+	.string "entire team!$"
 
 Gen_Route04_Text_Trainer0After:
-	.string "I need to train harder.$"
+	.string "Until we meet again, darling!$"
 
 Gen_Route04_EventScript_Trainer1::
 	trainerbattle_single TRAINER_LOLA_1, Gen_Route04_Text_Trainer1Intro, Gen_Route04_Text_Trainer1Defeat
@@ -22,14 +23,16 @@ Gen_Route04_EventScript_Trainer1::
 	end
 
 Gen_Route04_Text_Trainer1Intro:
-	.string "Hold it! You look like you could\n"
-	.string "use a battle.$"
+	.string "Sharp as icicles and cold as\n"
+	.string "winter wind! Go, my ICE team!$"
 
 Gen_Route04_Text_Trainer1Defeat:
-	.string "You're tougher than you look.$"
+	.string "That was a bigger shock than\n"
+	.string "hooking a monster!$"
 
 Gen_Route04_Text_Trainer1After:
-	.string "I need to train harder.$"
+	.string "Water routes can be tricky if you\n"
+	.string "are unprepared!$"
 
 Gen_Route04_EventScript_Trainer2::
 	trainerbattle_single TRAINER_AUSTINA, Gen_Route04_Text_Trainer2Intro, Gen_Route04_Text_Trainer2Defeat
@@ -37,14 +40,16 @@ Gen_Route04_EventScript_Trainer2::
 	end
 
 Gen_Route04_Text_Trainer2Intro:
-	.string "Hold it! You look like you could\n"
-	.string "use a battle.$"
+	.string "Come then! Show an old hand what\n"
+	.string "the new generation can do!$"
 
 Gen_Route04_Text_Trainer2Defeat:
-	.string "You're tougher than you look.$"
+	.string "Ah, my old tactics met their match\n"
+	.string "today!$"
 
 Gen_Route04_Text_Trainer2After:
-	.string "I need to train harder.$"
+	.string "Never grow complacent, no matter\n"
+	.string "how many BADGES you earn!$"
 
 Gen_Route04_EventScript_Trainer3::
 	trainerbattle_single TRAINER_GWEN, Gen_Route04_Text_Trainer3Intro, Gen_Route04_Text_Trainer3Defeat
@@ -52,11 +57,13 @@ Gen_Route04_EventScript_Trainer3::
 	end
 
 Gen_Route04_Text_Trainer3Intro:
-	.string "I only train ICE-type POKéMON.\n"
-	.string "Want to see why?$"
+	.string "I have been reading my survival\n"
+	.string "guide, and step one is winning!$"
 
 Gen_Route04_Text_Trainer3Defeat:
-	.string "You're tougher than you look.$"
+	.string "Back to the drawing board around\n"
+	.string "the lantern tonight!$"
 
 Gen_Route04_Text_Trainer3After:
-	.string "I need to train harder.$"
+	.string "Make sure you stock up on supplies\n"
+	.string "before heading out!$"

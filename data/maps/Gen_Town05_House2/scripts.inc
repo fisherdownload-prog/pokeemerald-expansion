@@ -6,5 +6,6 @@ Gen_Town05_House2_EventScript_Resident::
 	end
 
 Gen_Town05_House2_Text_Resident:
-	.string "ROUTE 6 to the north is full of\n"
-	.string "GROUND-type POKéMON.$"
+	.string "Before challenging CLOVERVIEW's\n"
+	.string "GYM, spend some time leveling up\l"
+	.string "along ROUTE 6!$"

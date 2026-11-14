@@ -6,5 +6,6 @@ Gen_Town01_House1_EventScript_Resident::
 	end
 
 Gen_Town01_House1_Text_Resident:
-	.string "ROUTE 1 to the west is full of\n"
-	.string "PSYCHIC-type POKéMON.$"
+	.string "Heading east onto ROUTE 2? Watch\n"
+	.string "out for wild ROCK POKéMON in the\l"
+	.string "grass!$"

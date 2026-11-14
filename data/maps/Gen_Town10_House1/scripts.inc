@@ -6,5 +6,6 @@ Gen_Town10_House1_EventScript_Resident::
 	end
 
 Gen_Town10_House1_Text_Resident:
-	.string "You can't get far on ROUTE 11\n"
-	.string "without 8 BADGES.$"
+	.string "Keep an eye out for unusual\n"
+	.string "colorations on wild POKéMON! Rare\l"
+	.string "ones are a real treat!$"

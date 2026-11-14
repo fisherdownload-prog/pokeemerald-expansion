@@ -18,12 +18,14 @@ Gen_Town09_Gym_EventScript_Defeated::
 	end
 
 Gen_Town09_Gym_Text_Intro:
-	.string "Welcome to the EMBERBROOK GYM! My\n"
-	.string "FIRE-type POKéMON and I have been\l"
-	.string "waiting for a challenger like you.$"
+	.string "My passion for battling never\n"
+	.string "cools, not even for a second!\p"
+	.string "Come! Let us ignite an\n"
+	.string "unforgettable GYM battle!$"
 
 Gen_Town09_Gym_Text_Defeat:
-	.string "Well fought! You have earned this.$"
+	.string "What a blaze of glory! You have\n"
+	.string "more than earned this GYM BADGE!$"
 
 Gen_Town09_Gym_Text_Badge:
 	.string "{PLAYER} received BADGE No. 7 from\n"
@@ -40,14 +42,17 @@ Gen_Town09_Gym_EventScript_Trainer0::
 	end
 
 Gen_Town09_Gym_Text_Trainer0Intro:
-	.string "The LEADER is too busy for you.\n"
-	.string "Battle me first!$"
+	.string "You will not reach the LEADER\n"
+	.string "without proving your skill right\l"
+	.string "here!$"
 
 Gen_Town09_Gym_Text_Trainer0Defeat:
-	.string "You might just have a chance.$"
+	.string "Oof! I ran out of breath on the\n"
+	.string "last lap!$"
 
 Gen_Town09_Gym_Text_Trainer0After:
-	.string "The LEADER is straight ahead.$"
+	.string "Make sure you have plenty of\n"
+	.string "healing items for long swims!$"
 
 Gen_Town09_Gym_EventScript_Trainer1::
 	trainerbattle_single TRAINER_ROSE_3, Gen_Town09_Gym_Text_Trainer1Intro, Gen_Town09_Gym_Text_Trainer1Defeat
@@ -55,11 +60,14 @@ Gen_Town09_Gym_EventScript_Trainer1::
 	end
 
 Gen_Town09_Gym_Text_Trainer1Intro:
-	.string "The LEADER is too busy for you.\n"
-	.string "Battle me first!$"
+	.string "Step forward, challenger! Let us\n"
+	.string "see if you deserve a shot at the\l"
+	.string "BADGE!$"
 
 Gen_Town09_Gym_Text_Trainer1Defeat:
-	.string "You might just have a chance.$"
+	.string "A fine contest! Thank you for the\n"
+	.string "thrill!$"
 
 Gen_Town09_Gym_Text_Trainer1After:
-	.string "The LEADER is straight ahead.$"
+	.string "Treat your POKéMON with kindness\n"
+	.string "and they will never fail you.$"

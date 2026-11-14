@@ -7,14 +7,16 @@ Gen_Route07_EventScript_Trainer0::
 	end
 
 Gen_Route07_Text_Trainer0Intro:
-	.string "Our eyes met. You know what that\n"
-	.string "means!$"
+	.string "I have climbed every peak around\n"
+	.string "here without breaking a sweat!$"
 
 Gen_Route07_Text_Trainer0Defeat:
-	.string "You're tougher than you look.$"
+	.string "Ha! I stumbled on the final\n"
+	.string "stretch!$"
 
 Gen_Route07_Text_Trainer0After:
-	.string "I need to train harder.$"
+	.string "Wahaha! Come back anytime for\n"
+	.string "another round!$"
 
 Gen_Route07_EventScript_Trainer1::
 	trainerbattle_single TRAINER_RANDALL, Gen_Route07_Text_Trainer1Intro, Gen_Route07_Text_Trainer1Defeat
@@ -22,14 +24,16 @@ Gen_Route07_EventScript_Trainer1::
 	end
 
 Gen_Route07_Text_Trainer1Intro:
-	.string "Hold it! You look like you could\n"
-	.string "use a battle.$"
+	.string "Sparkling charm hides fierce\n"
+	.string "power! Behold my FAIRY POKéMON!$"
 
 Gen_Route07_Text_Trainer1Defeat:
-	.string "You're tougher than you look.$"
+	.string "Magnificent! You are tougher than\n"
+	.string "granite!$"
 
 Gen_Route07_Text_Trainer1After:
-	.string "I need to train harder.$"
+	.string "Take care out there on the rocky\n"
+	.string "paths, friend!$"
 
 Gen_Route07_EventScript_Trainer2::
 	trainerbattle_single TRAINER_PARKER, Gen_Route07_Text_Trainer2Intro, Gen_Route07_Text_Trainer2Defeat
@@ -37,19 +41,21 @@ Gen_Route07_EventScript_Trainer2::
 	end
 
 Gen_Route07_Text_Trainer2Intro:
-	.string "Our eyes met. You know what that\n"
-	.string "means!$"
+	.string "My moves are swift as the wind and\n"
+	.string "silent as night!$"
 
 Gen_Route07_Text_Trainer2Defeat:
-	.string "You're tougher than you look.$"
+	.string "My secret techniques were\n"
+	.string "completely countered!$"
 
 Gen_Route07_Text_Trainer2After:
-	.string "I need to train harder.$"
+	.string "I will master the art of\n"
+	.string "invisibility before our rematch!$"
 
 Gen_Route07_EventScript_Guard::
 	msgbox Gen_Route07_Text_Guard, MSGBOX_NPC
 	end
 
 Gen_Route07_Text_Guard:
-	.string "The road ahead is dangerous. Come\n"
-	.string "back when you have 5 BADGES.$"
+	.string "Safety regulations require 5 GYM\n"
+	.string "BADGES to enter the road ahead!$"

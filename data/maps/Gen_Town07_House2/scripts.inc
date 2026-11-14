@@ -6,5 +6,6 @@ Gen_Town07_House2_EventScript_Resident::
 	end
 
 Gen_Town07_House2_Text_Resident:
-	.string "POKéMON from ROUTE 7 do well\n"
-	.string "against the GYM in HEATHWOOD.$"
+	.string "Smart TRAINERS scout ROUTE 7 for\n"
+	.string "helpful POKéMON before taking on\l"
+	.string "HEATHWOOD!$"

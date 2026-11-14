@@ -18,13 +18,15 @@ Gen_Town04_Gym_EventScript_Defeated::
 	end
 
 Gen_Town04_Gym_Text_Intro:
-	.string "Welcome to the SLATEHOLT GYM! My\n"
-	.string "GROUND-type POKéMON and I have\l"
-	.string "been waiting for a challenger like\l"
-	.string "you.$"
+	.string "Mountains do not move for the\n"
+	.string "wind, and I do not yield easily!\p"
+	.string "Show me the strength to shake my\n"
+	.string "GYM!$"
 
 Gen_Town04_Gym_Text_Defeat:
-	.string "Well fought! You have earned this.$"
+	.string "What earth-shattering strength!\n"
+	.string "You have rightfully earned my\l"
+	.string "BADGE!$"
 
 Gen_Town04_Gym_Text_Badge:
 	.string "{PLAYER} received BADGE No. 3 from\n"
@@ -41,14 +43,16 @@ Gen_Town04_Gym_EventScript_Trainer0::
 	end
 
 Gen_Town04_Gym_Text_Trainer0Intro:
-	.string "The LEADER is too busy for you.\n"
-	.string "Battle me first!$"
+	.string "Many challengers walk through\n"
+	.string "those doors, and most turn right\l"
+	.string "back!$"
 
 Gen_Town04_Gym_Text_Trainer0Defeat:
-	.string "You might just have a chance.$"
+	.string "Gah! My defenses were shattered!$"
 
 Gen_Town04_Gym_Text_Trainer0After:
-	.string "The LEADER is straight ahead.$"
+	.string "Defeat is merely the first step\n"
+	.string "toward true mastery!$"
 
 Gen_Town04_Gym_EventScript_Trainer1::
 	trainerbattle_single TRAINER_DECLAN, Gen_Town04_Gym_Text_Trainer1Intro, Gen_Town04_Gym_Text_Trainer1Defeat
@@ -56,11 +60,14 @@ Gen_Town04_Gym_EventScript_Trainer1::
 	end
 
 Gen_Town04_Gym_Text_Trainer1Intro:
-	.string "The LEADER is too busy for you.\n"
-	.string "Battle me first!$"
+	.string "Welcome to our GYM! Show me you\n"
+	.string "have what it takes to face the\l"
+	.string "LEADER!$"
 
 Gen_Town04_Gym_Text_Trainer1Defeat:
-	.string "You might just have a chance.$"
+	.string "How eerie... You broke right\n"
+	.string "through my hex...$"
 
 Gen_Town04_Gym_Text_Trainer1After:
-	.string "The LEADER is straight ahead.$"
+	.string "Hehe... My POKéMON seem to have\n"
+	.string "taken a liking to you...$"

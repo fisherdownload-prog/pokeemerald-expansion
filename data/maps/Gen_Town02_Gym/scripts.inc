@@ -18,13 +18,16 @@ Gen_Town02_Gym_EventScript_Defeated::
 	end
 
 Gen_Town02_Gym_Text_Intro:
-	.string "Welcome to the FLINTMERE GYM! My\n"
-	.string "FLYING-type POKéMON and I have\l"
-	.string "been waiting for a challenger like\l"
-	.string "you.$"
+	.string "Welcome! To reach the summit, you\n"
+	.string "must learn to ride the fiercest\l"
+	.string "gales!\p"
+	.string "Let us see if your dreams have\n"
+	.string "wings!$"
 
 Gen_Town02_Gym_Text_Defeat:
-	.string "Well fought! You have earned this.$"
+	.string "Bravo! You soared higher than even\n"
+	.string "the wind could carry us. Take this\l"
+	.string "BADGE!$"
 
 Gen_Town02_Gym_Text_Badge:
 	.string "{PLAYER} received BADGE No. 1 from\n"
@@ -41,14 +44,16 @@ Gen_Town02_Gym_EventScript_Trainer0::
 	end
 
 Gen_Town02_Gym_Text_Trainer0Intro:
-	.string "The LEADER is too busy for you.\n"
-	.string "Battle me first!$"
+	.string "Show me how well you handle FLYING\n"
+	.string "POKéMON under pressure!$"
 
 Gen_Town02_Gym_Text_Trainer0Defeat:
-	.string "You might just have a chance.$"
+	.string "Snapped my line! You got away with\n"
+	.string "the win!$"
 
 Gen_Town02_Gym_Text_Trainer0After:
-	.string "The LEADER is straight ahead.$"
+	.string "Tight lines and good luck to you,\n"
+	.string "kid!$"
 
 Gen_Town02_Gym_EventScript_Trainer1::
 	trainerbattle_single TRAINER_GABRIELLE_1, Gen_Town02_Gym_Text_Trainer1Intro, Gen_Town02_Gym_Text_Trainer1Defeat
@@ -56,11 +61,13 @@ Gen_Town02_Gym_EventScript_Trainer1::
 	end
 
 Gen_Town02_Gym_Text_Trainer1Intro:
-	.string "The LEADER is too busy for you.\n"
-	.string "Battle me first!$"
+	.string "Do not look past me toward the\n"
+	.string "LEADER! Focus on our battle!$"
 
 Gen_Town02_Gym_Text_Trainer1Defeat:
-	.string "You might just have a chance.$"
+	.string "Looks like my campfire just got\n"
+	.string "put out!$"
 
 Gen_Town02_Gym_Text_Trainer1After:
-	.string "The LEADER is straight ahead.$"
+	.string "Safe travels out there on the\n"
+	.string "road!$"

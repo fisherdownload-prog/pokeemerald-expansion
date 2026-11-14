@@ -6,5 +6,6 @@ Gen_Town10_House2_EventScript_Resident::
 	end
 
 Gen_Town10_House2_Text_Resident:
-	.string "POKéMON from ROUTE 10 do well\n"
-	.string "against the GYM in SABLEFALL.$"
+	.string "Be careful exploring south on\n"
+	.string "ROUTE 11! The POISON POKéMON there\l"
+	.string "are fierce!$"

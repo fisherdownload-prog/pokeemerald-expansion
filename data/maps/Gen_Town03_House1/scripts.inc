@@ -6,5 +6,6 @@ Gen_Town03_House1_EventScript_Resident::
 	end
 
 Gen_Town03_House1_Text_Resident:
-	.string "ROUTE 3 to the south is full of\n"
-	.string "GROUND-type POKéMON.$"
+	.string "Having trouble with the GYM in\n"
+	.string "SLATEHOLT? Try catching new\l"
+	.string "teammates out on ROUTE 4!$"

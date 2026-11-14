@@ -7,14 +7,16 @@ Gen_Route11_EventScript_Trainer0::
 	end
 
 Gen_Route11_Text_Trainer0Intro:
-	.string "Hold it! You look like you could\n"
-	.string "use a battle.$"
+	.string "Slowly but surely, my POISON\n"
+	.string "POKéMON wear down every foe!$"
 
 Gen_Route11_Text_Trainer0Defeat:
-	.string "You're tougher than you look.$"
+	.string "The future shifted right before my\n"
+	.string "eyes!$"
 
 Gen_Route11_Text_Trainer0After:
-	.string "I need to train harder.$"
+	.string "We shall cross paths again when\n"
+	.string "fate decides...$"
 
 Gen_Route11_EventScript_Trainer1::
 	trainerbattle_single TRAINER_WILTON_3, Gen_Route11_Text_Trainer1Intro, Gen_Route11_Text_Trainer1Defeat
@@ -22,14 +24,16 @@ Gen_Route11_EventScript_Trainer1::
 	end
 
 Gen_Route11_Text_Trainer1Intro:
-	.string "I only train POISON-type POKéMON.\n"
-	.string "Want to see why?$"
+	.string "Excuse me! Could you help me\n"
+	.string "practice my battle skills?$"
 
 Gen_Route11_Text_Trainer1Defeat:
-	.string "You're tougher than you look.$"
+	.string "You beat me fair and square. That\n"
+	.string "was fun!$"
 
 Gen_Route11_Text_Trainer1After:
-	.string "I need to train harder.$"
+	.string "I should visit a POKéMON CENTER\n"
+	.string "before my next match!$"
 
 Gen_Route11_EventScript_Trainer2::
 	trainerbattle_single TRAINER_WILTON_4, Gen_Route11_Text_Trainer2Intro, Gen_Route11_Text_Trainer2Defeat
@@ -37,13 +41,17 @@ Gen_Route11_EventScript_Trainer2::
 	end
 
 Gen_Route11_Text_Trainer2Intro:
-	.string "ROUTE 11 is my turf. Let's battle!$"
+	.string "Sweet aroma or noxious fume,\n"
+	.string "POISON POKéMON always leave a\l"
+	.string "mark!$"
 
 Gen_Route11_Text_Trainer2Defeat:
-	.string "You're tougher than you look.$"
+	.string "Hmph! You did not have to go that\n"
+	.string "hard on me!$"
 
 Gen_Route11_Text_Trainer2After:
-	.string "I need to train harder.$"
+	.string "My POKéMON still look adorable,\n"
+	.string "even when tired!$"
 
 Gen_Route11_EventScript_Trainer3::
 	trainerbattle_single TRAINER_WILTON_5, Gen_Route11_Text_Trainer3Intro, Gen_Route11_Text_Trainer3Defeat
@@ -51,19 +59,22 @@ Gen_Route11_EventScript_Trainer3::
 	end
 
 Gen_Route11_Text_Trainer3Intro:
-	.string "Hold it! You look like you could\n"
-	.string "use a battle.$"
+	.string "Toxic clouds and venomous fangs!\n"
+	.string "Beware my POISON team!$"
 
 Gen_Route11_Text_Trainer3Defeat:
-	.string "You're tougher than you look.$"
+	.string "Remarkable! Youthful energy\n"
+	.string "triumphs today!$"
 
 Gen_Route11_Text_Trainer3After:
-	.string "I need to train harder.$"
+	.string "It was a genuine pleasure crossing\n"
+	.string "swords with you!$"
 
 Gen_Route11_EventScript_Guard::
 	msgbox Gen_Route11_Text_Guard, MSGBOX_NPC
 	end
 
 Gen_Route11_Text_Guard:
-	.string "The road ahead is dangerous. Come\n"
-	.string "back when you have 8 BADGES.$"
+	.string "Halt! Only TRAINERS with at least\n"
+	.string "8 BADGES may proceed past this\l"
+	.string "checkpoint!$"

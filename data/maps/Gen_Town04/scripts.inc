@@ -7,4 +7,5 @@ Gen_Town04_EventScript_Sign::
 
 Gen_Town04_Text_Sign:
 	.string "SLATEHOLT CITY\p"
-	.string "Home of the GROUND-type GYM.$"
+	.string "A proud GYM town famed for\n"
+	.string "thrilling GROUND POKéMON matches!$"

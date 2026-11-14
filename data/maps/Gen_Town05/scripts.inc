@@ -7,4 +7,6 @@ Gen_Town05_EventScript_Sign::
 
 Gen_Town05_Text_Sign:
 	.string "BRAMPORT CITY\p"
-	.string "Home of the FIGHTING-type GYM.$"
+	.string "Where dedicated TRAINERS gather to\n"
+	.string "master the art of FIGHTING\l"
+	.string "battles!$"

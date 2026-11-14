@@ -6,6 +6,6 @@ Gen_Town06_House2_EventScript_Resident::
 	end
 
 Gen_Town06_House2_Text_Resident:
-	.string "Our GYM LEADER loves POISON-type\n"
-	.string "POKéMON. Beat them and you get the\l"
-	.string "HM for FLASH.$"
+	.string "The GYM in HEATHWOOD is no joke!\n"
+	.string "Prepare your team out on ROUTE 7\l"
+	.string "first!$"

@@ -7,12 +7,16 @@ Gen_Town11_League_EventScript_Member0::
 	end
 
 Gen_Town11_League_Text_Member0Intro:
-	.string "I am SIDNEY of the ELITE FOUR.\n"
-	.string "Show me what eight BADGES are\l"
-	.string "worth!$"
+	.string "You have walked through fire to\n"
+	.string "reach this chamber, yet the\l"
+	.string "hottest trial awaits!\p"
+	.string "Let us see if you can survive my\n"
+	.string "inferno!$"
 
 Gen_Town11_League_Text_Member0Defeat:
-	.string "Splendid. Go on.$"
+	.string "What roaring power! You conquered\n"
+	.string "the flames. Step forward to your\l"
+	.string "destiny!$"
 
 Gen_Town11_League_Text_Member0After:
 	.string "The next of us is waiting.$"
@@ -23,12 +27,13 @@ Gen_Town11_League_EventScript_Member1::
 	end
 
 Gen_Town11_League_Text_Member1Intro:
-	.string "I am PHOEBE of the ELITE FOUR.\n"
-	.string "Show me what eight BADGES are\l"
-	.string "worth!$"
+	.string "Forged in the depths of the earth,\n"
+	.string "my ROCK POKéMON yield to nothing!\p"
+	.string "Show me your strength!$"
 
 Gen_Town11_League_Text_Member1Defeat:
-	.string "Splendid. Go on.$"
+	.string "Unbreakable will! You earned this\n"
+	.string "victory cleanly. Step forward!$"
 
 Gen_Town11_League_Text_Member1After:
 	.string "The next of us is waiting.$"
@@ -39,12 +44,15 @@ Gen_Town11_League_EventScript_Member2::
 	end
 
 Gen_Town11_League_Text_Member2Intro:
-	.string "I am GLACIA of the ELITE FOUR.\n"
-	.string "Show me what eight BADGES are\l"
-	.string "worth!$"
+	.string "Legends are born in the roar of\n"
+	.string "dragons!\p"
+	.string "Prove you possess the soul of a\n"
+	.string "true CHAMPION!$"
 
 Gen_Town11_League_Text_Member2Defeat:
-	.string "Splendid. Go on.$"
+	.string "Truly worthy of legend! Step\n"
+	.string "forward and face your final\l"
+	.string "destiny!$"
 
 Gen_Town11_League_Text_Member2After:
 	.string "The next of us is waiting.$"
@@ -74,9 +82,10 @@ Gen_Town11_League_EventScript_Champion::
 	end
 
 Gen_Town11_League_Text_FinalIntro:
-	.string "I am DRAKE, last of the ELITE\n"
-	.string "FOUR. Nobody has come this far in\l"
-	.string "a long time. Let's begin!$"
+	.string "You have climbed high, challenger,\n"
+	.string "yet the sky above still belongs to\l"
+	.string "me!\p"
+	.string "Try to reach my FLYING POKéMON!$"
 
 Gen_Town11_League_Text_FinalDefeat:
 	.string "Magnificent. There is nothing more\n"

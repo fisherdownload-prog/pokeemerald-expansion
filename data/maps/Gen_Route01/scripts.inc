@@ -7,14 +7,15 @@ Gen_Route01_EventScript_Trainer0::
 	end
 
 Gen_Route01_Text_Trainer0Intro:
-	.string "I only train PSYCHIC-type POKéMON.\n"
-	.string "Want to see why?$"
+	.string "Experience cannot be bought at any\n"
+	.string "POKé MART!$"
 
 Gen_Route01_Text_Trainer0Defeat:
-	.string "You're tougher than you look.$"
+	.string "Remarkable! Keep walking that\n"
+	.string "path!$"
 
 Gen_Route01_Text_Trainer0After:
-	.string "I need to train harder.$"
+	.string "Go on now. Your destiny awaits!$"
 
 Gen_Route01_EventScript_Trainer1::
 	trainerbattle_single TRAINER_CHIP, Gen_Route01_Text_Trainer1Intro, Gen_Route01_Text_Trainer1Defeat
@@ -22,13 +23,16 @@ Gen_Route01_EventScript_Trainer1::
 	end
 
 Gen_Route01_Text_Trainer1Intro:
-	.string "ROUTE 1 is my turf. Let's battle!$"
+	.string "Focus your thoughts, or my PSYCHIC\n"
+	.string "team will overwhelm your mind!$"
 
 Gen_Route01_Text_Trainer1Defeat:
-	.string "You're tougher than you look.$"
+	.string "You proved your worth beyond any\n"
+	.string "doubt!$"
 
 Gen_Route01_Text_Trainer1After:
-	.string "I need to train harder.$"
+	.string "You have a good head on your\n"
+	.string "shoulders, youngster.$"
 
 Gen_Route01_EventScript_Trainer2::
 	trainerbattle_single TRAINER_FOSTER, Gen_Route01_Text_Trainer2Intro, Gen_Route01_Text_Trainer2Defeat
@@ -36,14 +40,16 @@ Gen_Route01_EventScript_Trainer2::
 	end
 
 Gen_Route01_Text_Trainer2Intro:
-	.string "Hold it! You look like you could\n"
-	.string "use a battle.$"
+	.string "Watch your step! The rocks around\n"
+	.string "here bite back!$"
 
 Gen_Route01_Text_Trainer2Defeat:
-	.string "You're tougher than you look.$"
+	.string "Wahaha! What an avalanche of power\n"
+	.string "you have!$"
 
 Gen_Route01_Text_Trainer2After:
-	.string "I need to train harder.$"
+	.string "Always carry plenty of POTIONS\n"
+	.string "when exploring far from town!$"
 
 Gen_Route01_EventScript_Trainer3::
 	trainerbattle_single TRAINER_DUSTY_2, Gen_Route01_Text_Trainer3Intro, Gen_Route01_Text_Trainer3Defeat
@@ -51,10 +57,12 @@ Gen_Route01_EventScript_Trainer3::
 	end
 
 Gen_Route01_Text_Trainer3Intro:
-	.string "ROUTE 1 is my turf. Let's battle!$"
+	.string "En garde! Let us conduct this\n"
+	.string "match with utmost honor!$"
 
 Gen_Route01_Text_Trainer3Defeat:
-	.string "You're tougher than you look.$"
+	.string "Bravo! A truly masterful display!$"
 
 Gen_Route01_Text_Trainer3After:
-	.string "I need to train harder.$"
+	.string "May fortune favor your travels\n"
+	.string "across the land!$"

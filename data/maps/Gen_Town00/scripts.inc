@@ -7,4 +7,5 @@ Gen_Town00_EventScript_Sign::
 
 Gen_Town00_Text_Sign:
 	.string "JADEFIELD TOWN\p"
-	.string "Where every journey begins.$"
+	.string "Home sweet home! Come back and\n"
+	.string "visit whenever you need a rest!$"

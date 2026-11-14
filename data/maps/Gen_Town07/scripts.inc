@@ -7,4 +7,5 @@ Gen_Town07_EventScript_Sign::
 
 Gen_Town07_Text_Sign:
 	.string "HEATHWOOD CITY\p"
-	.string "Home of the DRAGON-type GYM.$"
+	.string "Bring your best strategy if you\n"
+	.string "hope to conquer our DRAGON GYM!$"

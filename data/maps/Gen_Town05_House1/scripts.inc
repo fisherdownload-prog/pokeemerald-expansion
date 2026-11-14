@@ -6,5 +6,6 @@ Gen_Town05_House1_EventScript_Resident::
 	end
 
 Gen_Town05_House1_Text_Resident:
-	.string "You can't get far on ROUTE 6\n"
-	.string "without 4 BADGES.$"
+	.string "Our GYM LEADER loves FIGHTING-type\n"
+	.string "POKéMON. Beat them and you get the\l"
+	.string "HM for DIVE.$"

@@ -7,14 +7,16 @@ Gen_Route08_EventScript_Trainer0::
 	end
 
 Gen_Route08_Text_Trainer0Intro:
-	.string "I only train WATER-type POKéMON.\n"
-	.string "Want to see why?$"
+	.string "Dive into the deep end against my\n"
+	.string "fluid WATER team!$"
 
 Gen_Route08_Text_Trainer0Defeat:
-	.string "You're tougher than you look.$"
+	.string "I got completely washed out by\n"
+	.string "your team!$"
 
 Gen_Route08_Text_Trainer0After:
-	.string "I need to train harder.$"
+	.string "If you find a good fishing spot,\n"
+	.string "keep it a secret!$"
 
 Gen_Route08_EventScript_Trainer1::
 	trainerbattle_single TRAINER_BERKE, Gen_Route08_Text_Trainer1Intro, Gen_Route08_Text_Trainer1Defeat
@@ -22,14 +24,16 @@ Gen_Route08_EventScript_Trainer1::
 	end
 
 Gen_Route08_Text_Trainer1Intro:
-	.string "I only train WATER-type POKéMON.\n"
-	.string "Want to see why?$"
+	.string "Words are unnecessary. Our POKéMON\n"
+	.string "will speak for us!$"
 
 Gen_Route08_Text_Trainer1Defeat:
-	.string "You're tougher than you look.$"
+	.string "Impossible... My vision did not\n"
+	.string "show this outcome!$"
 
 Gen_Route08_Text_Trainer1After:
-	.string "I need to train harder.$"
+	.string "Your future is clouded in bright,\n"
+	.string "unpredictable energy...$"
 
 Gen_Route08_EventScript_Trainer2::
 	trainerbattle_single TRAINER_BRAXTON, Gen_Route08_Text_Trainer2Intro, Gen_Route08_Text_Trainer2Defeat
@@ -37,13 +41,16 @@ Gen_Route08_EventScript_Trainer2::
 	end
 
 Gen_Route08_Text_Trainer2Intro:
-	.string "ROUTE 8 is my turf. Let's battle!$"
+	.string "Crash like a tidal wave! My WATER\n"
+	.string "POKéMON will wash you away!$"
 
 Gen_Route08_Text_Trainer2Defeat:
-	.string "You're tougher than you look.$"
+	.string "A stunning performance. I tip my\n"
+	.string "hat to you!$"
 
 Gen_Route08_Text_Trainer2After:
-	.string "I need to train harder.$"
+	.string "Do try not to get too dusty out\n"
+	.string "here on the road!$"
 
 Gen_Route08_EventScript_Trainer3::
 	trainerbattle_single TRAINER_VINCENT, Gen_Route08_Text_Trainer3Intro, Gen_Route08_Text_Trainer3Defeat
@@ -51,14 +58,15 @@ Gen_Route08_EventScript_Trainer3::
 	end
 
 Gen_Route08_Text_Trainer3Intro:
-	.string "Hold it! You look like you could\n"
-	.string "use a battle.$"
+	.string "Let us put on a show worthy of a\n"
+	.string "grand stage!$"
 
 Gen_Route08_Text_Trainer3Defeat:
-	.string "You're tougher than you look.$"
+	.string "Well! At least I lost with\n"
+	.string "impeccable grace!$"
 
 Gen_Route08_Text_Trainer3After:
-	.string "I need to train harder.$"
+	.string "Until we meet again, darling!$"
 
 Gen_Route08_EventScript_Trainer4::
 	trainerbattle_single TRAINER_LEROY, Gen_Route08_Text_Trainer4Intro, Gen_Route08_Text_Trainer4Defeat
@@ -66,19 +74,22 @@ Gen_Route08_EventScript_Trainer4::
 	end
 
 Gen_Route08_Text_Trainer4Intro:
-	.string "I only train WATER-type POKéMON.\n"
-	.string "Want to see why?$"
+	.string "Shorts are comfy and easy to wear!\n"
+	.string "Let us battle!$"
 
 Gen_Route08_Text_Trainer4Defeat:
-	.string "You're tougher than you look.$"
+	.string "Whoa! You are way stronger than I\n"
+	.string "thought!$"
 
 Gen_Route08_Text_Trainer4After:
-	.string "I need to train harder.$"
+	.string "You really know how to raise\n"
+	.string "POKéMON!$"
 
 Gen_Route08_EventScript_Guard::
 	msgbox Gen_Route08_Text_Guard, MSGBOX_NPC
 	end
 
 Gen_Route08_Text_Guard:
-	.string "The road ahead is dangerous. Come\n"
-	.string "back when you have 6 BADGES.$"
+	.string "This route is dangerous! Show me 6\n"
+	.string "BADGES before I can let you\l"
+	.string "through!$"

@@ -7,4 +7,6 @@ Gen_Town03_EventScript_Sign::
 
 Gen_Town03_Text_Sign:
 	.string "WINDBURY CITY\p"
-	.string "Home of the STEEL-type GYM.$"
+	.string "Test your mettle against our\n"
+	.string "town's celebrated STEEL GYM\l"
+	.string "LEADER!$"

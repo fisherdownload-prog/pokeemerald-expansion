@@ -7,4 +7,6 @@ Gen_Town08_EventScript_Sign::
 
 Gen_Town08_Text_Sign:
 	.string "CORALSTONE TOWN\p"
-	.string "A quiet stop for weary TRAINERS.$"
+	.string "A bustling community where\n"
+	.string "TRAINERS swap stories and\l"
+	.string "supplies!$"

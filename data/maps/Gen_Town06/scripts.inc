@@ -7,4 +7,5 @@ Gen_Town06_EventScript_Sign::
 
 Gen_Town06_Text_Sign:
 	.string "CLOVERVIEW CITY\p"
-	.string "Home of the POISON-type GYM.$"
+	.string "Home of the renowned POISON GYM!\n"
+	.string "Only bold challengers prevail!$"

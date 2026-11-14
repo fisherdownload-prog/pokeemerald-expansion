@@ -7,14 +7,16 @@ Gen_Route10_EventScript_Trainer0::
 	end
 
 Gen_Route10_Text_Trainer0Intro:
-	.string "I only train GRASS-type POKéMON.\n"
-	.string "Want to see why?$"
+	.string "Sunshine and fresh soil gave my\n"
+	.string "GRASS team unstoppable vigor!$"
 
 Gen_Route10_Text_Trainer0Defeat:
-	.string "You're tougher than you look.$"
+	.string "Defeated! I must vanish into\n"
+	.string "training!$"
 
 Gen_Route10_Text_Trainer0After:
-	.string "I need to train harder.$"
+	.string "Check behind every tree! You never\n"
+	.string "know who is watching!$"
 
 Gen_Route10_EventScript_Trainer1::
 	trainerbattle_single TRAINER_VITO, Gen_Route10_Text_Trainer1Intro, Gen_Route10_Text_Trainer1Defeat
@@ -22,14 +24,15 @@ Gen_Route10_EventScript_Trainer1::
 	end
 
 Gen_Route10_Text_Trainer1Intro:
-	.string "I only train GRASS-type POKéMON.\n"
-	.string "Want to see why?$"
+	.string "Do not let their gentle leaves\n"
+	.string "fool you! GRASS POKéMON bite back!$"
 
 Gen_Route10_Text_Trainer1Defeat:
-	.string "You're tougher than you look.$"
+	.string "You saw right through all my\n"
+	.string "illusions!$"
 
 Gen_Route10_Text_Trainer1After:
-	.string "I need to train harder.$"
+	.string "Nin-nin! Farewell for now!$"
 
 Gen_Route10_EventScript_Trainer2::
 	trainerbattle_single TRAINER_OWEN, Gen_Route10_Text_Trainer2Intro, Gen_Route10_Text_Trainer2Defeat
@@ -37,11 +40,13 @@ Gen_Route10_EventScript_Trainer2::
 	end
 
 Gen_Route10_Text_Trainer2Intro:
-	.string "Hold it! You look like you could\n"
-	.string "use a battle.$"
+	.string "Nature's roots run deep! Feel the\n"
+	.string "wild energy of GRASS POKéMON!$"
 
 Gen_Route10_Text_Trainer2Defeat:
-	.string "You're tougher than you look.$"
+	.string "I bow to your superior strength\n"
+	.string "and focus!$"
 
 Gen_Route10_Text_Trainer2After:
-	.string "I need to train harder.$"
+	.string "Never neglect the fundamentals of\n"
+	.string "type matchups!$"

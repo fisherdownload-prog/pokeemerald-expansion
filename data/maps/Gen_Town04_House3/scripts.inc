@@ -6,5 +6,6 @@ Gen_Town04_House3_EventScript_Resident::
 	end
 
 Gen_Town04_House3_Text_Resident:
-	.string "ROUTE 4 to the east is full of\n"
-	.string "ICE-type POKéMON.$"
+	.string "I tried walking down ROUTE 5\n"
+	.string "earlier, but you definitely need\l"
+	.string "SURF there!$"

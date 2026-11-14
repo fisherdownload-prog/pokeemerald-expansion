@@ -6,5 +6,6 @@ Gen_Town07_House3_EventScript_Resident::
 	end
 
 Gen_Town07_House3_Text_Resident:
-	.string "POKéMON from ROUTE 7 do well\n"
-	.string "against the GYM in HEATHWOOD.$"
+	.string "A traveler from the east said\n"
+	.string "ROUTE 7 is packed with strong\l"
+	.string "FAIRY teams!$"

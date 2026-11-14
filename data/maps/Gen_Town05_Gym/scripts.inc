@@ -18,13 +18,16 @@ Gen_Town05_Gym_EventScript_Defeated::
 	end
 
 Gen_Town05_Gym_Text_Intro:
-	.string "Welcome to the BRAMPORT GYM! My\n"
-	.string "FIGHTING-type POKéMON and I have\l"
-	.string "been waiting for a challenger like\l"
-	.string "you.$"
+	.string "A GYM battle is a conversation\n"
+	.string "held with fists, grit, and\l"
+	.string "courage!\p"
+	.string "Show me the discipline you and\n"
+	.string "your POKéMON share!$"
 
 Gen_Town05_Gym_Text_Defeat:
-	.string "Well fought! You have earned this.$"
+	.string "I bow to a true warrior! You have\n"
+	.string "earned the right to carry this\l"
+	.string "BADGE!$"
 
 Gen_Town05_Gym_Text_Badge:
 	.string "{PLAYER} received BADGE No. 4 from\n"
@@ -41,14 +44,16 @@ Gen_Town05_Gym_EventScript_Trainer0::
 	end
 
 Gen_Town05_Gym_Text_Trainer0Intro:
-	.string "The LEADER is too busy for you.\n"
-	.string "Battle me first!$"
+	.string "I train here every day to uphold\n"
+	.string "the honor of our GYM!$"
 
 Gen_Town05_Gym_Text_Trainer0Defeat:
-	.string "You might just have a chance.$"
+	.string "No way! Even my toughest shell\n"
+	.string "cracked!$"
 
 Gen_Town05_Gym_Text_Trainer0After:
-	.string "The LEADER is straight ahead.$"
+	.string "One day my bugs will surprise\n"
+	.string "everybody!$"
 
 Gen_Town05_Gym_EventScript_Trainer1::
 	trainerbattle_single TRAINER_LEAH, Gen_Town05_Gym_Text_Trainer1Intro, Gen_Town05_Gym_Text_Trainer1Defeat
@@ -56,11 +61,13 @@ Gen_Town05_Gym_EventScript_Trainer1::
 	end
 
 Gen_Town05_Gym_Text_Trainer1Intro:
-	.string "The LEADER is too busy for you.\n"
-	.string "Battle me first!$"
+	.string "Our LEADER only battles TRAINERS\n"
+	.string "who can get past me first!$"
 
 Gen_Town05_Gym_Text_Trainer1Defeat:
-	.string "You might just have a chance.$"
+	.string "How dreadful! My flawless record\n"
+	.string "is ruined!$"
 
 Gen_Town05_Gym_Text_Trainer1After:
-	.string "The LEADER is straight ahead.$"
+	.string "Do try not to get too dusty out\n"
+	.string "here on the road!$"

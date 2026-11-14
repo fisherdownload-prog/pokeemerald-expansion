@@ -18,13 +18,15 @@ Gen_Town07_Gym_EventScript_Defeated::
 	end
 
 Gen_Town07_Gym_Text_Intro:
-	.string "Welcome to the HEATHWOOD GYM! My\n"
-	.string "DRAGON-type POKéMON and I have\l"
-	.string "been waiting for a challenger like\l"
-	.string "you.$"
+	.string "Few challengers possess the\n"
+	.string "courage to look a dragon in the\l"
+	.string "eye!\p"
+	.string "Show me you are worthy of standing\n"
+	.string "among legends!$"
 
 Gen_Town07_Gym_Text_Defeat:
-	.string "Well fought! You have earned this.$"
+	.string "Truly the heart of a champion! You\n"
+	.string "have earned this BADGE with honor!$"
 
 Gen_Town07_Gym_Text_Badge:
 	.string "{PLAYER} received BADGE No. 6 from\n"
@@ -41,14 +43,16 @@ Gen_Town07_Gym_EventScript_Trainer0::
 	end
 
 Gen_Town07_Gym_Text_Trainer0Intro:
-	.string "The LEADER is too busy for you.\n"
-	.string "Battle me first!$"
+	.string "Our DRAGON strategies are famous\n"
+	.string "across the entire region!$"
 
 Gen_Town07_Gym_Text_Trainer0Defeat:
-	.string "You might just have a chance.$"
+	.string "You totally swept me away in that\n"
+	.string "tide!$"
 
 Gen_Town07_Gym_Text_Trainer0After:
-	.string "The LEADER is straight ahead.$"
+	.string "My POKéMON love racing alongside\n"
+	.string "boats!$"
 
 Gen_Town07_Gym_EventScript_Trainer1::
 	trainerbattle_single TRAINER_VIOLET, Gen_Town07_Gym_Text_Trainer1Intro, Gen_Town07_Gym_Text_Trainer1Defeat
@@ -56,11 +60,13 @@ Gen_Town07_Gym_EventScript_Trainer1::
 	end
 
 Gen_Town07_Gym_Text_Trainer1Intro:
-	.string "The LEADER is too busy for you.\n"
-	.string "Battle me first!$"
+	.string "Think you can earn a BADGE today?\n"
+	.string "Let us test that confidence!$"
 
 Gen_Town07_Gym_Text_Trainer1Defeat:
-	.string "You might just have a chance.$"
+	.string "Oof! You knocked me right off the\n"
+	.string "trail!$"
 
 Gen_Town07_Gym_Text_Trainer1After:
-	.string "The LEADER is straight ahead.$"
+	.string "A sturdy team is a traveler's best\n"
+	.string "companion!$"

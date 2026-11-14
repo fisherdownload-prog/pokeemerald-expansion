@@ -6,5 +6,6 @@ Gen_Town02_House3_EventScript_Resident::
 	end
 
 Gen_Town02_House3_Text_Resident:
-	.string "POKéMON from ROUTE 2 do well\n"
-	.string "against the GYM in FLINTMERE.$"
+	.string "A balanced team with several\n"
+	.string "different types can handle almost\l"
+	.string "any GYM LEADER!$"

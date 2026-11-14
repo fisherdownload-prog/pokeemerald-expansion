@@ -6,5 +6,5 @@ Gen_Town10_House3_EventScript_Resident::
 	end
 
 Gen_Town10_House3_Text_Resident:
-	.string "ROUTE 11 to the south is full of\n"
-	.string "POISON-type POKéMON.$"
+	.string "Lots of GRASS POKéMON gather along\n"
+	.string "ROUTE 10, just north of town!$"

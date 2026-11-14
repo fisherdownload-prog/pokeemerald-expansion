@@ -6,5 +6,6 @@ Gen_Town06_House1_EventScript_Resident::
 	end
 
 Gen_Town06_House1_Text_Resident:
-	.string "You can't get far on ROUTE 7\n"
-	.string "without 5 BADGES.$"
+	.string "I heard PROF. TEAK is always\n"
+	.string "excited to see how many species\l"
+	.string "TRAINERS discover!$"

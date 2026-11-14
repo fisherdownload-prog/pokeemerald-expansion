@@ -6,5 +6,6 @@ Gen_Town07_House1_EventScript_Resident::
 	end
 
 Gen_Town07_House1_Text_Resident:
-	.string "ROUTE 7 to the east is full of\n"
-	.string "FAIRY-type POKéMON.$"
+	.string "Our GYM LEADER loves DRAGON-type\n"
+	.string "POKéMON. Beat them and you get the\l"
+	.string "HM for WATERFALL.$"

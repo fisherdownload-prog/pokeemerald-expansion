@@ -7,14 +7,16 @@ Gen_Route06_EventScript_Trainer0::
 	end
 
 Gen_Route06_Text_Trainer0Intro:
-	.string "Hold it! You look like you could\n"
-	.string "use a battle.$"
+	.string "Solid as bedrock! My GROUND team\n"
+	.string "shakes the very ground!$"
 
 Gen_Route06_Text_Trainer0Defeat:
-	.string "You're tougher than you look.$"
+	.string "I underestimated the power of your\n"
+	.string "bond!$"
 
 Gen_Route06_Text_Trainer0After:
-	.string "I need to train harder.$"
+	.string "You carry a remarkable aura with\n"
+	.string "you, TRAINER.$"
 
 Gen_Route06_EventScript_Trainer1::
 	trainerbattle_single TRAINER_RICKY_3, Gen_Route06_Text_Trainer1Intro, Gen_Route06_Text_Trainer1Defeat
@@ -22,13 +24,16 @@ Gen_Route06_EventScript_Trainer1::
 	end
 
 Gen_Route06_Text_Trainer1Intro:
-	.string "ROUTE 6 is my turf. Let's battle!$"
+	.string "You seem confident. Let us see if\n"
+	.string "your skills match your nerve!$"
 
 Gen_Route06_Text_Trainer1Defeat:
-	.string "You're tougher than you look.$"
+	.string "Hmph... You actually have quite a\n"
+	.string "bit of flair!$"
 
 Gen_Route06_Text_Trainer1After:
-	.string "I need to train harder.$"
+	.string "Take good care of your POKéMON so\n"
+	.string "they always shine!$"
 
 Gen_Route06_EventScript_Trainer2::
 	trainerbattle_single TRAINER_RICKY_4, Gen_Route06_Text_Trainer2Intro, Gen_Route06_Text_Trainer2Defeat
@@ -36,19 +41,22 @@ Gen_Route06_EventScript_Trainer2::
 	end
 
 Gen_Route06_Text_Trainer2Intro:
-	.string "Hold it! You look like you could\n"
-	.string "use a battle.$"
+	.string "Strange spirits gather wherever\n"
+	.string "strong TRAINERS walk...$"
 
 Gen_Route06_Text_Trainer2Defeat:
-	.string "You're tougher than you look.$"
+	.string "My haunting melody ended far too\n"
+	.string "soon...$"
 
 Gen_Route06_Text_Trainer2After:
-	.string "I need to train harder.$"
+	.string "I will stay here and listen to the\n"
+	.string "wind a little longer...$"
 
 Gen_Route06_EventScript_Guard::
 	msgbox Gen_Route06_Text_Guard, MSGBOX_NPC
 	end
 
 Gen_Route06_Text_Guard:
-	.string "The road ahead is dangerous. Come\n"
-	.string "back when you have 4 BADGES.$"
+	.string "Sorry, kid! Come back once you\n"
+	.string "have earned 4 BADGES from GYM\l"
+	.string "LEADERS!$"

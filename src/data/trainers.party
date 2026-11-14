@@ -85,18 +85,18 @@ Double Battle: No
 
 === TRAINER_SAWYER_1 ===
 Name: EDWIN
-Class: Hiker
-Pic: Hiker
+Class: Fisherman
+Pic: Fisherman
 Gender: Male
 Music: Hiker
 Double Battle: No
 AI: Basic Trainer
 
-SPECIES_WOOBAT
+SPECIES_CHATOT
 Level: 14
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
-SPECIES_MURKROW
+SPECIES_PIDGEY
 Level: 14
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
@@ -197,18 +197,18 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GABRIELLE_1 ===
 Name: NOLAN
-Class: Gentleman
-Pic: Gentleman
+Class: Camper
+Pic: Camper
 Gender: Male
-Music: Rich
+Music: Male
 Double Battle: No
 AI: Basic Trainer
 
-SPECIES_SWABLU
+SPECIES_WINGULL
 Level: 14
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
-SPECIES_DELIBIRD
+SPECIES_ARCHEN
 Level: 14
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
@@ -226,53 +226,53 @@ Level: 9
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_MARCEL ===
-Name: CONRAD
-Class: Gentleman
-Pic: Gentleman
-Gender: Male
-Music: Rich
+Name: FAYE
+Class: Lass
+Pic: Lass
+Gender: Female
+Music: Female
 Double Battle: No
 AI: Basic Trainer
 
-SPECIES_PERRSERKER
+SPECIES_TOGEDEMARU
 Level: 19
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
-SPECIES_DOUBLADE
+SPECIES_TINKATUFF
 Level: 19
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
 === TRAINER_ALBERTO ===
-Name: IVOR
-Class: Swimmer M
-Pic: Swimmer M
+Name: CONRAD
+Class: Expert
+Pic: Expert M
 Gender: Male
-Music: Swimmer
+Music: Intense
 Double Battle: No
 AI: Basic Trainer
 
-SPECIES_METANG
+SPECIES_TOGEDEMARU
 Level: 19
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
-SPECIES_DOUBLADE
+SPECIES_ARON
 Level: 19
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
 === TRAINER_ED ===
-Name: FAYE
-Class: Picnicker
-Pic: Picnicker
-Gender: Female
-Music: Girl
+Name: IVOR
+Class: Black Belt
+Pic: Black Belt
+Gender: Male
+Music: Intense
 Double Battle: No
 AI: Basic Trainer
 
-SPECIES_SANDSLASH
+SPECIES_DIGGERSBY
 Level: 24
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
-SPECIES_WHISCASH
+SPECIES_LARVITAR
 Level: 24
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
@@ -290,19 +290,19 @@ Level: 36
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_DECLAN ===
-Name: ALDO
-Class: Fisherman
-Pic: Fisherman
-Gender: Male
-Music: Hiker
+Name: GWEN
+Class: Hex Maniac
+Pic: Hex Maniac
+Gender: Female
+Music: Suspicious
 Double Battle: No
 AI: Basic Trainer
 
-SPECIES_SILICOBRA
+SPECIES_GOLETT
 Level: 24
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
-SPECIES_SANDSLASH
+SPECIES_PUPITAR
 Level: 24
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
@@ -535,19 +535,19 @@ Level: 34
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 === TRAINER_ZANDER ===
-Name: SILAS
-Class: Gentleman
-Pic: Gentleman
+Name: ALDO
+Class: Bug Catcher
+Pic: Bug Catcher
 Gender: Male
-Music: Rich
+Music: Male
 Double Battle: No
 AI: Basic Trainer
 
-SPECIES_HARIYAMA
+SPECIES_MONFERNO
 Level: 29
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
-SPECIES_BEWEAR
+SPECIES_BRELOOM
 Level: 29
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
@@ -608,23 +608,40 @@ Level: 43
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
 === TRAINER_LEAH ===
-Name: GWEN
-Class: Swimmer F
-Pic: Swimmer F
+Name: ESME
+Class: Beauty
+Pic: Beauty
 Gender: Female
-Music: Swimmer
+Music: Female
 Double Battle: No
 AI: Basic Trainer
 
-SPECIES_SCRAFTY
+SPECIES_HARIYAMA
 Level: 29
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
-SPECIES_PAWMOT
+SPECIES_PANCHAM
 Level: 29
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
 === TRAINER_DAISY ===
+Name: SILAS
+Class: Black Belt
+Pic: Black Belt
+Gender: Male
+Music: Intense
+Double Battle: No
+AI: Basic Trainer
+
+SPECIES_WHIRLIPEDE
+Level: 34
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+
+SPECIES_BEEDRILL
+Level: 34
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+
+=== TRAINER_ROSE_1 ===
 Name: QUINN
 Class: Bug Catcher
 Pic: Bug Catcher
@@ -633,16 +650,84 @@ Music: Male
 Double Battle: No
 AI: Basic Trainer
 
-SPECIES_GARBODOR
+SPECIES_BEEDRILL
 Level: 34
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
-SPECIES_DRAPION
+SPECIES_MUK
 Level: 34
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
-=== TRAINER_ROSE_1 ===
-Name: ESME
+=== TRAINER_FELIX ===
+Name: JONAS
+Class: Swimmer M
+Pic: Swimmer M
+Gender: Male
+Music: Swimmer
+Double Battle: No
+AI: Basic Trainer
+
+SPECIES_APPLETUN
+Level: 39
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+
+SPECIES_DIPPLIN
+Level: 39
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+
+=== TRAINER_VIOLET ===
+Name: WYATT
+Class: Hiker
+Pic: Hiker
+Gender: Male
+Music: Hiker
+Double Battle: No
+AI: Basic Trainer
+
+SPECIES_DRAKLOAK
+Level: 39
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+
+SPECIES_DRACOVISH
+Level: 39
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+
+=== TRAINER_ROSE_2 ===
+Name: RUFUS
+Class: Swimmer M
+Pic: Swimmer M
+Gender: Male
+Music: Swimmer
+Double Battle: No
+AI: Basic Trainer
+
+SPECIES_RABOOT
+Level: 44
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+
+SPECIES_TORKOAL
+Level: 44
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+
+=== TRAINER_ROSE_3 ===
+Name: BRAN
+Class: Gentleman
+Pic: Gentleman
+Gender: Male
+Music: Rich
+Double Battle: No
+AI: Basic Trainer
+
+SPECIES_FLAREON
+Level: 44
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+
+SPECIES_CHANDELURE
+Level: 44
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+
+=== TRAINER_ROSE_4 ===
+Name: FLORA
 Class: Lass
 Pic: Lass
 Gender: Female
@@ -650,130 +735,32 @@ Music: Female
 Double Battle: No
 AI: Basic Trainer
 
-SPECIES_ARIADOS
-Level: 34
-IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
-
-SPECIES_CROBAT
-Level: 34
-IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
-
-=== TRAINER_FELIX ===
-Name: JONAS
-Class: Black Belt
-Pic: Black Belt
-Gender: Male
-Music: Intense
-Double Battle: No
-AI: Basic Trainer
-
-SPECIES_DIPPLIN
-Level: 39
-IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
-
-SPECIES_HYDRAPPLE
-Level: 39
-IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
-
-=== TRAINER_VIOLET ===
-Name: FLORA
-Class: Picnicker
-Pic: Picnicker
-Gender: Female
-Music: Girl
-Double Battle: No
-AI: Basic Trainer
-
-SPECIES_SHELGON
-Level: 39
-IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
-
-SPECIES_FRAXURE
-Level: 39
-IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
-
-=== TRAINER_ROSE_2 ===
-Name: WYATT
-Class: Bug Catcher
-Pic: Bug Catcher
-Gender: Male
-Music: Male
-Double Battle: No
-AI: Basic Trainer
-
-SPECIES_TALONFLAME
-Level: 44
-IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
-
-SPECIES_RABOOT
-Level: 44
-IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
-
-=== TRAINER_ROSE_3 ===
-Name: RUFUS
-Class: Bug Catcher
-Pic: Bug Catcher
-Gender: Male
-Music: Male
-Double Battle: No
-AI: Basic Trainer
-
-SPECIES_CERULEDGE
-Level: 44
-IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
-
-SPECIES_INCINEROAR
-Level: 44
-IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
-
-=== TRAINER_ROSE_4 ===
-Name: XENIA
-Class: Picnicker
-Pic: Picnicker
-Gender: Female
-Music: Girl
-Double Battle: No
-AI: Basic Trainer
-
-SPECIES_INTELEON
+SPECIES_KABUTOPS
 Level: 49
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
-SPECIES_SLOWBRO
+SPECIES_CRAWDAUNT
 Level: 49
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
 === TRAINER_ROSE_5 ===
-Name: BRAN
-Class: Bug Catcher
-Pic: Bug Catcher
+Name: CASPER
+Class: Youngster
+Pic: Youngster
 Gender: Male
 Music: Male
 Double Battle: No
 AI: Basic Trainer
-
-SPECIES_DEWGONG
-Level: 49
-IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
 SPECIES_DREDNAW
 Level: 49
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
-=== TRAINER_DUSTY_1 ===
-Name: CASPER
-Class: Expert
-Pic: Expert M
-Gender: Male
-Music: Intense
-Double Battle: No
-AI: Basic Trainer
-
-SPECIES_SMOOCHUM
-Level: 5
+SPECIES_INTELEON
+Level: 49
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
-=== TRAINER_CHIP ===
+=== TRAINER_DUSTY_1 ===
 Name: YORICK
 Class: Expert
 Pic: Expert M
@@ -782,12 +769,25 @@ Music: Intense
 Double Battle: No
 AI: Basic Trainer
 
-SPECIES_WOOBAT
+SPECIES_INKAY
 Level: 5
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
-=== TRAINER_FOSTER ===
+=== TRAINER_CHIP ===
 Name: HUGO
+Class: Expert
+Pic: Expert M
+Gender: Male
+Music: Intense
+Double Battle: No
+AI: Basic Trainer
+
+SPECIES_HATENNA
+Level: 3
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+
+=== TRAINER_FOSTER ===
+Name: LUCAS
 Class: Hiker
 Pic: Hiker
 Gender: Male
@@ -795,12 +795,12 @@ Music: Hiker
 Double Battle: No
 AI: Basic Trainer
 
-SPECIES_MUNNA
-Level: 4
+SPECIES_HATENNA
+Level: 3
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
 === TRAINER_DUSTY_2 ===
-Name: LUCAS
+Name: BASIL
 Class: Gentleman
 Pic: Gentleman
 Gender: Male
@@ -808,11 +808,24 @@ Music: Rich
 Double Battle: No
 AI: Basic Trainer
 
-SPECIES_SOLOSIS
-Level: 3
+SPECIES_SLOWPOKE
+Level: 4
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
 === TRAINER_DUSTY_3 ===
+Name: XENIA
+Class: Beauty
+Pic: Beauty
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Basic Trainer
+
+SPECIES_NACLI
+Level: 5
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+
+=== TRAINER_DUSTY_4 ===
 Name: PIPPA
 Class: Beauty
 Pic: Beauty
@@ -821,25 +834,12 @@ Music: Female
 Double Battle: No
 AI: Basic Trainer
 
-SPECIES_ROGGENROLA
-Level: 4
-IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
-
-=== TRAINER_DUSTY_4 ===
-Name: UNA
-Class: Beauty
-Pic: Beauty
-Gender: Female
-Music: Female
-Double Battle: No
-AI: Basic Trainer
-
-SPECIES_TYRUNT
-Level: 4
+SPECIES_BINACLE
+Level: 3
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
 === TRAINER_DUSTY_5 ===
-Name: LENA
+Name: UNA
 Class: Hex Maniac
 Pic: Hex Maniac
 Gender: Female
@@ -847,12 +847,12 @@ Music: Suspicious
 Double Battle: No
 AI: Basic Trainer
 
-SPECIES_LARVITAR
-Level: 3
+SPECIES_BONSLY
+Level: 5
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
 === TRAINER_GABBY_AND_TY_1 ===
-Name: BASIL
+Name: OSCAR
 Class: Fisherman
 Pic: Fisherman
 Gender: Male
@@ -860,12 +860,12 @@ Music: Hiker
 Double Battle: No
 AI: Basic Trainer
 
-SPECIES_ARON
-Level: 5
+SPECIES_GLIMMET
+Level: 3
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
 === TRAINER_GABBY_AND_TY_2 ===
-Name: OSCAR
+Name: XAVIER
 Class: Black Belt
 Pic: Black Belt
 Gender: Male
@@ -873,20 +873,16 @@ Music: Intense
 Double Battle: No
 AI: Basic Trainer
 
-SPECIES_TRAPINCH
+SPECIES_HIPPOPOTAS
 Level: 8
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
-SPECIES_LARVITAR
-Level: 9
-IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
-
-SPECIES_SWINUB
-Level: 9
+SPECIES_ONIX
+Level: 8
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
 === TRAINER_GABBY_AND_TY_3 ===
-Name: XAVIER
+Name: ZANE
 Class: Youngster
 Pic: Youngster
 Gender: Male
@@ -894,20 +890,20 @@ Music: Male
 Double Battle: No
 AI: Basic Trainer
 
-SPECIES_NINCADA
+SPECIES_DRILBUR
+Level: 8
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+
+SPECIES_CUBONE
 Level: 9
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
-SPECIES_LARVITAR
-Level: 10
-IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
-
 SPECIES_GIBLE
-Level: 10
+Level: 9
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
 === TRAINER_GABBY_AND_TY_4 ===
-Name: HATTIE
+Name: LENA
 Class: Beauty
 Pic: Beauty
 Gender: Female
@@ -915,20 +911,16 @@ Music: Female
 Double Battle: No
 AI: Basic Trainer
 
-SPECIES_DRILBUR
-Level: 7
+SPECIES_CUBONE
+Level: 10
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
-SPECIES_GOLETT
-Level: 8
-IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
-
-SPECIES_RHYHORN
-Level: 8
+SPECIES_PHANPY
+Level: 10
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
 === TRAINER_GABBY_AND_TY_5 ===
-Name: ELISE
+Name: HATTIE
 Class: Hex Maniac
 Pic: Hex Maniac
 Gender: Female
@@ -936,16 +928,16 @@ Music: Suspicious
 Double Battle: No
 AI: Basic Trainer
 
-SPECIES_GIBLE
-Level: 8
+SPECIES_NINCADA
+Level: 10
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
-SPECIES_GOLETT
-Level: 8
+SPECIES_SWINUB
+Level: 10
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
 === TRAINER_GABBY_AND_TY_6 ===
-Name: ZELDA
+Name: ELISE
 Class: Beauty
 Pic: Beauty
 Gender: Female
@@ -953,7 +945,7 @@ Music: Female
 Double Battle: No
 AI: Basic Trainer
 
-SPECIES_SPHEAL
+SPECIES_AMAURA
 Level: 15
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
@@ -962,7 +954,7 @@ Level: 15
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
 === TRAINER_LOLA_1 ===
-Name: ZANE
+Name: EMIL
 Class: Fisherman
 Pic: Fisherman
 Gender: Male
@@ -970,16 +962,20 @@ Music: Hiker
 Double Battle: No
 AI: Basic Trainer
 
-SPECIES_BERGMITE
-Level: 15
+SPECIES_SNORUNT
+Level: 13
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
-SPECIES_SNOVER
-Level: 15
+SPECIES_FRIGIBAX
+Level: 14
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+
+SPECIES_DELIBIRD
+Level: 14
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
 === TRAINER_AUSTINA ===
-Name: EMIL
+Name: GARETH
 Class: Expert
 Pic: Expert M
 Gender: Male
@@ -987,20 +983,20 @@ Music: Intense
 Double Battle: No
 AI: Basic Trainer
 
-SPECIES_VANILLITE
-Level: 13
+SPECIES_DELIBIRD
+Level: 14
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
 SPECIES_AMAURA
-Level: 14
+Level: 15
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
-SPECIES_BERGMITE
-Level: 14
+SPECIES_CETODDLE
+Level: 15
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
 === TRAINER_GWEN ===
-Name: GARETH
+Name: VANCE
 Class: Camper
 Pic: Camper
 Gender: Male
@@ -1008,36 +1004,19 @@ Music: Male
 Double Battle: No
 AI: Basic Trainer
 
-SPECIES_SWINUB
+SPECIES_AMAURA
 Level: 14
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
-SPECIES_VANILLITE
-Level: 14
+SPECIES_SPHEAL
+Level: 15
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+
+SPECIES_CETODDLE
+Level: 15
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
 === TRAINER_LOLA_2 ===
-Name: VANCE
-Class: Swimmer M
-Pic: Swimmer M
-Gender: Male
-Music: Swimmer
-Double Battle: No
-AI: Basic Trainer
-
-SPECIES_DODUO
-Level: 17
-IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
-
-SPECIES_YANMA
-Level: 18
-IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
-
-SPECIES_STARAVIA
-Level: 18
-IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
-
-=== TRAINER_LOLA_3 ===
 Name: ULRIC
 Class: Swimmer M
 Pic: Swimmer M
@@ -1046,20 +1025,45 @@ Music: Swimmer
 Double Battle: No
 AI: Basic Trainer
 
-SPECIES_TAILLOW
+SPECIES_TRANQUILL
 Level: 17
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
-SPECIES_YANMA
+SPECIES_VULLABY
+Level: 17
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+
+SPECIES_MURKROW
 Level: 18
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
-SPECIES_SWELLOW
+SPECIES_ARCHEN
 Level: 18
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+
+=== TRAINER_LOLA_3 ===
+Name: MILO
+Class: Swimmer M
+Pic: Swimmer M
+Gender: Male
+Music: Swimmer
+Double Battle: No
+AI: Basic Trainer
+
+SPECIES_FLETCHLING
+Level: 18
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+
+SPECIES_SKIPLOOM
+Level: 19
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+
+SPECIES_FLETCHINDER
+Level: 19
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
 === TRAINER_LOLA_4 ===
-Name: MILO
+Name: PERRY
 Class: Ninja Boy
 Pic: Ninja Boy
 Gender: Male
@@ -1067,20 +1071,24 @@ Music: Suspicious
 Double Battle: No
 AI: Basic Trainer
 
-SPECIES_PIDGEOTTO
-Level: 17
-IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
-
-SPECIES_VULLABY
+SPECIES_MANTYKE
 Level: 18
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
-SPECIES_TAILLOW
+SPECIES_TRANQUILL
 Level: 18
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+
+SPECIES_YANMA
+Level: 19
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+
+SPECIES_CORVISQUIRE
+Level: 19
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
 === TRAINER_LOLA_5 ===
-Name: PERRY
+Name: KENT
 Class: Bug Catcher
 Pic: Bug Catcher
 Gender: Male
@@ -1088,24 +1096,24 @@ Music: Male
 Double Battle: No
 AI: Basic Trainer
 
-SPECIES_STARAVIA
+SPECIES_FLETCHINDER
+Level: 17
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+
+SPECIES_DARTRIX
+Level: 17
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+
+SPECIES_SWABLU
 Level: 18
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
-SPECIES_DRIFLOON
+SPECIES_CORVISQUIRE
 Level: 18
-IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
-
-SPECIES_GLIGAR
-Level: 19
-IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
-
-SPECIES_BUTTERFREE
-Level: 19
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
 === TRAINER_RICKY_1 ===
-Name: KENT
+Name: DARIO
 Class: Fisherman
 Pic: Fisherman
 Gender: Male
@@ -1113,24 +1121,20 @@ Music: Hiker
 Double Battle: No
 AI: Basic Trainer
 
-SPECIES_STARAVIA
-Level: 17
+SPECIES_EMOLGA
+Level: 19
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+
+SPECIES_MANTYKE
+Level: 20
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
 SPECIES_PIDGEOTTO
-Level: 17
-IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
-
-SPECIES_GLIGAR
-Level: 18
-IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
-
-SPECIES_VULLABY
-Level: 18
+Level: 20
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
 === TRAINER_SIMON ===
-Name: DARIO
+Name: FELIX
 Class: Bug Catcher
 Pic: Bug Catcher
 Gender: Male
@@ -1138,20 +1142,20 @@ Music: Male
 Double Battle: No
 AI: Basic Trainer
 
-SPECIES_NATU
+SPECIES_DARTRIX
 Level: 17
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
-SPECIES_NOCTOWL
+SPECIES_ROWLET
 Level: 18
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
-SPECIES_GLIGAR
+SPECIES_DELIBIRD
 Level: 18
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
 === TRAINER_CHARLIE ===
-Name: FELIX
+Name: DEXTER
 Class: Camper
 Pic: Camper
 Gender: Male
@@ -1159,20 +1163,20 @@ Music: Male
 Double Battle: No
 AI: Basic Trainer
 
-SPECIES_WOOBAT
-Level: 18
-IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
-
-SPECIES_NOCTOWL
+SPECIES_WATTREL
 Level: 19
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
-SPECIES_BEAUTIFLY
-Level: 19
+SPECIES_STARAVIA
+Level: 20
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+
+SPECIES_FEAROW
+Level: 20
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
 === TRAINER_RICKY_2 ===
-Name: DEXTER
+Name: TOBIAS
 Class: Psychic
 Pic: Psychic M
 Gender: Male
@@ -1180,24 +1184,20 @@ Music: Intense
 Double Battle: No
 AI: Basic Trainer
 
-SPECIES_GRAVELER
+SPECIES_ONIX
 Level: 22
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
-SPECIES_DIGGERSBY
-Level: 22
-IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
-
-SPECIES_TOEDSCOOL
+SPECIES_DRILBUR
 Level: 23
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
-SPECIES_MUDBRAY
+SPECIES_MARSHTOMP
 Level: 23
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
 === TRAINER_RICKY_3 ===
-Name: TESSA
+Name: ZELDA
 Class: Beauty
 Pic: Beauty
 Gender: Female
@@ -1205,20 +1205,20 @@ Music: Female
 Double Battle: No
 AI: Basic Trainer
 
-SPECIES_GOLURK
+SPECIES_PUPITAR
 Level: 23
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
-SPECIES_VIBRAVA
+SPECIES_KROKOROK
 Level: 24
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
-SPECIES_SANDSLASH
+SPECIES_SANDYGAST
 Level: 24
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
 === TRAINER_RICKY_4 ===
-Name: OPAL
+Name: TESSA
 Class: Hex Maniac
 Pic: Hex Maniac
 Gender: Female
@@ -1226,44 +1226,23 @@ Music: Suspicious
 Double Battle: No
 AI: Basic Trainer
 
-SPECIES_CAMERUPT
-Level: 22
+SPECIES_NIDOKING
+Level: 24
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
-SPECIES_DIGGERSBY
-Level: 23
+SPECIES_PILOSWINE
+Level: 24
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
-SPECIES_CLODSIRE
-Level: 23
+SPECIES_SANDSHREW
+Level: 25
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+
+SPECIES_SANDYGAST
+Level: 25
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
 === TRAINER_RICKY_5 ===
-Name: TOBIAS
-Class: Hiker
-Pic: Hiker
-Gender: Male
-Music: Hiker
-Double Battle: No
-AI: Basic Trainer
-
-SPECIES_MORGREM
-Level: 27
-IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
-
-SPECIES_MAWILE
-Level: 27
-IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
-
-SPECIES_TINKATUFF
-Level: 28
-IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
-
-SPECIES_DACHSBUN
-Level: 28
-IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
-
-=== TRAINER_RANDALL ===
 Name: EDWIN
 Class: Hiker
 Pic: Hiker
@@ -1272,28 +1251,28 @@ Music: Hiker
 Double Battle: No
 AI: Basic Trainer
 
+SPECIES_COMFEY
+Level: 29
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+
 SPECIES_GRANBULL
 Level: 29
-IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
-
-SPECIES_GRIMMSNARL
-Level: 29
-IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
-
-SPECIES_DEDENNE
-Level: 30
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
 SPECIES_SLURPUFF
 Level: 30
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
-=== TRAINER_PARKER ===
+SPECIES_SWIRLIX
+Level: 30
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+
+=== TRAINER_RANDALL ===
 Name: NOLAN
-Class: Ninja Boy
-Pic: Ninja Boy
+Class: Hiker
+Pic: Hiker
 Gender: Male
-Music: Suspicious
+Music: Hiker
 Double Battle: No
 AI: Basic Trainer
 
@@ -1301,20 +1280,45 @@ SPECIES_AZUMARILL
 Level: 28
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
-SPECIES_MAWILE
+SPECIES_GRIMMSNARL
 Level: 28
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
-SPECIES_DEDENNE
+SPECIES_RIBOMBEE
 Level: 29
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
-SPECIES_MORGREM
+SPECIES_SLURPUFF
 Level: 29
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+
+=== TRAINER_PARKER ===
+Name: CONRAD
+Class: Ninja Boy
+Pic: Ninja Boy
+Gender: Male
+Music: Suspicious
+Double Battle: No
+AI: Basic Trainer
+
+SPECIES_TINKATON
+Level: 29
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+
+SPECIES_MAWILE
+Level: 29
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+
+SPECIES_COMFEY
+Level: 30
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+
+SPECIES_HATTERENE
+Level: 30
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
 === TRAINER_GEORGE ===
-Name: CONRAD
+Name: IVOR
 Class: Fisherman
 Pic: Fisherman
 Gender: Male
@@ -1322,24 +1326,24 @@ Music: Hiker
 Double Battle: No
 AI: Basic Trainer
 
-SPECIES_EMPOLEON
+SPECIES_GOLDUCK
+Level: 32
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+
+SPECIES_BRIONNE
+Level: 32
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+
+SPECIES_GRENINJA
 Level: 33
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
-SPECIES_POLIWHIRL
+SPECIES_DREDNAW
 Level: 33
-IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
-
-SPECIES_BLASTOISE
-Level: 34
-IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
-
-SPECIES_PRIMARINA
-Level: 34
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
 === TRAINER_BERKE ===
-Name: IVOR
+Name: ALDO
 Class: Psychic
 Pic: Psychic M
 Gender: Male
@@ -1347,23 +1351,48 @@ Music: Intense
 Double Battle: No
 AI: Basic Trainer
 
-SPECIES_SEADRA
+SPECIES_OMANYTE
 Level: 33
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
-SPECIES_SEALEO
+SPECIES_GOLDUCK
 Level: 33
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
-SPECIES_VAPOREON
+SPECIES_LUMINEON
 Level: 34
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
-SPECIES_QWILFISH
+SPECIES_DRACOVISH
 Level: 34
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
 === TRAINER_BRAXTON ===
+Name: OPAL
+Class: Beauty
+Pic: Beauty
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Basic Trainer
+
+SPECIES_POLIWRATH
+Level: 33
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+
+SPECIES_PRIMARINA
+Level: 33
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+
+SPECIES_GOLDUCK
+Level: 34
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+
+SPECIES_POLITOED
+Level: 34
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+
+=== TRAINER_VINCENT ===
 Name: DAPHNE
 Class: Beauty
 Pic: Beauty
@@ -1372,49 +1401,24 @@ Music: Female
 Double Battle: No
 AI: Basic Trainer
 
-SPECIES_FERALIGATR
-Level: 33
-IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
-
-SPECIES_GOREBYSS
-Level: 33
-IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
-
-SPECIES_VELUZA
+SPECIES_KABUTOPS
 Level: 34
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
-SPECIES_SLOWBRO
+SPECIES_WARTORTLE
 Level: 34
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
-=== TRAINER_VINCENT ===
-Name: BRIAR
-Class: Beauty
-Pic: Beauty
-Gender: Female
-Music: Female
-Double Battle: No
-AI: Basic Trainer
-
-SPECIES_DREDNAW
-Level: 33
+SPECIES_BRIONNE
+Level: 35
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
-SPECIES_GOLISOPOD
-Level: 33
-IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
-
-SPECIES_JELLICENT
-Level: 34
-IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
-
-SPECIES_DEWGONG
-Level: 34
+SPECIES_CORSOLA
+Level: 35
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
 === TRAINER_LEROY ===
-Name: ALDO
+Name: SILAS
 Class: Youngster
 Pic: Youngster
 Gender: Male
@@ -1422,24 +1426,24 @@ Music: Male
 Double Battle: No
 AI: Basic Trainer
 
-SPECIES_JELLICENT
+SPECIES_QUAGSIRE
 Level: 34
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
-SPECIES_CLAWITZER
+SPECIES_POLITOED
 Level: 34
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
-SPECIES_VAPOREON
+SPECIES_GOLISOPOD
 Level: 35
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
-SPECIES_TENTACOOL
+SPECIES_LANTURN
 Level: 35
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
 === TRAINER_WILTON_1 ===
-Name: SILAS
+Name: QUINN
 Class: Hiker
 Pic: Hiker
 Gender: Male
@@ -1447,24 +1451,24 @@ Music: Hiker
 Double Battle: No
 AI: Basic Trainer
 
-SPECIES_WYRDEER
+SPECIES_ORBEETLE
 Level: 34
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
-SPECIES_MUSHARNA
+SPECIES_HYPNO
 Level: 34
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
-SPECIES_GOTHITELLE
+SPECIES_KADABRA
 Level: 35
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
-SPECIES_GARDEVOIR
+SPECIES_GOTHORITA
 Level: 35
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
 === TRAINER_EDGAR ===
-Name: QUINN
+Name: JONAS
 Class: Camper
 Pic: Camper
 Gender: Male
@@ -1476,20 +1480,20 @@ SPECIES_ABRA
 Level: 33
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
-SPECIES_SWOOBAT
+SPECIES_MALAMAR
 Level: 33
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
-SPECIES_SOLROCK
+SPECIES_MR_MIME
 Level: 34
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
-SPECIES_ESPATHRA
+SPECIES_DELPHOX
 Level: 34
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
 === TRAINER_ALBERT ===
-Name: JONAS
+Name: WYATT
 Class: Fisherman
 Pic: Fisherman
 Gender: Male
@@ -1497,48 +1501,23 @@ Music: Hiker
 Double Battle: No
 AI: Basic Trainer
 
-SPECIES_GARDEVOIR
+SPECIES_JYNX
 Level: 33
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
-SPECIES_REUNICLUS
+SPECIES_WYRDEER
 Level: 33
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
-SPECIES_ESPURR
+SPECIES_BRUXISH
 Level: 34
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
-SPECIES_GALLADE
+SPECIES_HATTREM
 Level: 34
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
 === TRAINER_SAMUEL ===
-Name: WYATT
-Class: Ninja Boy
-Pic: Ninja Boy
-Gender: Male
-Music: Suspicious
-Double Battle: No
-AI: Basic Trainer
-
-SPECIES_TORTERRA
-Level: 37
-IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
-
-SPECIES_TANGELA
-Level: 37
-IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
-
-SPECIES_ROSELIA
-Level: 38
-IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
-
-SPECIES_THWACKEY
-Level: 38
-IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
-
-=== TRAINER_VITO ===
 Name: RUFUS
 Class: Ninja Boy
 Pic: Ninja Boy
@@ -1547,24 +1526,49 @@ Music: Suspicious
 Double Battle: No
 AI: Basic Trainer
 
-SPECIES_THWACKEY
+SPECIES_IVYSAUR
 Level: 37
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
-SPECIES_CACTURNE
+SPECIES_SHIFTRY
 Level: 37
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
-SPECIES_MEGANIUM
+SPECIES_TOEDSCRUEL
 Level: 38
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
-SPECIES_LEAVANNY
+SPECIES_GROTLE
 Level: 38
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+
+=== TRAINER_VITO ===
+Name: BRAN
+Class: Ninja Boy
+Pic: Ninja Boy
+Gender: Male
+Music: Suspicious
+Double Battle: No
+AI: Basic Trainer
+
+SPECIES_VILEPLUME
+Level: 39
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+
+SPECIES_BRAMBLEGHAST
+Level: 39
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+
+SPECIES_FLAPPLE
+Level: 40
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+
+SPECIES_BAYLEEF
+Level: 40
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
 === TRAINER_OWEN ===
-Name: BRAN
+Name: CASPER
 Class: Black Belt
 Pic: Black Belt
 Gender: Male
@@ -1572,24 +1576,24 @@ Music: Intense
 Double Battle: No
 AI: Basic Trainer
 
-SPECIES_SCOVILLAIN
-Level: 38
-IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
-
-SPECIES_GOGOAT
-Level: 38
-IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
-
-SPECIES_SERPERIOR
+SPECIES_IVYSAUR
 Level: 39
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
-SPECIES_ROSERADE
+SPECIES_ABOMASNOW
 Level: 39
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+
+SPECIES_GROTLE
+Level: 40
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+
+SPECIES_WHIMSICOTT
+Level: 40
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
 === TRAINER_WILTON_2 ===
-Name: CASPER
+Name: YORICK
 Class: Psychic
 Pic: Psychic M
 Gender: Male
@@ -1597,23 +1601,48 @@ Music: Intense
 Double Battle: No
 AI: Basic Trainer
 
-SPECIES_VENUSAUR
-Level: 42
+SPECIES_VICTREEBEL
+Level: 44
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
-SPECIES_HAUNTER
-Level: 42
+SPECIES_TOXICROAK
+Level: 44
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
-SPECIES_GOLBAT
-Level: 43
+SPECIES_SEVIPER
+Level: 45
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
-SPECIES_SWALOT
-Level: 43
+SPECIES_GRAFAIAI
+Level: 45
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
 === TRAINER_WILTON_3 ===
+Name: BRIAR
+Class: Lass
+Pic: Lass
+Gender: Female
+Music: Female
+Double Battle: No
+AI: Basic Trainer
+
+SPECIES_SCOLIPEDE
+Level: 43
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+
+SPECIES_VILEPLUME
+Level: 43
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+
+SPECIES_IVYSAUR
+Level: 44
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+
+SPECIES_ARBOK
+Level: 44
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+
+=== TRAINER_WILTON_4 ===
 Name: WILLA
 Class: Lass
 Pic: Lass
@@ -1622,49 +1651,24 @@ Music: Female
 Double Battle: No
 AI: Basic Trainer
 
-SPECIES_ARBOK
-Level: 42
+SPECIES_NIDOKING
+Level: 44
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
-SPECIES_CLODSIRE
-Level: 42
+SPECIES_SKUNTANK
+Level: 44
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
-SPECIES_SALAZZLE
-Level: 43
+SPECIES_VENOMOTH
+Level: 45
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
-SPECIES_WEEZING
-Level: 43
-IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
-
-=== TRAINER_WILTON_4 ===
-Name: DELIA
-Class: Lass
-Pic: Lass
-Gender: Female
-Music: Female
-Double Battle: No
-AI: Basic Trainer
-
-SPECIES_VENUSAUR
-Level: 42
-IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
-
-SPECIES_GENGAR
-Level: 42
-IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
-
-SPECIES_GRAFAIAI
-Level: 43
-IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
-
-SPECIES_SWALOT
-Level: 43
+SPECIES_SNEASLER
+Level: 45
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
 === TRAINER_WILTON_5 ===
-Name: YORICK
+Name: HUGO
 Class: Gentleman
 Pic: Gentleman
 Gender: Male
@@ -1672,20 +1676,20 @@ Music: Rich
 Double Battle: No
 AI: Basic Trainer
 
-SPECIES_AMOONGUSS
-Level: 42
-IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
-
 SPECIES_VENUSAUR
-Level: 42
-IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
-
-SPECIES_GLIMMORA
 Level: 43
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
-SPECIES_GRAFAIAI
+SPECIES_VILEPLUME
 Level: 43
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+
+SPECIES_NIDOQUEEN
+Level: 44
+IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
+
+SPECIES_CLODSIRE
+Level: 44
 IVs: 8 HP / 8 Atk / 8 Def / 8 SpA / 8 SpD / 8 Spe
 
 === TRAINER_WARREN ===
@@ -4655,19 +4659,19 @@ SPECIES_COALOSSAL
 Level: 53
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
-SPECIES_MAGMORTAR
+SPECIES_INFERNAPE
 Level: 54
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
-SPECIES_SALAZZLE
+SPECIES_CHANDELURE
 Level: 54
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
-SPECIES_SIMISEAR
+SPECIES_CERULEDGE
 Level: 55
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
-SPECIES_INFERNAPE
+SPECIES_HEATMOR
 Level: 55
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
@@ -4681,23 +4685,23 @@ Items: Full Restore / Full Restore
 Double Battle: No
 AI: Basic Trainer
 
-SPECIES_CRUSTLE
+SPECIES_PROBOPASS
 Level: 54
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
-SPECIES_GIGALITH
+SPECIES_AGGRON
 Level: 55
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
-SPECIES_PROBOPASS
+SPECIES_CRUSTLE
 Level: 55
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
-SPECIES_TYRANTRUM
+SPECIES_KLAWF
 Level: 56
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
-SPECIES_BASTIODON
+SPECIES_KLEAVOR
 Level: 56
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
@@ -4711,23 +4715,23 @@ Items: Full Restore / Full Restore
 Double Battle: No
 AI: Basic Trainer
 
-SPECIES_HYDREIGON
+SPECIES_DRACOVISH
 Level: 55
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
-SPECIES_GARCHOMP
+SPECIES_BAXCALIBUR
 Level: 56
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
-SPECIES_DRAMPA
+SPECIES_KOMMO_O
 Level: 56
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
-SPECIES_GOODRA
+SPECIES_FLYGON
 Level: 57
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
-SPECIES_HYDRAPPLE
+SPECIES_GARCHOMP
 Level: 57
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
@@ -4741,23 +4745,23 @@ Items: Full Restore / Full Restore
 Double Battle: No
 AI: Basic Trainer
 
-SPECIES_KILOWATTREL
+SPECIES_DRIFBLIM
 Level: 56
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
-SPECIES_CORVIKNIGHT
+SPECIES_KILOWATTREL
 Level: 57
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
-SPECIES_PIDGEOT
+SPECIES_TOUCANNON
 Level: 57
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
-SPECIES_DODRIO
+SPECIES_HONCHKROW
 Level: 58
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
-SPECIES_YANMEGA
+SPECIES_STARAPTOR
 Level: 58
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
@@ -4771,11 +4775,11 @@ Items: Super Potion
 Double Battle: No
 AI: Basic Trainer
 
-SPECIES_DUCKLETT
+SPECIES_FARFETCHD
 Level: 17
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
-SPECIES_DARTRIX
+SPECIES_ARCHEN
 Level: 17
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
@@ -4789,15 +4793,15 @@ Items: Super Potion
 Double Battle: No
 AI: Basic Trainer
 
-SPECIES_FORRETRESS
+SPECIES_CUFANT
 Level: 21
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
-SPECIES_MAWILE
+SPECIES_SKARMORY
 Level: 22
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
-SPECIES_SHIELDON
+SPECIES_METANG
 Level: 22
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
@@ -4811,15 +4815,15 @@ Items: Super Potion
 Double Battle: No
 AI: Basic Trainer
 
-SPECIES_NIDOQUEEN
+SPECIES_GABITE
 Level: 26
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
-SPECIES_PUPITAR
+SPECIES_HIPPOPOTAS
 Level: 27
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
-SPECIES_MUDSDALE
+SPECIES_NIDOQUEEN
 Level: 27
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
@@ -4833,19 +4837,19 @@ Items: Hyper Potion / Hyper Potion
 Double Battle: No
 AI: Basic Trainer
 
-SPECIES_PANCHAM
+SPECIES_MACHAMP
 Level: 31
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
-SPECIES_GURDURR
+SPECIES_PASSIMIAN
 Level: 31
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
-SPECIES_COMBUSKEN
+SPECIES_MEDICHAM
 Level: 32
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
-SPECIES_PRIMEAPE
+SPECIES_BEWEAR
 Level: 32
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
@@ -4859,19 +4863,19 @@ Items: Hyper Potion / Hyper Potion
 Double Battle: No
 AI: Basic Trainer
 
-SPECIES_SCOLIPEDE
+SPECIES_NIDORINO
 Level: 36
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
-SPECIES_MUK
+SPECIES_HAUNTER
 Level: 36
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
-SPECIES_SKUNTANK
+SPECIES_WEEPINBELL
 Level: 37
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
-SPECIES_GARBODOR
+SPECIES_VILEPLUME
 Level: 37
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
@@ -4885,23 +4889,23 @@ Items: Hyper Potion / Hyper Potion
 Double Battle: No
 AI: Basic Trainer
 
-SPECIES_DRAMPA
+SPECIES_ARCTIBAX
 Level: 40
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
-SPECIES_KINGDRA
+SPECIES_GABITE
 Level: 41
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
-SPECIES_HAKAMO_O
+SPECIES_HAXORUS
 Level: 41
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
-SPECIES_TURTONATOR
+SPECIES_DRAKLOAK
 Level: 42
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
-SPECIES_DRUDDIGON
+SPECIES_NOIVERN
 Level: 42
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
@@ -4915,23 +4919,23 @@ Items: Full Restore / Full Restore
 Double Battle: No
 AI: Basic Trainer
 
-SPECIES_CHANDELURE
+SPECIES_NINETALES
 Level: 45
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
-SPECIES_INFERNAPE
-Level: 46
-IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
-
-SPECIES_RAPIDASH
-Level: 46
-IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
-
 SPECIES_INCINEROAR
+Level: 46
+IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
+
+SPECIES_COALOSSAL
+Level: 46
+IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
+
+SPECIES_EMBOAR
 Level: 47
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
-SPECIES_VOLCARONA
+SPECIES_CERULEDGE
 Level: 47
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
@@ -4945,27 +4949,27 @@ Items: Full Restore / Full Restore
 Double Battle: No
 AI: Basic Trainer
 
-SPECIES_SWAMPERT
+SPECIES_TOXAPEX
 Level: 50
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
-SPECIES_RELICANTH
+SPECIES_VAPOREON
 Level: 50
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
-SPECIES_OCTILLERY
+SPECIES_CRAMORANT
 Level: 51
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
-SPECIES_BRUXISH
+SPECIES_FERALIGATR
 Level: 51
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
-SPECIES_WALREIN
+SPECIES_OMASTAR
 Level: 52
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 
-SPECIES_BLASTOISE
+SPECIES_DONDOZO
 Level: 52
 IVs: 25 HP / 25 Atk / 25 Def / 25 SpA / 25 SpD / 25 Spe
 

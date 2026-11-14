@@ -18,12 +18,15 @@ Gen_Town03_Gym_EventScript_Defeated::
 	end
 
 Gen_Town03_Gym_Text_Intro:
-	.string "Welcome to the WINDBURY GYM! My\n"
-	.string "STEEL-type POKéMON and I have been\l"
-	.string "waiting for a challenger like you.$"
+	.string "Welcome! Only through heat and\n"
+	.string "hammer blows does raw ore become a\l"
+	.string "blade!\p"
+	.string "Let me test your mettle!$"
 
 Gen_Town03_Gym_Text_Defeat:
-	.string "Well fought! You have earned this.$"
+	.string "Unbreakable will! You passed the\n"
+	.string "ultimate test of mettle. Here is\l"
+	.string "your BADGE!$"
 
 Gen_Town03_Gym_Text_Badge:
 	.string "{PLAYER} received BADGE No. 2 from\n"
@@ -40,14 +43,16 @@ Gen_Town03_Gym_EventScript_Trainer0::
 	end
 
 Gen_Town03_Gym_Text_Trainer0Intro:
-	.string "The LEADER is too busy for you.\n"
-	.string "Battle me first!$"
+	.string "In this GYM, we push STEEL POKéMON\n"
+	.string "to their absolute peak!$"
 
 Gen_Town03_Gym_Text_Trainer0Defeat:
-	.string "You might just have a chance.$"
+	.string "Oh no! My poor POKéMON got all\n"
+	.string "scuffed up!$"
 
 Gen_Town03_Gym_Text_Trainer0After:
-	.string "The LEADER is straight ahead.$"
+	.string "Traveling with POKéMON is the best\n"
+	.string "thing ever!$"
 
 Gen_Town03_Gym_EventScript_Trainer1::
 	trainerbattle_single TRAINER_ALBERTO, Gen_Town03_Gym_Text_Trainer1Intro, Gen_Town03_Gym_Text_Trainer1Defeat
@@ -55,11 +60,13 @@ Gen_Town03_Gym_EventScript_Trainer1::
 	end
 
 Gen_Town03_Gym_Text_Trainer1Intro:
-	.string "The LEADER is too busy for you.\n"
-	.string "Battle me first!$"
+	.string "Every TRAINER in this GYM is hand-\n"
+	.string "picked by our LEADER!$"
 
 Gen_Town03_Gym_Text_Trainer1Defeat:
-	.string "You might just have a chance.$"
+	.string "Hmph! Well played, very well\n"
+	.string "played indeed!$"
 
 Gen_Town03_Gym_Text_Trainer1After:
-	.string "The LEADER is straight ahead.$"
+	.string "True strength comes from trust\n"
+	.string "between human and POKéMON.$"
